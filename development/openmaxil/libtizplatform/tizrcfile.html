@@ -1,0 +1,255 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>tizrcfile &#8212; Tizonia 0.13.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '0.13.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="tizshufflelst" href="tizshufflelst.html" />
+    <link rel="prev" title="tizqueue" href="tizqueue.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../../index.html">
+    <img class="logo" src="../../../_static/tizonia_logo_200.gif" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=tizonia&repo=tizonia-openmax-il&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+    <img
+        alt="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+        src="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+    />
+</a>
+</p>
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/intro.html">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project's Building Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../screenshots/screenshots.html">Screenshots</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../BUILDING.html">Building from Source</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../style.html">Coding Style</a></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il/issues">Issues (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://bintray.com/tizonia">Binaries (Bintray)</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../development.html">Development</a><ul>
+  <li><a href="../openmaxil.html">OpenMAX IL Framework</a><ul>
+  <li><a href="libtizplatform.html">libtizplatform</a><ul>
+      <li>Previous: <a href="tizqueue.html" title="previous chapter">tizqueue</a></li>
+      <li>Next: <a href="tizshufflelst.html" title="next chapter">tizshufflelst</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tizrcfile">
+<h1>tizrcfile<a class="headerlink" href="#tizrcfile" title="Permalink to this headline">¶</a></h1>
+<dl class="group">
+<dt>
+<span class="target" id="group__tizrcfile"></span><em>group</em> <code class="descname">tizrcfile</code></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Functions</p>
+<dl class="function">
+<dt id="c.tiz_rcfile_get_value">
+<span class="target" id="group__tizrcfile_1ga8005bf6a3a2362372bedef6f6d932e9a"></span>const char* <code class="descname">tiz_rcfile_get_value</code><span class="sig-paren">(</span>const char *<em>&nbsp;section</em>, const char *<em>&nbsp;key</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a value string from a give section using the value’s key</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A newly allocated string or NULL if the specified key cannot be found. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">section</span></code>: String indicating the section where the key-value list pair is to be found.</li>
+<li><code class="docutils literal"><span class="pre">key</span></code>: A search key in the specified section.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="c.tiz_rcfile_get_value_list">
+<span class="target" id="group__tizrcfile_1ga228128b3eb32257c6401f0553a5d83ba"></span>char** <code class="descname">tiz_rcfile_get_value_list</code><span class="sig-paren">(</span>const char *<em>&nbsp;section</em>, const char *<em>&nbsp;key</em>, unsigned long *<em>&nbsp;length</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_get_value_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a value string from a give section using the value’s key</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>An array of NULL-terminated strings or NULL if the specified key cannot be found. The array should be freed by the caller. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">section</span></code>: String indicating the section where the key-value list pair is to be found.</li>
+<li><code class="docutils literal"><span class="pre">key</span></code>: A search key in the specified section.</li>
+<li><code class="docutils literal"><span class="pre">length</span></code>: The length of the returned list.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="c.tiz_rcfile_compare_value">
+<span class="target" id="group__tizrcfile_1gace48ac77d676bb7f2074345c9e907304"></span>int <code class="descname">tiz_rcfile_compare_value</code><span class="sig-paren">(</span>const char *<em>&nbsp;section</em>, const char *<em>&nbsp;key</em>, const char *<em>&nbsp;value</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_compare_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an integer less than, equal to, or greater than zero if the section-key-value triad provided is respectively, not found, found and matching, or found and no matching.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>Returns an integer less than (key or section not found), equal to (section and key found, value matched), or greater than zero (section and key found, value unmatched). </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">section</span></code>: String indicating the section where the key-value pair is to be found.</li>
+<li><code class="docutils literal"><span class="pre">key</span></code>: A search key in the specified section.</li>
+<li><code class="docutils literal"><span class="pre">value</span></code>: The value to be matched against.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="c.tiz_rcfile_status">
+<span class="target" id="group__tizrcfile_1ga2ef75e4a49d824024c019e676724e1ea"></span>int <code class="descname">tiz_rcfile_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns 0 if the status of the configuration file is such that a tizonia configuration file has been found at one of the expected locations and the file can be opened and read by the current user.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>On success, zero is returned. On error, -1 is returned. </dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2018, Aratelia Limited - Juan A. Rubio.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../../_sources/development/openmaxil/libtizplatform/tizrcfile.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/tizonia/tizonia-openmax-il" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21817639-6']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,237 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The Tizonia Project &#8212; Tizonia 0.13.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.13.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Project&#39;s Building Blocks" href="PROJECT.html" />
+    <link rel="prev" title="Tizonia documentation" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/tizonia_logo_200.gif" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=tizonia&repo=tizonia-openmax-il&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+    <img
+        alt="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+        src="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+    />
+</a>
+</p>
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Tizonia Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#current-features">Current features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#roadmap">Roadmap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PROJECT.html">The Project's Building Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../screenshots/screenshots.html">Screenshots</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Development</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il/issues">Issues (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://bintray.com/tizonia">Binaries (Bintray)</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter">Tizonia documentation</a></li>
+      <li>Next: <a href="PROJECT.html" title="next chapter">The Project's Building Blocks</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-tizonia-project">
+<h1>The Tizonia Project<a class="headerlink" href="#the-tizonia-project" title="Permalink to this headline">¶</a></h1>
+<p>Tizonia is a free and open-source multimedia software project based on
+OpenMAX IL.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/OpenMAX">OpenMAX IL</a> is an open standard
+maintained by the <a class="reference external" href="http://www.khronos.org/openmax/">The Khronos Group</a> that
+enables the creation and integration of software and hardware accelerated media
+streaming components like audio and video encoders and decoders, camera
+components, and media processing algorithms.</p>
+<p>Tizonia provides a number of libraries that implement the various features and
+components of the OpenMAX IL API, including the OpenMAX IL Core, the OpenMAX IL
+plugin infrastructure, Resource Management and a number of plugin
+implementations (primarily audio and video software decoders, and media sources
+and renderers).</p>
+<p>From a user-side perspective, the Tizonia project also features a command-line
+music player and audio streaming client/server for Linux with support for
+Spotify, Google Play Music, YouTube, SoundCloud, and Dirble on-demand streaming
+services.</p>
+<p>Tizonia development is hosted on <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il">GitHub</a> and software binary releases
+are available for Debian-based Linux distributions from <a class="reference external" href="https://bintray.com/tizonia">Bintray</a>. There are AUR (Arch User Repository) packages
+avaialable as well.</p>
+<div class="section" id="current-features">
+<h2>Current features<a class="headerlink" href="#current-features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Simple, no-fuss command-line music player utility.</li>
+<li>Audio streaming from cloud services:<ul>
+<li><em>Spotify Premium, Google Play Unlimited, YouTube, SoundCloud, and Dirble.</em></li>
+</ul>
+</li>
+<li>Audio playback from local media, with support for most common high-quality
+audio formats:<ul>
+<li><em>Formats currently supported: mp3, mp2, mpa, m2a, aac, vorbis, opus, wav,
+aiff, and flac</em>.</li>
+</ul>
+</li>
+<li>Playback of Icecast/SHOUTcast radio streams:<ul>
+<li>mp3, aac, and opus stations supported.</li>
+</ul>
+</li>
+<li>Icecast/SHOUTcast LAN audio streaming server (<em>experimental</em>):<ul>
+<li><em>Currently: stations can be created from local mp3 media.</em></li>
+</ul>
+</li>
+<li>MPRIS v2 remote control interface with support for previous, next, pause,
+play, stop and volume commands.</li>
+<li>Tizonia has its own internal multimedia framework.<ul>
+<li>A full implementation of the OpenMAX IL 1.2 provisional specification.</li>
+<li>Therefore, with no depedencies on ffmpeg, libav, gstreamer or libvlc
+frameworks.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="roadmap">
+<h2>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Chromecast support.</li>
+<li>Integration of additional audio streaming services (e.g. Pandora, Deezer,
+etc.).</li>
+<li>LAN streaming (Icecast/SHOUTcast) of any audio stream (including cloud
+services).</li>
+<li>Multi-room synchronised playback (via Chromecast).</li>
+<li>Hardware-acceleration and video support.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2018, Aratelia Limited - Juan A. Rubio.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/overview/intro.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/tizonia/tizonia-openmax-il" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21817639-6']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>

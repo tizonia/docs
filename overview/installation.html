@@ -1,0 +1,468 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Installation &#8212; Tizonia 0.13.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.13.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Screenshots" href="../screenshots/screenshots.html" />
+    <link rel="prev" title="The Project&#39;s Building Blocks" href="PROJECT.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/tizonia_logo_200.gif" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=tizonia&repo=tizonia-openmax-il&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+    <img
+        alt="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+        src="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+    />
+</a>
+</p>
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PROJECT.html">The Project's Building Blocks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#debian-ubuntu-packages">Debian/Ubuntu packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arch-user-repository-aur-packages">Arch User Repository (AUR) packages</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../screenshots/screenshots.html">Screenshots</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Development</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il/issues">Issues (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://bintray.com/tizonia">Binaries (Bintray)</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="PROJECT.html" title="previous chapter">The Project's Building Blocks</a></li>
+      <li>Next: <a href="../screenshots/screenshots.html" title="next chapter">Screenshots</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="debian-ubuntu-packages">
+<h2>Debian/Ubuntu packages<a class="headerlink" href="#debian-ubuntu-packages" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For the latest installation information, please visit the <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/blob/master/tools/install.sh">README.md</a>
+file on GitHub.</p>
+</div>
+<p>Debian/Ubuntu packages are available from <a class="reference external" href="https://bintray.com/tizonia">Bintray</a> for the following distro/arch combinations:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://bintray.com/tizonia/ubuntu/tizonia-trusty/view">Ubuntu Trusty</a> (14.04)<ul>
+<li>amd64, i386, armhf</li>
+</ul>
+</li>
+<li><a class="reference external" href="https://bintray.com/tizonia/ubuntu/tizonia-vivid/view">Ubuntu Vivid</a> (15.04)<ul>
+<li>amd64, i386, armhf</li>
+</ul>
+</li>
+<li><a class="reference external" href="https://bintray.com/tizonia/debian/tizonia-jessie/view">Debian Jessie</a> (8)<ul>
+<li>amd64, i386, armhf, armel</li>
+</ul>
+</li>
+<li><a class="reference external" href="https://bintray.com/tizonia/raspbian/tizonia-jessie/view">Raspbian Jessie</a> (8)<ul>
+<li>armhf</li>
+</ul>
+</li>
+<li><a class="reference external" href="https://bintray.com/tizonia/debian/tizonia-stretch/view">Debian Stretch</a> (9)<ul>
+<li>amd64, i386, armhf, armel</li>
+</ul>
+</li>
+<li><a class="reference external" href="https://bintray.com/tizonia/raspbian/tizonia-stretch/view">Raspbian Stretch</a> (9)<ul>
+<li>armhf</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Elementary OS and Linux Mint are supported on releases based on
+Ubuntu ‘Trusty’ or Ubuntu ‘Xenial’.</p>
+</div>
+<div class="section" id="installing-the-latest-release">
+<h3>Installing the latest release<a class="headerlink" href="#installing-the-latest-release" title="Permalink to this headline">¶</a></h3>
+<p>To conveniently install the latest release of the Debian packages, and all
+their dependencies, use the <code class="docutils literal"><span class="pre">install.sh</span></code> script:</p>
+<div class="highlight-bash"><div class="highlight"><pre>$ curl -kL https://github.com/tizonia/tizonia-openmax-il/raw/master/tools/install.sh <span class="p">|</span> bash
+<span class="c1"># or it&#39;s shortened version</span>
+$ curl -L -O https://goo.gl/Vu8qGR <span class="o">&amp;&amp;</span> chmod +x Vu8qGR <span class="o">&amp;&amp;</span> ./Vu8qGR
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/blob/master/tools/install.sh">install.sh</a>
+script is hosted on GitHub, and displayed here for clarity:</p>
+</div>
+<div class="highlight-bash"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</pre></div></td><td class="code"><div class="highlight"><pre><span class="ch">#!/bin/bash</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright (C) 2011-2018 Aratelia Limited - Juan A. Rubio</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+
+<span class="c1">#</span>
+<span class="c1"># Script that installs Tizonia&#39;s debian packages and their dependencies.</span>
+<span class="c1">#</span>
+
+<span class="c1"># Run the install actions in a subshell</span>
+<span class="o">(</span>
+<span class="nv">RELIDS</span><span class="o">=</span><span class="k">$(</span>cat /etc/*-release<span class="k">)</span>
+<span class="k">if</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep raspbian<span class="p">;</span> <span class="k">then</span>
+    <span class="nv">DISTRO</span><span class="o">=</span><span class="s2">&quot;raspbian&quot;</span>
+    <span class="k">if</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep stretch<span class="p">;</span> <span class="k">then</span>
+        <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;stretch&quot;</span>
+    <span class="k">elif</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep jessie<span class="p">;</span> <span class="k">then</span>
+        <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;jessie&quot;</span>
+    <span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Can&#39;t find a supported Raspbian distribution.&quot;</span>
+        <span class="nb">exit</span> 1
+    <span class="k">fi</span>
+<span class="k">elif</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep jessie<span class="p">;</span> <span class="k">then</span>
+  <span class="nv">DISTRO</span><span class="o">=</span><span class="s2">&quot;debian&quot;</span> <span class="p">;</span> <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;jessie&quot;</span>
+<span class="k">elif</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep stretch<span class="p">;</span> <span class="k">then</span>
+  <span class="nv">DISTRO</span><span class="o">=</span><span class="s2">&quot;debian&quot;</span> <span class="p">;</span> <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;stretch&quot;</span>
+<span class="k">elif</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep -E <span class="s1">&#39;trusty|freya|qiana|rebecca|rafaela|rosa|sarah&#39;</span><span class="p">;</span> <span class="k">then</span>
+  <span class="c1"># NOTE: Elementary OS &#39;freya&#39; is based on trusty</span>
+  <span class="c1"># NOTE: LinuxMint &#39;qiana&#39; &#39;rebecca&#39; &#39;rafaela&#39; &#39;rosa&#39; &#39;sarah&#39; are all based on trusty</span>
+  <span class="nv">DISTRO</span><span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> <span class="p">;</span> <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;trusty&quot;</span>
+<span class="k">elif</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep vivid<span class="p">;</span> <span class="k">then</span>
+  <span class="nv">DISTRO</span><span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> <span class="p">;</span> <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;vivid&quot;</span>
+<span class="k">elif</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep -E <span class="s1">&#39;xenial|loki|sarah|serena&#39;</span><span class="p">;</span> <span class="k">then</span>
+  <span class="c1"># NOTE: Elementary OS &#39;loki&#39; is based on xenial</span>
+  <span class="c1"># Linux Mint &#39;sarah&#39; and &#39;serena&#39; are based on xenial</span>
+  <span class="nv">DISTRO</span><span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> <span class="p">;</span> <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;xenial&quot;</span>
+<span class="k">elif</span> <span class="nb">echo</span> <span class="s2">&quot;</span>$<span class="s2">RELIDS&quot;</span> <span class="p">|</span> grep -E <span class="s1">&#39;bionic&#39;</span><span class="p">;</span> <span class="k">then</span>
+  <span class="nv">DISTRO</span><span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> <span class="p">;</span> <span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;bionic&quot;</span>
+<span class="k">else</span>
+  <span class="nb">echo</span> <span class="s2">&quot;Can&#39;t find a supported Debian or Ubuntu-based distribution.&quot;</span>
+  <span class="nb">exit</span> 1
+<span class="k">fi</span>
+
+<span class="c1"># Let&#39;s make sure these packages are already installed before trying to install anything else.</span>
+sudo apt-get -y --force-yes install python-dev curl apt-transport-https libffi-dev libssl-dev
+
+<span class="c1"># Add Mopidy&#39;s archive to APT&#39;s sources.list (required to install &#39;libspotify&#39;)</span>
+grep -q <span class="s2">&quot;apt.mopidy.com&quot;</span> /etc/apt/sources.list
+<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$?</span><span class="s2">&quot;</span> -eq <span class="m">1</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    curl <span class="s1">&#39;http://apt.mopidy.com/mopidy.gpg&#39;</span> <span class="p">|</span> sudo apt-key add -
+    <span class="nb">echo</span> <span class="s2">&quot;deb http://apt.mopidy.com/ stable main contrib non-free&quot;</span> <span class="p">|</span> sudo tee -a /etc/apt/sources.list
+<span class="k">fi</span>
+
+<span class="c1"># Add Tizonia&#39;s archive to APT&#39;s sources.list</span>
+grep -q <span class="s2">&quot;dl.bintray.com/tizonia&quot;</span> /etc/apt/sources.list
+<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$?</span><span class="s2">&quot;</span> -eq <span class="m">1</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    curl -k <span class="s1">&#39;https://bintray.com/user/downloadSubjectPublicKey?username=tizonia&#39;</span> <span class="p">|</span> sudo apt-key add -
+    <span class="nb">echo</span> <span class="s2">&quot;deb https://dl.bintray.com/tizonia/</span><span class="nv">$D</span><span class="s2">ISTRO </span>$<span class="s2">RELEASE main&quot;</span> <span class="p">|</span> sudo tee -a /etc/apt/sources.list
+<span class="k">fi</span>
+
+<span class="c1"># Resynchronize APT&#39;s package index files</span>
+sudo apt-get update
+
+<span class="c1"># Python dependencies (NOTE: using pip2 here, to make sure the Python 2</span>
+<span class="c1"># versions of these packages are installed).</span>
+sudo apt-get -y install python-pip <span class="se">\</span>
+    <span class="o">&amp;&amp;</span> sudo -H pip2 install --upgrade <span class="se">\</span>
+            gmusicapi <span class="se">\</span>
+            soundcloud <span class="se">\</span>
+            youtube-dl <span class="se">\</span>
+            pafy <span class="se">\</span>
+            pycountry <span class="se">\</span>
+            titlecase <span class="se">\</span>
+            pychromecast <span class="se">\</span>
+            plexapi <span class="se">\</span>
+            fuzzywuzzy <span class="se">\</span>
+            eventlet
+
+<span class="c1"># Install &#39;libspotify&#39;</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$?</span><span class="s2">&quot;</span> -eq <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    sudo apt-get -y install libspotify12
+<span class="k">fi</span>
+
+<span class="c1"># Install Tizonia</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$?</span><span class="s2">&quot;</span> -eq <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    sudo apt-get -y install tizonia-all
+<span class="k">fi</span>
+
+<span class="c1"># Simple test to verify that everything went well</span>
+<span class="nv">TIZ_CONFIG_FILE</span><span class="o">=</span><span class="s2">&quot;</span>$<span class="s2">HOME/.config/tizonia/tizonia.conf&quot;</span>
+which tizonia &gt; /dev/null
+<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$?</span><span class="s2">&quot;</span> -eq <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="p">;</span> tizonia <span class="p">;</span> <span class="nb">echo</span>
+    <span class="nb">printf</span> <span class="s2">&quot;Tizonia is now installed.\n\n&quot;</span>
+    <span class="nb">printf</span> <span class="s2">&quot;Please add Spotify, Google Music, Soundcloud, Dirble, and Plex credentials to : </span>$<span class="s2">TIZ_CONFIG_FILE\n&quot;</span>
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Oops. Something went wrong!&quot;</span>
+    <span class="nb">exit</span> 1
+<span class="k">fi</span>
+
+<span class="o">)</span> <span class="c1"># end running in a subshell</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="arch-user-repository-aur-packages">
+<h2>Arch User Repository (AUR) packages<a class="headerlink" href="#arch-user-repository-aur-packages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all/">tizonia-all (0.9.0)</a></li>
+<li><a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all-git/">tizonia-all-git</a></li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre>$ yaourt -S tizonia-all <span class="c1"># for the latest released version</span>
+<span class="c1"># or</span>
+$ yaourt -S tizonia-all-git <span class="c1"># for the bleeding edge</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2018, Aratelia Limited - Juan A. Rubio.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/overview/installation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/tizonia/tizonia-openmax-il" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21817639-6']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>
