@@ -1,0 +1,200 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Shoutcast Client &#8212; Tizonia 0.17.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Spotify" href="spotify.html" />
+    <link rel="prev" title="Shoutcast Server" href="server.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/tizonia_logo_200.gif" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=tizonia&repo=tizonia-openmax-il&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a class="badge" href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+    <img
+        alt="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+        src="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+    />
+</a>
+</p>
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#news">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#roadmap">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#resources">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/PROJECT.html">The Project’s Building Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/ISSUE_TEMPLATE.html">Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/ISSUE_TEMPLATE.html#steps-to-reproduce">Steps to Reproduce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/ISSUE_TEMPLATE.html#versions">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/ISSUE_TEMPLATE.html#installation-method-used">Installation Method Used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/ISSUE_TEMPLATE.html#additional-information">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/BUILDING.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="usage.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="helptopics.html">Help Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="global.html">Global Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="openmax.html">OpenMAX IL Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html">Shoutcast Server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Shoutcast Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spotify.html">Spotify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="googlemusic.html">Google Play Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="soundcloud.html">SoundCloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dirble.html">Dirble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="youtube.html">YouTube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plex.html">Plex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chromecast.html">Chromecast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keyboard.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html">Configuration Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="localmedia.html">Local Media Playback</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Development</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il/issues">Issues (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://bintray.com/tizonia">Binaries (Bintray)</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="usage.html">Usage</a><ul>
+      <li>Previous: <a href="server.html" title="previous chapter">Shoutcast Server</a></li>
+      <li>Next: <a href="spotify.html" title="next chapter">Spotify</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="shoutcast-client">
+<h1>Shoutcast Client<a class="headerlink" href="#shoutcast-client" title="Permalink to this headline">¶</a></h1>
+<img alt="tizonia shoutcast client help" class="align-center" src="../_images/tizonia-help-client.png" />
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/usage/client.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/tizonia/tizonia-openmax-il" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21817639-6']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>

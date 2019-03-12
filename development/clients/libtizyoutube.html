@@ -4,26 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>libtizyoutube &#8212; Tizonia 0.13.0 documentation</title>
+    <title>libtizyoutube &#8212; Tizonia 0.17.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../',
-        VERSION:     '0.13.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Coding Style" href="../style.html" />
+    <link rel="next" title="libtizdirble" href="libtizdirble.html" />
     <link rel="prev" title="libtizsoundcloud" href="libtizsoundcloud.html" />
    
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -31,8 +24,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   <div class="document">
     
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -61,7 +53,7 @@
     
 
 <p>
-<a href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+<a class="badge" href="https://travis-ci.org/tizonia/tizonia-openmax-il">
     <img
         alt="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
         src="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
@@ -72,16 +64,28 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/intro.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/PROJECT.html">The Project's Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#news">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#roadmap">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#resources">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/ISSUE_TEMPLATE.html">Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/ISSUE_TEMPLATE.html#steps-to-reproduce">Steps to Reproduce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/ISSUE_TEMPLATE.html#versions">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/ISSUE_TEMPLATE.html#installation-method-used">Installation Method Used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/ISSUE_TEMPLATE.html#additional-information">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/BUILDING.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../screenshots/screenshots.html">Screenshots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/usage.html">Usage</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../development.html">Development</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../BUILDING.html">Building from Source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../openmaxil/openmaxil.html">OpenMAX IL Framework</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/plugins.html">OpenMAX IL Plugins</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="clients.html">Streaming Client Libraries</a></li>
@@ -110,7 +114,7 @@
   <li><a href="../development.html">Development</a><ul>
   <li><a href="clients.html">Streaming Client Libraries</a><ul>
       <li>Previous: <a href="libtizsoundcloud.html" title="previous chapter">libtizsoundcloud</a></li>
-      <li>Next: <a href="../style.html" title="next chapter">Coding Style</a></li>
+      <li>Next: <a href="libtizdirble.html" title="next chapter">libtizdirble</a></li>
   </ul></li>
   </ul></li>
   </ul></li>
@@ -118,18 +122,22 @@
 </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="libtizyoutube">
@@ -190,7 +198,7 @@
 <dd>0 on success. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">app_youtube</span></code>: A pointer to the tiz_youtube handle which will be initialised.</li>
+<li><code class="docutils literal notranslate"><span class="pre">app_youtube</span></code>: A pointer to the tiz_youtube handle which will be initialised.</li>
 </ul>
 </dd>
 </dl>
@@ -204,7 +212,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -218,7 +226,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -232,7 +240,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -246,7 +254,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -260,7 +268,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -277,8 +285,8 @@
 <dd>0 on success </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_url_or_id</span></code>: A YouTube video full url or video id.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_url_or_id</span></code>: A YouTube video full url or video id.</li>
 </ul>
 </dd>
 </dl>
@@ -295,8 +303,8 @@
 <dd>0 on success </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_url_or_id</span></code>: A playlist full url or playlist id.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_url_or_id</span></code>: A playlist full url or playlist id.</li>
 </ul>
 </dd>
 </dl>
@@ -313,8 +321,8 @@
 <dd>0 on success </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_url_or_id</span></code>: A playlist url or playlist id.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_url_or_id</span></code>: A playlist url or playlist id.</li>
 </ul>
 </dd>
 </dl>
@@ -331,8 +339,8 @@
 <dd>0 on success </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_search</span></code>: A search term.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_search</span></code>: A search term.</li>
 </ul>
 </dd>
 </dl>
@@ -349,8 +357,44 @@
 <dd>0 on success </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_search</span></code>: A search term.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_search</span></code>: A search term.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="c.tiz_youtube_play_audio_channel_uploads">
+<span class="target" id="group__libtizyoutube_1ga031efc55ab5e5a89f53ddb0f5c0529ba"></span>int <code class="descname">tiz_youtube_play_audio_channel_uploads</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em>&nbsp;ap_youtube</em>, const char *<em>&nbsp;ap_channel</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_channel_uploads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all video uploads from a YouTube channel and add all the audio streams to the playback queue.</p>
+<p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>0 on success </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_channel</span></code>: A channel url.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="c.tiz_youtube_play_audio_channel_playlist">
+<span class="target" id="group__libtizyoutube_1ga2edb927d43198792d9d6d0819139f014"></span>int <code class="descname">tiz_youtube_play_audio_channel_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em>&nbsp;ap_youtube</em>, const char *<em>&nbsp;ap_channel_and_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_channel_playlist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all video uploads from a YouTube channel and add all the audio streams to the playback queue.</p>
+<p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>0 on success </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_channel_and_playlist</span></code>: The channel and playlist names, separated by a space character.</li>
 </ul>
 </dd>
 </dl>
@@ -367,8 +411,8 @@
 <dd>The next url in the playback queue or NULL if the playback queue is empty. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
-<li><code class="docutils literal"><span class="pre">a_remove_current_url</span></code>: If true, delete the current url from the playback queue before moving to the next url.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_remove_current_url</span></code>: If true, delete the current url from the playback queue before moving to the next url.</li>
 </ul>
 </dd>
 </dl>
@@ -385,8 +429,8 @@
 <dd>The previous url in the playback queue or NULL if the playback queue is empty. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
-<li><code class="docutils literal"><span class="pre">a_remove_current_url</span></code>: If true, delete the current url from the playback queue before moving to the previous url.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_remove_current_url</span></code>: If true, delete the current url from the playback queue before moving to the previous url.</li>
 </ul>
 </dd>
 </dl>
@@ -400,7 +444,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -414,7 +458,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -428,7 +472,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -442,7 +486,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -456,7 +500,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -470,7 +514,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -484,7 +528,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -498,7 +542,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -512,7 +556,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -526,7 +570,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_gmusic</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -540,7 +584,7 @@
 <p><dl class="docutils">
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </li>
 </ul>
 </dd>
 </dl>
@@ -554,16 +598,17 @@
 
 
           </div>
+          
         </div>
       </div>
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2018, Aratelia Limited - Juan A. Rubio.
+      &copy;2019, Aratelia Limited - Juan A. Rubio.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/development/clients/libtizyoutube.rst.txt"

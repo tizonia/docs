@@ -4,23 +4,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>tizscheduler &#8212; Tizonia 0.13.0 documentation</title>
+    <title>tizscheduler &#8212; Tizonia 0.17.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../../',
-        VERSION:     '0.13.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="tizfsm" href="tizfsm.html" />
@@ -31,8 +24,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   <div class="document">
     
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -61,7 +53,7 @@
     
 
 <p>
-<a href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+<a class="badge" href="https://travis-ci.org/tizonia/tizonia-openmax-il">
     <img
         alt="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
         src="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
@@ -72,16 +64,28 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/intro.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project's Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#roadmap">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#resources">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html">Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html#steps-to-reproduce">Steps to Reproduce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html#versions">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html#installation-method-used">Installation Method Used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html#additional-information">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/BUILDING.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../screenshots/screenshots.html">Screenshots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/usage.html">Usage</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../BUILDING.html">Building from Source</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
@@ -120,18 +124,22 @@
 </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="tizscheduler">
@@ -175,7 +183,7 @@
 <dd>A pointer to a newly instantiated ‘configuration port’ object. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -192,7 +200,7 @@
 <dd>A pointer to a newly instantiated ‘port’ object. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -209,7 +217,7 @@
 <dd>A pointer to a newly instantiated ‘processor’ object. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -218,13 +226,13 @@
 
 <dl class="typedef">
 <dt id="c.tiz_role_factory_t">
-<span class="target" id="group__tizscheduler_1ga04f5399d42c5924c4bc4c15e18a59e34"></span><em class="property">typedef </em>struct tiz_role_factory <code class="descname">tiz_role_factory_t</code><a class="headerlink" href="#c.tiz_role_factory_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizscheduler_1ga04f5399d42c5924c4bc4c15e18a59e34"></span><em class="property">typedef </em>struct <a class="reference internal" href="#c.tiz_role_factory" title="tiz_role_factory">tiz_role_factory</a> <code class="descname">tiz_role_factory_t</code><a class="headerlink" href="#c.tiz_role_factory_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>OpenMAX IL role registration factory structure (typedef). </p>
 </dd></dl>
 
 <dl class="typedef">
 <dt id="c.tiz_event_pluggable_t">
-<span class="target" id="group__tizscheduler_1gac29f5b4b6b6d09ee0b77b87c126709f3"></span><em class="property">typedef </em>struct tiz_event_pluggable <code class="descname">tiz_event_pluggable_t</code><a class="headerlink" href="#c.tiz_event_pluggable_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizscheduler_1gac29f5b4b6b6d09ee0b77b87c126709f3"></span><em class="property">typedef </em>struct <a class="reference internal" href="#c.tiz_event_pluggable" title="tiz_event_pluggable">tiz_event_pluggable</a> <code class="descname">tiz_event_pluggable_t</code><a class="headerlink" href="#c.tiz_event_pluggable_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>‘Pluggable’ event structure (typedef). </p>
 </dd></dl>
 
@@ -243,8 +251,8 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_cname</span></code>: The component name. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_cname</span></code>: The component name. </li>
 </ul>
 </dd>
 </dl>
@@ -263,9 +271,9 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_role_list</span></code>: A list of role factories. </li>
-<li><code class="docutils literal"><span class="pre">a_nroles</span></code>: The number of factories in the list. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_role_list</span></code>: A list of role factories. </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_nroles</span></code>: The number of factories in the list. </li>
 </ul>
 </dd>
 </dl>
@@ -284,9 +292,9 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_type_list</span></code>: A list of type/class factories. </li>
-<li><code class="docutils literal"><span class="pre">a_ntypes</span></code>: The number of factories in the list. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_type_list</span></code>: A list of type/class factories. </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_ntypes</span></code>: The number of factories in the list. </li>
 </ul>
 </dd>
 </dl>
@@ -302,9 +310,9 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_new_hooks</span></code>: The new port buffer allocation hooks. </li>
-<li><code class="docutils literal"><span class="pre">ap_old_hooks</span></code>: The old allocation hooks (the ones replaced). </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_new_hooks</span></code>: The new port buffer allocation hooks. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_old_hooks</span></code>: The old allocation hooks (the ones replaced). </li>
 </ul>
 </dd>
 </dl>
@@ -320,8 +328,8 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_hook</span></code>: EGL image validation hook info. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hook</span></code>: EGL image validation hook info. </li>
 </ul>
 </dd>
 </dl>
@@ -337,9 +345,9 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_role</span></code>: A role name (a string of up to OMX_MAX_STRINGNAME_SIZE). </li>
-<li><code class="docutils literal"><span class="pre">ap_hook</span></code>: EGL image validation hook info. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_role</span></code>: A role name (a string of up to OMX_MAX_STRINGNAME_SIZE). </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hook</span></code>: EGL image validation hook info. </li>
 </ul>
 </dd>
 </dl>
@@ -356,8 +364,8 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_event</span></code>: The pluggable event. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_event</span></code>: The pluggable event. </li>
 </ul>
 </dd>
 </dl>
@@ -374,12 +382,12 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_ev_io</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">ap_arg</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">a_id</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">a_fd</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">a_events</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_ev_io</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_arg</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_id</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_fd</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_events</span></code>: </li>
 </ul>
 </dd>
 </dl>
@@ -396,10 +404,10 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_ev_timer</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">ap_arg</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">a_id</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_ev_timer</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_arg</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_id</span></code>: </li>
 </ul>
 </dd>
 </dl>
@@ -416,11 +424,11 @@
 <dd>OMX_ErrorNone on success, other OMX_ERRORTYPE on error. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
-<li><code class="docutils literal"><span class="pre">ap_ev_stat</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">ap_arg</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">a_id</span></code>: </li>
-<li><code class="docutils literal"><span class="pre">a_events</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_ev_stat</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_arg</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_id</span></code>: </li>
+<li><code class="docutils literal notranslate"><span class="pre">a_events</span></code>: </li>
 </ul>
 </dd>
 </dl>
@@ -436,7 +444,7 @@
 <dd>A registered type. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -452,7 +460,7 @@
 <dd>The fsm servant. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -468,7 +476,7 @@
 <dd>The kernel servant. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -484,7 +492,7 @@
 <dd>The processor servant. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -500,7 +508,7 @@
 <dd>The scheduler object. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -516,7 +524,7 @@
 <dd>A registered type. </dd>
 <dt><strong>Parameters</strong></dt>
 <dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
 </ul>
 </dd>
 </dl>
@@ -524,9 +532,9 @@
 </dd></dl>
 
 </div>
-<dl class="class">
-<dt id="_CPPv216tiz_role_factory">
-<span id="tiz_role_factory"></span><span class="target" id="structtiz__role__factory"></span><em class="property">struct </em><code class="descname">tiz_role_factory</code><a class="headerlink" href="#_CPPv216tiz_role_factory" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="struct">
+<dt id="c.tiz_role_factory">
+<span class="target" id="structtiz__role__factory"></span><em class="property">struct </em><code class="descname">tiz_role_factory</code><a class="headerlink" href="#c.tiz_role_factory" title="Permalink to this definition">¶</a></dt>
 <dd><em>#include &lt;tizscheduler.h&gt;</em><p>OpenMAX IL role registration factory structure. </p>
 <p>This structure is used to hold the various factory functions and elements necessary to register a new role within the libtizonia component infrastrucure. </p>
 <div class="breathe-sectiondef docutils container">
@@ -558,9 +566,9 @@
 </div>
 </dd></dl>
 
-<dl class="class">
-<dt id="_CPPv219tiz_event_pluggable">
-<span id="tiz_event_pluggable"></span><span class="target" id="structtiz__event__pluggable"></span><em class="property">struct </em><code class="descname">tiz_event_pluggable</code><a class="headerlink" href="#_CPPv219tiz_event_pluggable" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="struct">
+<dt id="c.tiz_event_pluggable">
+<span class="target" id="structtiz__event__pluggable"></span><em class="property">struct </em><code class="descname">tiz_event_pluggable</code><a class="headerlink" href="#c.tiz_event_pluggable" title="Permalink to this definition">¶</a></dt>
 <dd><em>#include &lt;tizscheduler.h&gt;</em><p>‘Pluggable’ event structure. </p>
 <p>A ‘pluggable’ event is a user-defined event that gets queued up in the component’s event queue. Once in the component’s event loop, the event is then delivered (in the context of the component’s thread) to the corresponding servant object (‘fsm’, ‘kernel’, or ‘processor’) for processing.</p>
 <p>The main use for this type of event is to allow the component’s ‘processor’ the processing of events coming from an external thread from within the component’s event loop and thread. Any data received in the external event tipically needs to be dup’ed before enqueueing the pluggable event (to avoid data races). </p>
@@ -587,16 +595,17 @@
 
 
           </div>
+          
         </div>
       </div>
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2018, Aratelia Limited - Juan A. Rubio.
+      &copy;2019, Aratelia Limited - Juan A. Rubio.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../../_sources/development/openmaxil/libtizonia/tizscheduler.rst.txt"
