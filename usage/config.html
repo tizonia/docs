@@ -148,6 +148,288 @@
   <div class="section" id="configuration-files">
 <h1>Configuration Files<a class="headerlink" href="#configuration-files" title="Permalink to this headline">¶</a></h1>
 <img alt="tizonia shoutcast config help" class="align-center" src="../_images/tizonia-help-config.png" />
+<div class="section" id="tizonia-conf">
+<h2>tizonia.conf<a class="headerlink" href="#tizonia-conf" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ini notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># -*-Mode: conf; -*-</span>
+<span class="c1"># tizonia-config v0.17.0 configuration file</span>
+
+<span class="k">[ilcore]</span>
+<span class="c1"># Tizonia OpenMAX IL Core section</span>
+
+<span class="c1"># Component plugins discovery</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># A comma-separated list of paths to be scanned by the Tizonia IL Core when</span>
+<span class="c1"># searching for component plugins</span>
+<span class="na">component-paths</span> <span class="o">=</span> <span class="s">/home/joni/temp/lib/tizonia0-plugins12;</span>
+
+<span class="c1"># IL Core extension plugins discovery</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># A comma-separated list of paths to be scanned by the Tizonia IL Core when</span>
+<span class="c1"># searching for IL Core extensions (not implemented yet)</span>
+<span class="na">extension-paths</span> <span class="o">=</span>
+
+
+<span class="k">[resource-management]</span>
+<span class="c1"># Tizonia OpenMAX IL Resource Management (RM) section</span>
+
+<span class="c1"># Resource Manager (RM) daemon interface enable/disable switch</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># Whether the IL RM functionality is enabled or not</span>
+<span class="na">enabled</span> <span class="o">=</span> <span class="s">false</span>
+
+<span class="c1"># RM database</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># This is the path to the Resource Manager database</span>
+<span class="na">rmdb</span> <span class="o">=</span> <span class="s">/home/joni/temp/share/tizrmd/tizrm.db</span>
+
+
+<span class="k">[plugins]</span>
+<span class="c1"># OpenMAX IL Component plugins section</span>
+
+<span class="c1"># Each key-value pair represents a list of any data that a</span>
+<span class="c1"># specific component might need. The entries here must honor the following</span>
+<span class="c1"># format: OMX.component.name.key = &lt;semi-colon-separated list of items&gt;</span>
+
+<span class="c1"># ALSA Audio Renderer</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1"># OMX.Aratelia.audio_renderer.alsa.pcm.preannouncements_disabled.port0 = false</span>
+<span class="na">OMX.Aratelia.audio_renderer.alsa.pcm.alsa_device</span> <span class="o">=</span> <span class="s">default</span>
+<span class="na">OMX.Aratelia.audio_renderer.alsa.pcm.alsa_mixer</span> <span class="o">=</span> <span class="s">Master</span>
+
+
+<span class="k">[tizonia]</span>
+<span class="c1"># Tizonia player section</span>
+
+<span class="c1"># The default audio renderer used by the tizonia player</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># Valid values are:</span>
+<span class="c1"># - OMX.Aratelia.audio_renderer.pulseaudio.pcm</span>
+<span class="c1"># - OMX.Aratelia.audio_renderer.alsa.pcm</span>
+<span class="na">default-audio-renderer</span> <span class="o">=</span> <span class="s">OMX.Aratelia.audio_renderer.pulseaudio.pcm</span>
+
+<span class="c1"># MPRIS v2 interface enable/disable switch</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># Valid values are: true | false</span>
+<span class="c1">#</span>
+<span class="na">mpris-enabled</span> <span class="o">=</span> <span class="s">false</span>
+
+<span class="c1"># Spotify configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment</span>
+<span class="c1"># and configure accordingly</span>
+<span class="c1">#</span>
+<span class="c1"># spotify.user     = user</span>
+<span class="c1"># spotify.password = pass</span>
+<span class="c1"># spotify.recover_lost_token = false (set to true to continue playback after</span>
+<span class="c1">#                                     the token has been [spuriously?] lost)</span>
+<span class="c1"># spotify.allow_explicit_tracks = false (set to true to allow explicit tracks)</span>
+
+<span class="c1"># Google Play Music configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
+<span class="c1"># configure here.</span>
+<span class="c1">#</span>
+<span class="c1"># gmusic.user       = user@gmail.com</span>
+<span class="c1"># gmusic.password   = pass (account password or app-specific password for</span>
+<span class="c1">#                          2-factor users)</span>
+<span class="c1"># gmusic.device_id  = deviceid (16 hex digits, e.g. &#39;1234567890abcdef&#39;)</span>
+<span class="c1"># gmusic.buffer_seconds = size of the audio buffer (in seconds) to use while</span>
+<span class="c1">#                         downloading streams. Default: 720. Increase in</span>
+<span class="c1">#                         case of cuts.</span>
+
+<span class="c1"># SoundCloud configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
+<span class="c1"># configure your SoundCloud OAuth token here.</span>
+<span class="c1">#</span>
+<span class="c1"># To obtain your OAuth token, Tizonia needs to be granted access to your</span>
+<span class="c1"># SoundCloud account. Visit http://tizonia.org/docs/soundcloud/ for the</span>
+<span class="c1"># details.</span>
+<span class="c1">#</span>
+<span class="c1"># soundcloud.oauth_token = X-XXXXXX-XXXXXXXX-XXXXXXXXXXXXXX</span>
+<span class="c1"># soundcloud.buffer_seconds = size of the audio buffer (in seconds) to use</span>
+<span class="c1">#                             while downloading streams. Default: 600.</span>
+<span class="c1">#                             Increase in case of cuts.</span>
+
+
+<span class="c1"># Dirble configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
+<span class="c1"># configure your Dirble Api Key here.</span>
+<span class="c1">#</span>
+<span class="c1"># To obtain your Dirble API key, go to https://dirble.com/developer/</span>
+<span class="c1">#</span>
+<span class="c1"># dirble.api_key = xxxxxxxxxxxxxx</span>
+<span class="c1"># dirble.buffer_seconds = size of the audio buffer (in seconds) to use</span>
+<span class="c1">#                         while downloading streams. Default: 120.</span>
+<span class="c1">#                         Increase in case of cuts.</span>
+
+
+<span class="c1"># YouTube configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
+<span class="c1"># configure as needed.</span>
+<span class="c1">#</span>
+<span class="c1"># youtube.buffer_seconds = size of the audio buffer (in seconds) to use</span>
+<span class="c1">#                          while downloading streams. Default: 60.</span>
+<span class="c1">#                          Increase in case of cuts.</span>
+
+
+<span class="c1"># Plex configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
+<span class="c1"># configure your Plex server and account auth token here.</span>
+<span class="c1">#</span>
+<span class="c1"># To find how to obtain a Plex user authentication token, see:</span>
+<span class="c1"># https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/</span>
+<span class="c1">#</span>
+<span class="c1"># plex.base_url = xxxxxxxxxxxxxx (e.g. http://plexserver:32400)</span>
+<span class="c1"># plex.auth_token = xxxxxxxxxxxxxx (e.g. SrPEojhap3H5Qj2DmjhX)</span>
+<span class="c1"># plex.buffer_seconds = size of the audio buffer (in seconds) to use</span>
+<span class="c1">#                       while downloading streams. Default: 60.</span>
+<span class="c1">#                       Increase in case of cuts.</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 </div>
 
 
