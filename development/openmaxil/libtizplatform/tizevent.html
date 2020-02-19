@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>tizevent &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>tizevent &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -67,25 +65,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../style.html">Coding Style</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -94,7 +90,7 @@
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -107,7 +103,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../../index.html">Documentation overview</a><ul>
-  <li><a href="../../development.html">Development</a><ul>
+  <li><a href="../../development.html">Developer Guide</a><ul>
   <li><a href="../openmaxil.html">OpenMAX IL Framework</a><ul>
   <li><a href="libtizplatform.html">libtizplatform</a><ul>
       <li>Previous: <a href="tizbuffer.html" title="previous chapter">tizbuffer</a></li>
@@ -119,13 +115,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -142,38 +136,37 @@
 <h1>tizevent<a class="headerlink" href="#tizevent" title="Permalink to this headline">¶</a></h1>
 <dl class="group">
 <dt>
-<span class="target" id="group__tizevent"></span><em>group</em> <code class="descname">tizevent</code></dt>
+<span class="target" id="group__tizevent"></span><em>group</em> <code class="sig-name descname">tizevent</code></dt>
 <dd><p>Global event loop, async io and timers. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
 <dl class="typedef">
 <dt id="c.tiz_event_io_t">
-<span class="target" id="group__tizevent_1gae7a73afe22b85074857bb317a8659112"></span><em class="property">typedef </em>struct tiz_event_io <code class="descname">tiz_event_io_t</code><a class="headerlink" href="#c.tiz_event_io_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizevent_1gae7a73afe22b85074857bb317a8659112"></span><em class="property">typedef </em>struct tiz_event_io <code class="sig-name descname">tiz_event_io_t</code><a class="headerlink" href="#c.tiz_event_io_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>Handle to an io event </p>
 </dd></dl>
 
 <dl class="typedef">
 <dt id="c.tiz_event_timer_t">
-<span class="target" id="group__tizevent_1ga61beba9d851389a306528773ddd9a8ad"></span><em class="property">typedef </em>struct tiz_event_timer <code class="descname">tiz_event_timer_t</code><a class="headerlink" href="#c.tiz_event_timer_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizevent_1ga61beba9d851389a306528773ddd9a8ad"></span><em class="property">typedef </em>struct tiz_event_timer <code class="sig-name descname">tiz_event_timer_t</code><a class="headerlink" href="#c.tiz_event_timer_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>Handle to a timer event </p>
 </dd></dl>
 
 <dl class="typedef">
 <dt id="c.tiz_event_stat_t">
-<span class="target" id="group__tizevent_1ga931c3365eb26ccdc029967af0c381f19"></span><em class="property">typedef </em>struct tiz_event_stat <code class="descname">tiz_event_stat_t</code><a class="headerlink" href="#c.tiz_event_stat_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizevent_1ga931c3365eb26ccdc029967af0c381f19"></span><em class="property">typedef </em>struct tiz_event_stat <code class="sig-name descname">tiz_event_stat_t</code><a class="headerlink" href="#c.tiz_event_stat_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>Handle to a file status change event </p>
 </dd></dl>
 
 <dl class="typedef">
 <dt id="c.tiz_event_io_cb_f">
-<span class="target" id="group__tizevent_1ga9335be6fe0430667a10ebcccc22e9b60"></span><em class="property">typedef </em>void<code class="descname">(* tiz_event_io_cb_f)</code><span class="sig-paren">(</span>void<em>&nbsp;*ap_arg0</em>, <a class="reference internal" href="#c.tiz_event_io_t" title="tiz_event_io_t">tiz_event_io_t</a><em>&nbsp;*ap_ev_io</em>, void<em>&nbsp;*ap_arg1</em>, const uint32_t<em>&nbsp;a_id</em>, int<em>&nbsp;a_fd</em>, int<em>&nbsp;a_events</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_event_io_cb_f" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizevent_1ga9335be6fe0430667a10ebcccc22e9b60"></span><em class="property">typedef </em>void<code class="sig-name descname">(* tiz_event_io_cb_f)</code><span class="sig-paren">(</span>void<em> *ap_arg0</em>, <a class="reference internal" href="#c.tiz_event_io_t" title="tiz_event_io_t">tiz_event_io_t</a><em> *ap_ev_io</em>, void<em> *ap_arg1</em>, const uint32_t<em> a_id</em>, int<em> a_fd</em>, int<em> a_events</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_event_io_cb_f" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback prototype for io events</p>
-<p><dl class="docutils">
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">p_ev_io</span></code>: The io event being notified</li>
-<li><code class="docutils literal notranslate"><span class="pre">fd</span></code>: The associated file descriptor</li>
-<li><code class="docutils literal notranslate"><span class="pre">events</span></code>: The event types notified </li>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">p_ev_io</span></code>: The io event being notified</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fd</span></code>: The associated file descriptor</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">events</span></code>: The event types notified </p></li>
 </ul>
 </dd>
 </dl>
@@ -185,18 +178,18 @@
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="function">
 <dt id="c.tiz_event_loop_init">
-<span class="target" id="group__tizevent_1ga76ce116973179328493aed3e5554a754"></span>OMX_ERRORTYPE <code class="descname">tiz_event_loop_init</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_event_loop_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizevent_1ga76ce116973179328493aed3e5554a754"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_event_loop_init</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_event_loop_init" title="Permalink to this definition">¶</a></dt>
 <dd><p>Explicit initialisation of the global event loop. The loop is hosted in its own thread which is spawned the first time this function or any other function in this module are called. Therefore it is not mandatory to call this function in order to instantiate the global event loop. This is only useful if for some reason the initialization cannot be done at the same time as the first use.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>OMX_ErrorNone if success, OMX_ErrorInsufficientResources otherwise. </dd>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>OMX_ErrorNone if success, OMX_ErrorInsufficientResources otherwise. </p>
+</dd>
 </dl>
 </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_event_loop_destroy">
-<span class="target" id="group__tizevent_1ga4d54807c6fe040229cca556b8bd52648"></span>void <code class="descname">tiz_event_loop_destroy</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_event_loop_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizevent_1ga4d54807c6fe040229cca556b8bd52648"></span>void <code class="sig-name descname">tiz_event_loop_destroy</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_event_loop_destroy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Explicit destruction of the global event loop. WARNING: After this function, the event loop cannot be recreated in the current process. Therefore, if this function is used, the caller should guarantee that the global event loop is no longer needed. </p>
 </dd></dl>
 
@@ -213,10 +206,10 @@
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

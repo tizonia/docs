@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>tizfsm &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>tizfsm &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -67,25 +65,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../style.html">Coding Style</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -94,7 +90,7 @@
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -107,7 +103,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../../index.html">Documentation overview</a><ul>
-  <li><a href="../../development.html">Development</a><ul>
+  <li><a href="../../development.html">Developer Guide</a><ul>
   <li><a href="../openmaxil.html">OpenMAX IL Framework</a><ul>
   <li><a href="libtizonia.html">libtizonia</a><ul>
       <li>Previous: <a href="tizscheduler.html" title="previous chapter">tizscheduler</a></li>
@@ -119,13 +115,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -142,21 +136,20 @@
 <h1>tizfsm<a class="headerlink" href="#tizfsm" title="Permalink to this headline">¶</a></h1>
 <dl class="group">
 <dt>
-<span class="target" id="group__tizfsm"></span><em>group</em> <code class="descname">tizfsm</code></dt>
+<span class="target" id="group__tizfsm"></span><em>group</em> <code class="sig-name descname">tizfsm</code></dt>
 <dd><p>libtizonia’s OpenMAX IL FSM servant. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="function">
 <dt id="c.tiz_fsm_class_init">
-<span class="target" id="group__tizfsm_1ga4cdb8225db831f4e55d494c7db97d227"></span>void* <code class="descname">tiz_fsm_class_init</code><span class="sig-paren">(</span>void *<em>&nbsp;ap_tos</em>, void *<em>&nbsp;ap_hdl</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_fsm_class_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizfsm_1ga4cdb8225db831f4e55d494c7db97d227"></span>void* <code class="sig-name descname">tiz_fsm_class_init</code><span class="sig-paren">(</span>void *<em> ap_tos</em>, void *<em> ap_hdl</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_fsm_class_init" title="Permalink to this definition">¶</a></dt>
 <dd><p>‘fsm’ metaclass initialisation.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The scheduler object. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_tos</span></code>: Tizonia’s object system handle. </li>
-<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The scheduler object. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_tos</span></code>: Tizonia’s object system handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </p></li>
 </ul>
 </dd>
 </dl>
@@ -165,15 +158,14 @@
 
 <dl class="function">
 <dt id="c.tiz_fsm_init">
-<span class="target" id="group__tizfsm_1ga9dbaf979af8cac888dba1d7c9f69d51d"></span>void* <code class="descname">tiz_fsm_init</code><span class="sig-paren">(</span>void *<em>&nbsp;ap_tos</em>, void *<em>&nbsp;ap_hdl</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_fsm_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizfsm_1ga9dbaf979af8cac888dba1d7c9f69d51d"></span>void* <code class="sig-name descname">tiz_fsm_init</code><span class="sig-paren">(</span>void *<em> ap_tos</em>, void *<em> ap_hdl</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_fsm_init" title="Permalink to this definition">¶</a></dt>
 <dd><p>‘fsm’ class initialisation.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The scheduler object. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_tos</span></code>: Tizonia’s object system handle. </li>
-<li><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The scheduler object. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_tos</span></code>: Tizonia’s object system handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The OpenMAX IL handle. </p></li>
 </ul>
 </dd>
 </dl>
@@ -193,10 +185,10 @@
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

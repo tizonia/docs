@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>tizqueue &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>tizqueue &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -67,25 +65,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../style.html">Coding Style</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -94,7 +90,7 @@
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -107,7 +103,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../../index.html">Documentation overview</a><ul>
-  <li><a href="../../development.html">Development</a><ul>
+  <li><a href="../../development.html">Developer Guide</a><ul>
   <li><a href="../openmaxil.html">OpenMAX IL Framework</a><ul>
   <li><a href="libtizplatform.html">libtizplatform</a><ul>
       <li>Previous: <a href="tizpqueue.html" title="previous chapter">tizpqueue</a></li>
@@ -119,13 +115,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -142,13 +136,13 @@
 <h1>tizqueue<a class="headerlink" href="#tizqueue" title="Permalink to this headline">¶</a></h1>
 <dl class="group">
 <dt>
-<span class="target" id="group__tizqueue"></span><em>group</em> <code class="descname">tizqueue</code></dt>
+<span class="target" id="group__tizqueue"></span><em>group</em> <code class="sig-name descname">tizqueue</code></dt>
 <dd><p>Thread-safe FIFO queue. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
 <dl class="typedef">
 <dt id="c.tiz_queue_t">
-<span class="target" id="group__tizqueue_1ga8fcde9f139b906fb0a7ec18038b076cf"></span><em class="property">typedef </em>struct tiz_queue <code class="descname">tiz_queue_t</code><a class="headerlink" href="#c.tiz_queue_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1ga8fcde9f139b906fb0a7ec18038b076cf"></span><em class="property">typedef </em>struct tiz_queue <code class="sig-name descname">tiz_queue_t</code><a class="headerlink" href="#c.tiz_queue_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>Queue opaque structure. </p>
 </dd></dl>
 
@@ -157,14 +151,13 @@
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="function">
 <dt id="c.tiz_queue_init">
-<span class="target" id="group__tizqueue_1ga8e40404bdc36b0830bd2edce1b45008d"></span>OMX_ERRORTYPE <code class="descname">tiz_queue_init</code><span class="sig-paren">(</span>tiz_queue_ptr_t  *<em>&nbsp;app_q</em>, OMX_S32<em>&nbsp;a_capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1ga8e40404bdc36b0830bd2edce1b45008d"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_queue_init</code><span class="sig-paren">(</span>tiz_queue_ptr_t  *<em> app_q</em>, OMX_S32<em> a_capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_init" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a new empty queue.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>OMX_ErrorNone if success, OMX_ErrorInsufficientResources otherwise. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">a_capacity</span></code>: Maximum number of items that can be send into the queue.</li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>OMX_ErrorNone if success, OMX_ErrorInsufficientResources otherwise. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">a_capacity</span></code>: Maximum number of items that can be send into the queue.</p></li>
 </ul>
 </dd>
 </dl>
@@ -173,37 +166,37 @@
 
 <dl class="function">
 <dt id="c.tiz_queue_destroy">
-<span class="target" id="group__tizqueue_1gab201db1f335acdff53416b5fa05c6b03"></span>void <code class="descname">tiz_queue_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em>&nbsp;ap_q</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1gab201db1f335acdff53416b5fa05c6b03"></span>void <code class="sig-name descname">tiz_queue_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em> ap_q</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_destroy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Destroy a queue. If ap_q is NULL, or the queue has already been detroyed before, no operation is performed. </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_queue_send">
-<span class="target" id="group__tizqueue_1ga237d4aedc1750a1491b74cd146a5e645"></span>OMX_ERRORTYPE <code class="descname">tiz_queue_send</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em>&nbsp;ap_q</em>, OMX_PTR<em>&nbsp;ap_data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_send" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1ga237d4aedc1750a1491b74cd146a5e645"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_queue_send</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em> ap_q</em>, OMX_PTR<em> ap_data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_send" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add an item onto the end of the queue. If the queue is full, it blocks until a space becomes available. </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_queue_receive">
-<span class="target" id="group__tizqueue_1ga0b305c5106b35aeacda3a0ab6f1599bc"></span>OMX_ERRORTYPE <code class="descname">tiz_queue_receive</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em>&nbsp;ap_q</em>, OMX_PTR *<em>&nbsp;app_data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_receive" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1ga0b305c5106b35aeacda3a0ab6f1599bc"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_queue_receive</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em> ap_q</em>, OMX_PTR *<em> app_data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_receive" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve an item from the head of the queue. If the queue is empty, it blocks until an item becomes available. </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_queue_timed_receive">
-<span class="target" id="group__tizqueue_1ga7377cfc66819eb3dfb17c638463c105d"></span>OMX_ERRORTYPE <code class="descname">tiz_queue_timed_receive</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em>&nbsp;ap_q</em>, OMX_PTR *<em>&nbsp;app_data</em>, OMX_U32<em>&nbsp;a_millis</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_timed_receive" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1ga7377cfc66819eb3dfb17c638463c105d"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_queue_timed_receive</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em> ap_q</em>, OMX_PTR *<em> app_data</em>, OMX_U32<em> a_millis</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_timed_receive" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve an item from the head of the queue. If the queue is empty, it waits for up to a_millis milliseconds or until an item becomes available. </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_queue_capacity">
-<span class="target" id="group__tizqueue_1gaa65c0819914a864d176c43d85a3c6d2f"></span>OMX_S32 <code class="descname">tiz_queue_capacity</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em>&nbsp;ap_q</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_capacity" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1gaa65c0819914a864d176c43d85a3c6d2f"></span>OMX_S32 <code class="sig-name descname">tiz_queue_capacity</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em> ap_q</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_capacity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the maximum number of items that can be stored in the queue. </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_queue_length">
-<span class="target" id="group__tizqueue_1gac815751e4495fce684c1cc4471fddcee"></span>OMX_S32 <code class="descname">tiz_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em>&nbsp;ap_q</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_length" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizqueue_1gac815751e4495fce684c1cc4471fddcee"></span>OMX_S32 <code class="sig-name descname">tiz_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_queue_t" title="tiz_queue_t">tiz_queue_t</a>  *<em> ap_q</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_queue_length" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the number of items currently stored in the queue. </p>
 </dd></dl>
 
@@ -220,10 +213,10 @@
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

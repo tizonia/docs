@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>tizthread &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>tizthread &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -67,25 +65,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../style.html">Coding Style</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -94,7 +90,7 @@
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -107,7 +103,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../../index.html">Documentation overview</a><ul>
-  <li><a href="../../development.html">Development</a><ul>
+  <li><a href="../../development.html">Developer Guide</a><ul>
   <li><a href="../openmaxil.html">OpenMAX IL Framework</a><ul>
   <li><a href="libtizplatform.html">libtizplatform</a><ul>
       <li>Previous: <a href="tizsync.html" title="previous chapter">tizsync</a></li>
@@ -119,13 +115,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -142,13 +136,13 @@
 <h1>tizthread<a class="headerlink" href="#tizthread" title="Permalink to this headline">¶</a></h1>
 <dl class="group">
 <dt>
-<span class="target" id="group__tizthread"></span><em>group</em> <code class="descname">tizthread</code></dt>
+<span class="target" id="group__tizthread"></span><em>group</em> <code class="sig-name descname">tizthread</code></dt>
 <dd><p>Simple thread/task management wrapper functions. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
 <dl class="typedef">
 <dt id="c.tiz_thread_t">
-<span class="target" id="group__tizthread_1ga95ef743ca68d4b3a96489cdc47c6f05b"></span><em class="property">typedef </em>OMX_U32 <code class="descname">tiz_thread_t</code><a class="headerlink" href="#c.tiz_thread_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizthread_1ga95ef743ca68d4b3a96489cdc47c6f05b"></span><em class="property">typedef </em>OMX_U32 <code class="sig-name descname">tiz_thread_t</code><a class="headerlink" href="#c.tiz_thread_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>Thread hdl </p>
 </dd></dl>
 
@@ -157,61 +151,61 @@
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="function">
 <dt id="c.tiz_thread_create">
-<span class="target" id="group__tizthread_1ga2fb981885b987a88ea99864d1fdfda4a"></span>OMX_ERRORTYPE <code class="descname">tiz_thread_create</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_thread_t" title="tiz_thread_t">tiz_thread_t</a>  *<em>&nbsp;ap_thread</em>, size_t<em>&nbsp;a_stack_size</em>, OMX_U32<em>&nbsp;a_priority</em>, OMX_PTR(<em>*a_pf_routine</em>)(OMX_PTR), OMX_PTR<em>&nbsp;ap_arg</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_create" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizthread_1ga2fb981885b987a88ea99864d1fdfda4a"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_thread_create</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_thread_t" title="tiz_thread_t">tiz_thread_t</a>  *<em> ap_thread</em>, size_t<em> a_stack_size</em>, OMX_U32<em> a_priority</em>, OMX_PTR(<em>*a_pf_routine</em>)(OMX_PTR), OMX_PTR<em> ap_arg</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_create" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new thread, starting with execution of a_pf_routine getting passed ap_arg. The new hdl is stored in *ap_thread.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </dd>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </p>
+</dd>
 </dl>
 </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_thread_join">
-<span class="target" id="group__tizthread_1gab6bf29f9633ca70c705cc9c717f9152f"></span>OMX_ERRORTYPE <code class="descname">tiz_thread_join</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_thread_t" title="tiz_thread_t">tiz_thread_t</a>  *<em>&nbsp;ap_thread</em>, void **<em>&nbsp;app_result</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_join" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizthread_1gab6bf29f9633ca70c705cc9c717f9152f"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_thread_join</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_thread_t" title="tiz_thread_t">tiz_thread_t</a>  *<em> ap_thread</em>, void **<em> app_result</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_join" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make the calling thread wait for the termination of the thread ap_thread. The exit status of the thread is stored in *app_result.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </dd>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </p>
+</dd>
 </dl>
 </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_thread_setname">
-<span class="target" id="group__tizthread_1ga16f498dece22b6cce94a516e38e7b1a0"></span>OMX_ERRORTYPE <code class="descname">tiz_thread_setname</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_thread_t" title="tiz_thread_t">tiz_thread_t</a>  *<em>&nbsp;ap_thread</em>, const OMX_STRING<em>&nbsp;a_name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_setname" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizthread_1ga16f498dece22b6cce94a516e38e7b1a0"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_thread_setname</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_thread_t" title="tiz_thread_t">tiz_thread_t</a>  *<em> ap_thread</em>, const OMX_STRING<em> a_name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_setname" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the name of a thread.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>0 if success, -1 otherwise. </dd>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 if success, -1 otherwise. </p>
+</dd>
 </dl>
 </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_thread_exit">
-<span class="target" id="group__tizthread_1ga6f7dd8078fc8005ade53dd9c37d9ea14"></span>void <code class="descname">tiz_thread_exit</code><span class="sig-paren">(</span>OMX_PTR<em>&nbsp;a_status</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_exit" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizthread_1ga6f7dd8078fc8005ade53dd9c37d9ea14"></span>void <code class="sig-name descname">tiz_thread_exit</code><span class="sig-paren">(</span>OMX_PTR<em> a_status</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_exit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Terminate the calling thread. </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_thread_id">
-<span class="target" id="group__tizthread_1gadbbdd7bf877ffd910959c4a25c94bc0e"></span>OMX_S32 <code class="descname">tiz_thread_id</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_id" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizthread_1gadbbdd7bf877ffd910959c4a25c94bc0e"></span>OMX_S32 <code class="sig-name descname">tiz_thread_id</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_thread_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the thread id of the calling thread.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The thread id </dd>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The thread id </p>
+</dd>
 </dl>
 </p>
 </dd></dl>
 
 <dl class="function">
 <dt id="c.tiz_sleep">
-<span class="target" id="group__tizthread_1gaf8b74ba62ad99757444af582cab60f93"></span>OMX_S32 <code class="descname">tiz_sleep</code><span class="sig-paren">(</span>OMX_U32<em>&nbsp;a_usec</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_sleep" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizthread_1gaf8b74ba62ad99757444af582cab60f93"></span>OMX_S32 <code class="sig-name descname">tiz_sleep</code><span class="sig-paren">(</span>OMX_U32<em> a_usec</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_sleep" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sleep for the specified number of micro seconds.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>0 if success, -1 otherwise. </dd>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 if success, -1 otherwise. </p>
+</dd>
 </dl>
 </p>
 </dd></dl>
@@ -229,10 +223,10 @@
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

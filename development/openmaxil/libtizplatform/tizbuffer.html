@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>tizbuffer &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>tizbuffer &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -67,25 +65,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../style.html">Coding Style</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -94,7 +90,7 @@
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -107,7 +103,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../../index.html">Documentation overview</a><ul>
-  <li><a href="../../development.html">Development</a><ul>
+  <li><a href="../../development.html">Developer Guide</a><ul>
   <li><a href="../openmaxil.html">OpenMAX IL Framework</a><ul>
   <li><a href="libtizplatform.html">libtizplatform</a><ul>
       <li>Previous: <a href="tizatomic.html" title="previous chapter">tizatomic</a></li>
@@ -119,13 +115,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -142,13 +136,13 @@
 <h1>tizbuffer<a class="headerlink" href="#tizbuffer" title="Permalink to this headline">¶</a></h1>
 <dl class="group">
 <dt>
-<span class="target" id="group__tizbuffer"></span><em>group</em> <code class="descname">tizbuffer</code></dt>
+<span class="target" id="group__tizbuffer"></span><em>group</em> <code class="sig-name descname">tizbuffer</code></dt>
 <dd><p>Dynamically re-sizeable buffer of contiguous binary data. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
 <dl class="typedef">
 <dt id="c.tiz_buffer_t">
-<span class="target" id="group__tizbuffer_1ga9dee87cf71412c3c56de211c9e04bf74"></span><em class="property">typedef </em>struct tiz_buffer <code class="descname">tiz_buffer_t</code><a class="headerlink" href="#c.tiz_buffer_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1ga9dee87cf71412c3c56de211c9e04bf74"></span><em class="property">typedef </em>struct tiz_buffer <code class="sig-name descname">tiz_buffer_t</code><a class="headerlink" href="#c.tiz_buffer_t" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dynamic buffer object opaque handle. </p>
 </dd></dl>
 
@@ -157,15 +151,14 @@
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="function">
 <dt id="c.tiz_buffer_init">
-<span class="target" id="group__tizbuffer_1gaf787dd1abb9ca0d3e14e5c4cc558e7ae"></span>OMX_ERRORTYPE <code class="descname">tiz_buffer_init</code><span class="sig-paren">(</span>tiz_buffer_ptr_t  *<em>&nbsp;app_buf</em>, const size_t<em>&nbsp;a_nbytes</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1gaf787dd1abb9ca0d3e14e5c4cc558e7ae"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_buffer_init</code><span class="sig-paren">(</span>tiz_buffer_ptr_t  *<em> app_buf</em>, const size_t<em> a_nbytes</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_init" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new dynamic buffer object.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">app_buf</span></code>: A dynamic buffer handle to be initialised. </li>
-<li><code class="docutils literal notranslate"><span class="pre">a_nbytes</span></code>: Initial size of the data store. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">app_buf</span></code>: A dynamic buffer handle to be initialised. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_nbytes</span></code>: Initial size of the data store. </p></li>
 </ul>
 </dd>
 </dl>
@@ -174,12 +167,11 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_destroy">
-<span class="target" id="group__tizbuffer_1ga2c0df96361be2abf4a5387447dc6ab33"></span>void <code class="descname">tiz_buffer_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1ga2c0df96361be2abf4a5387447dc6ab33"></span>void <code class="sig-name descname">tiz_buffer_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_destroy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Destroy a dynamic buffer object.</p>
-<p><dl class="docutils">
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: A dynamic buffer handle to be destroyed. </li>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: A dynamic buffer handle to be destroyed. </p></li>
 </ul>
 </dd>
 </dl>
@@ -188,15 +180,14 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_seek_mode">
-<span class="target" id="group__tizbuffer_1ga042ca7be93351187f09c1ecb7c0d7b65"></span>int <code class="descname">tiz_buffer_seek_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em>, const int<em>&nbsp;a_seek_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_seek_mode" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1ga042ca7be93351187f09c1ecb7c0d7b65"></span>int <code class="sig-name descname">tiz_buffer_seek_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em>, const int<em> a_seek_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_seek_mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set a new overwrite mode.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The old seek mode, or -1 on error. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </li>
-<li><code class="docutils literal notranslate"><span class="pre">a_seek_mode</span></code>: TIZ_BUFFER_NON_SEEKABLE (default) or TIZ_BUFFER_SEEKABLE. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The old seek mode, or -1 on error. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_seek_mode</span></code>: TIZ_BUFFER_NON_SEEKABLE (default) or TIZ_BUFFER_SEEKABLE. </p></li>
 </ul>
 </dd>
 </dl>
@@ -205,16 +196,15 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_push">
-<span class="target" id="group__tizbuffer_1ga913c81bfc8052dca11ca59279ea1f5cc"></span>int <code class="descname">tiz_buffer_push</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em>, const void *<em>&nbsp;ap_data</em>, const size_t<em>&nbsp;a_nbytes</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_push" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1ga913c81bfc8052dca11ca59279ea1f5cc"></span>int <code class="sig-name descname">tiz_buffer_push</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em>, const void *<em> ap_data</em>, const size_t<em> a_nbytes</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_push" title="Permalink to this definition">¶</a></dt>
 <dd><p>Copy data at the back the buffer.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The number of bytes actually stored. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </li>
-<li><code class="docutils literal notranslate"><span class="pre">ap_data</span></code>: The data to be stored. </li>
-<li><code class="docutils literal notranslate"><span class="pre">a_nbytes</span></code>: The number of bytes to store. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The number of bytes actually stored. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_data</span></code>: The data to be stored. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_nbytes</span></code>: The number of bytes to store. </p></li>
 </ul>
 </dd>
 </dl>
@@ -223,13 +213,12 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_clear">
-<span class="target" id="group__tizbuffer_1ga85987745c33b03403099200a16288fcb"></span>void <code class="descname">tiz_buffer_clear</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_clear" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1ga85987745c33b03403099200a16288fcb"></span>void <code class="sig-name descname">tiz_buffer_clear</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_clear" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reset the position marker. </p>
 <p>After this operation, tiz_buffer_available returns zero.</p>
-<p><dl class="docutils">
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </li>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </p></li>
 </ul>
 </dd>
 </dl>
@@ -238,14 +227,13 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_available">
-<span class="target" id="group__tizbuffer_1ga6511eb567d95a77a462950a8d66e8830"></span>int <code class="descname">tiz_buffer_available</code><span class="sig-paren">(</span>const  <a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_available" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1ga6511eb567d95a77a462950a8d66e8830"></span>int <code class="sig-name descname">tiz_buffer_available</code><span class="sig-paren">(</span>const  <a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_available" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the number of bytes available in the buffer.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The total number of bytes currently available. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The total number of bytes currently available. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </p></li>
 </ul>
 </dd>
 </dl>
@@ -254,14 +242,13 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_offset">
-<span class="target" id="group__tizbuffer_1gaef1ab4c9845d55d903e742379671871e"></span>int <code class="descname">tiz_buffer_offset</code><span class="sig-paren">(</span>const  <a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_offset" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1gaef1ab4c9845d55d903e742379671871e"></span>int <code class="sig-name descname">tiz_buffer_offset</code><span class="sig-paren">(</span>const  <a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_offset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the current position marker. </p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The offset in bytes that marks the current position in the buffer. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The buffer handle. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The offset in bytes that marks the current position in the buffer. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The buffer handle. </p></li>
 </ul>
 </dd>
 </dl>
@@ -270,15 +257,14 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_get">
-<span class="target" id="group__tizbuffer_1gae1ed9ae3e89733490df5ac9089fa106a"></span>void* <code class="descname">tiz_buffer_get</code><span class="sig-paren">(</span>const  <a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_get" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1gae1ed9ae3e89733490df5ac9089fa106a"></span>void* <code class="sig-name descname">tiz_buffer_get</code><span class="sig-paren">(</span>const  <a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_get" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the current position in the buffer where data can be read from. </p>
 <p>If the buffer is empty, i.e. tiz_buffer_available returns zero, the pointer returned is the position of the start of the buffer.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The pointer to the current position in the buffer. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The pointer to the current position in the buffer. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </p></li>
 </ul>
 </dd>
 </dl>
@@ -287,15 +273,14 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_advance">
-<span class="target" id="group__tizbuffer_1gaf1120d7d8df484803521b9d057c61e0a"></span>int <code class="descname">tiz_buffer_advance</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em>, const int<em>&nbsp;nbytes</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_advance" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1gaf1120d7d8df484803521b9d057c61e0a"></span>int <code class="sig-name descname">tiz_buffer_advance</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em>, const int<em> nbytes</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_advance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Advance the current position in the buffer. </p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>The number of bytes actually advanced. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </li>
-<li><code class="docutils literal notranslate"><span class="pre">nbytes</span></code>: The number of bytes to increment the position marker by. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The number of bytes actually advanced. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nbytes</span></code>: The number of bytes to increment the position marker by. </p></li>
 </ul>
 </dd>
 </dl>
@@ -304,17 +289,16 @@
 
 <dl class="function">
 <dt id="c.tiz_buffer_seek">
-<span class="target" id="group__tizbuffer_1ga8b60977a4e7e0724260b9780406cb7e5"></span>int <code class="descname">tiz_buffer_seek</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em>&nbsp;ap_buf</em>, const long<em>&nbsp;a_offset</em>, const int<em>&nbsp;a_whence</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_seek" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizbuffer_1ga8b60977a4e7e0724260b9780406cb7e5"></span>int <code class="sig-name descname">tiz_buffer_seek</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_buffer_t" title="tiz_buffer_t">tiz_buffer_t</a>  *<em> ap_buf</em>, const long<em> a_offset</em>, const int<em> a_whence</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_buffer_seek" title="Permalink to this definition">¶</a></dt>
 <dd><p>Re-position the position marker. </p>
 <p>The new position, measured in bytes, is obtained by adding offset bytes to the position specified by whence. If whence is set to TIZ_BUFFER_SEEK_SET, TIZ_BUFFER_SEEK_CUR, or TIZ_BUFFER_SEEK_END, the offset is relative to the start of the buffer, the current position indicator, or end-of-data marker, respectively.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>0 on success, -1 on error (e.g. the whence argument was not TIZ_BUFFER_SEEK_SET, TIZ_BUFFER_SEEK_END, or TIZ_BUFFER_SEEK_CUR. Or the resulting buffer offset would be negative). </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </li>
-<li><code class="docutils literal notranslate"><span class="pre">a_offset</span></code>: The new position is obtained by adding a_offset bytes to the position specified by a_whence. </li>
-<li><code class="docutils literal notranslate"><span class="pre">a_whence</span></code>: TIZ_BUFFER_SEEK_SET, TIZ_BUFFER_SEEK_CUR, or TIZ_BUFFER_SEEK_END. </li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success, -1 on error (e.g. the whence argument was not TIZ_BUFFER_SEEK_SET, TIZ_BUFFER_SEEK_END, or TIZ_BUFFER_SEEK_CUR. Or the resulting buffer offset would be negative). </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_buf</span></code>: The dynamic buffer handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_offset</span></code>: The new position is obtained by adding a_offset bytes to the position specified by a_whence. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_whence</span></code>: TIZ_BUFFER_SEEK_SET, TIZ_BUFFER_SEEK_CUR, or TIZ_BUFFER_SEEK_END. </p></li>
 </ul>
 </dd>
 </dl>
@@ -334,10 +318,10 @@
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

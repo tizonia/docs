@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>The Project’s Building Blocks &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>Components &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +14,6 @@
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Contributing to Tizonia" href="CONTRIBUTING.html" />
-    <link rel="prev" title="The Tizonia Project" href="README.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -63,32 +59,29 @@
 
 
 <h3>Navigation</h3>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="README.html#resources">Resources</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/manual.html">User Guide</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Developer Guide</a></li>
 </ul>
 
 
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -101,19 +94,15 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="README.html" title="previous chapter">The Tizonia Project</a></li>
-      <li>Next: <a href="CONTRIBUTING.html" title="next chapter">Contributing to Tizonia</a></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -126,120 +115,123 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="the-project-s-building-blocks">
-<h1>The Project’s Building Blocks<a class="headerlink" href="#the-project-s-building-blocks" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="table-of-contents">
-<h2>Table Of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="components">
+<h1>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h1>
 <!-- START doctoc generated TOC please keep comment here to allow auto update --><!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --><ul class="simple">
-<li><a class="reference external" href="#the-projects-building-blocks">The Project’s Building Blocks</a><ul>
-<li><a class="reference external" href="#tizonia-a-command-line-cloud-music-player-and-audio-streaming-clientserver"><code class="docutils literal notranslate"><span class="pre">tizonia</span></code>: A command-line cloud music player and audio streaming client/server.</a></li>
-<li><a class="reference external" href="#a-fully-featured-openmax-il-12-multimedia-framework">A fully-featured OpenMAX IL 1.2 multimedia framework</a></li>
-<li><a class="reference external" href="#tizonias-openmax-il-12-plugins">Tizonia’s OpenMAX IL 1.2 plugins</a></li>
-<li><a class="reference external" href="#skema-tizonias-test-execution-framework-for-openmax-il-components">Skema: Tizonia’s test execution framework for OpenMAX IL components.</a></li>
+<li><p><a class="reference external" href="#tizonia-a-command-line-cloud-music-player-and-audio-streaming-clientserver"><code class="docutils literal notranslate"><span class="pre">tizonia</span></code>: A command-line cloud music player and audio streaming client/server.</a></p></li>
+<li><p><a class="reference external" href="#a-fully-featured-openmax-il-12-multimedia-framework">A fully-featured OpenMAX IL 1.2 multimedia framework</a></p></li>
+<li><p><a class="reference external" href="#tizonias-openmax-il-12-plugins">Tizonia’s OpenMAX IL 1.2 plugins</a></p></li>
+<li><p><a class="reference external" href="#skema-tizonias-test-execution-framework-for-openmax-il-components">Skema: Tizonia’s test execution framework for OpenMAX IL components.</a></p></li>
 </ul>
-</li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update --></div>
-<div class="section" id="tizonia-a-command-line-cloud-music-player-and-audio-streaming-client-server">
-<h2><code class="docutils literal notranslate"><span class="pre">tizonia</span></code>: A command-line cloud music player and audio streaming client/server.<a class="headerlink" href="#tizonia-a-command-line-cloud-music-player-and-audio-streaming-client-server" title="Permalink to this headline">¶</a></h2>
+<!-- END doctoc generated TOC please keep comment here to allow auto update --><div class="section" id="command-line-cloud-music-player-and-audio-streaming-client-server">
+<h2>Command-line cloud music player and audio streaming client/server.<a class="headerlink" href="#command-line-cloud-music-player-and-audio-streaming-client-server" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">tizonia</span></code> is a command-line application that can:</p>
 <ul class="simple">
-<li>Stream playlists from Spotify (Spotify Premium required).</li>
-<li>Search and stream audio from Google Play Music (free and paid tiers).</li>
-<li>Search and stream audio from YouTube.</li>
-<li>Search and stream audio from SoundCloud.</li>
-<li>Search and stream Internet radio stations with Dirble.</li>
-<li>Search and stream audio from Plex servers.</li>
-<li>Cast cloud music to your Chromecast devices.</li>
-<li>Playback of local media files (mp3, mp2, mpa, m2a, aac, ogg/vorbis, opus,
-wav, aiff, and flac).</li>
-<li>Icecast/SHOUTcast streaming LAN server (mp3) (<em>experimental</em>).</li>
-<li>Icecast/SHOUTcast streaming client (mp3, aac, and opus).</li>
-<li>Daemon and command line modes (no GUI).</li>
-<li>MPRIS D-BUS v2 media player remote control interface (basic controls only).</li>
-<li>Based on Tizonia’s own OpenMAX IL-based multimedia framework. That means, no
-gstreamer, libav, or ffmpeg dependencies.</li>
+<li><p>Stream playlists from Spotify (Spotify Premium required).</p></li>
+<li><p>Search and stream audio from Google Play Music (free and paid tiers).</p></li>
+<li><p>Search and stream audio from YouTube.</p></li>
+<li><p>Search and stream audio from SoundCloud.</p></li>
+<li><p>Search and stream Internet radio stations from the TuneIn directory.</p></li>
+<li><p>Search and stream audio from Plex servers.</p></li>
+<li><p>Cast cloud music to your Chromecast devices.</p></li>
+<li><p>Playback of local media files (mp3, mp2, mpa, m2a, aac, ogg/vorbis, opus,
+wav, aiff, and flac).</p></li>
+<li><p>Act as an Icecast/SHOUTcast LAN server (mp3) (<em>experimental</em>).</p></li>
+<li><p>Stream Icecast/SHOUTcast radio stations as a client (mp3, aac, and opus).</p></li>
+<li><p>Be used as daemon or as an interactive command-line application.</p></li>
+<li><p>Be remote-controlled via its MPRIS D-BUS v2 media player remote control interface (basic playback controls only).</p></li>
 </ul>
 </div>
 <div class="section" id="a-fully-featured-openmax-il-1-2-multimedia-framework">
 <h2>A fully-featured OpenMAX IL 1.2 multimedia framework<a class="headerlink" href="#a-fully-featured-openmax-il-1-2-multimedia-framework" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li>‘libtizonia’ : OpenMAX IL 1.2 component framework</li>
-</ol>
+<p>Tizonia is the first open-source implementation of <a class="reference external" href="https://www.khronos.org/news/press/khronos-group-releases-openmax-il-1.2-provisional-specification">OpenMAX IL
+1.2</a>.</p>
+<p>Tizonia contains its own OpenMAX IL-based multimedia framework, therefore no
+gstreamer, libav, or ffmpeg dependencies are required.</p>
+<div class="section" id="libtizcore-openmax-il-1-2-core-implementation">
+<h3>‘libtizcore’ : OpenMAX IL 1.2 Core implementation<a class="headerlink" href="#libtizcore-openmax-il-1-2-core-implementation" title="Permalink to this headline">¶</a></h3>
+<p>The OpenMAX IL Core is the central piece defined by the OpenMAX IL Standard.</p>
 <ul class="simple">
-<li>A C library for creating OpenMAX IL 1.2 plugins (encoders, decoders,
-parsers, sinks, etc, for audio/video/other).</li>
-<li>Full support for OpenMAX IL 1.2 Base and Interop profiles.</li>
-</ul>
-<ol class="simple">
-<li>‘libtizcore’ : OpenMAX IL 1.2 Core implementation</li>
-</ol>
-<ul class="simple">
-<li>A C library for discovery and dynamic loading of OpenMAX IL 1.2 plugins.</li>
-<li>Support for all of the OMX IL 1.2 standard Core APIs, including <em>OMX_SetupTunnel</em> and <em>OMX_TeardownTunnel</em>.</li>
-</ul>
-<ol class="simple">
-<li>‘libtizplatform’ : OS abstraction/utility library</li>
-</ol>
-<ul class="simple">
-<li>A C library with wrappers and utilities for:<ul>
-<li>memory allocation,</li>
-<li>threading and synchronization primitives,</li>
-<li>evented I/O (via libev)</li>
-<li>FIFO and priority queues,</li>
-<li>dynamic arrays,</li>
-<li>associative arrays,</li>
-<li>small object allocation,</li>
-<li>config file parsing,</li>
-<li>HTTP parser,</li>
-<li>uuids,</li>
-<li>etc..</li>
-</ul>
-</li>
-</ul>
-<ol class="simple">
-<li>OpenMAX IL 1.2 Resource Management (RM)</li>
-</ol>
-<ul class="simple">
-<li>‘tizrmd’ : a D-Bus-based Resource Manager daemon server.</li>
-<li>‘libtizrmproxy’ : a C client library to interface with the RM daemon.</li>
+<li><p>A C library for discovery and dynamic loading of OpenMAX IL 1.2 plugins.</p></li>
+<li><p>It has support for all of the OMX IL 1.2 standard Core APIs, including <em>OMX_SetupTunnel</em> and <em>OMX_TeardownTunnel</em>.</p></li>
 </ul>
 </div>
-<div class="section" id="tizonia-s-openmax-il-1-2-plugins">
-<h2>Tizonia’s OpenMAX IL 1.2 plugins<a class="headerlink" href="#tizonia-s-openmax-il-1-2-plugins" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="libtizonia-openmax-il-1-2-component-framework">
+<h3>‘libtizonia’ : OpenMAX IL 1.2 component framework<a class="headerlink" href="#libtizonia-openmax-il-1-2-component-framework" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">libtizonia</span></code> is the name of the library that contains the plugin construction
+framework. This library provides all the features required to implement OpenMAX
+IL 1.2 plugins.</p>
 <ul class="simple">
-<li>Spotify streaming service client (<a class="reference external" href="https://github.com/mopidy/libspotify-deb">libspotify</a>),</li>
-<li>Google Play Music streaming service client (based on <a class="reference external" href="https://github.com/simon-weber/gmusicapi">gmusicapi</a>),</li>
-<li>YouTube audio streaming service client (based on <a class="reference external" href="https://github.com/mps-youtube/pafy">pafy</a>),</li>
-<li>SoundCloud streaming service client (based on <a class="reference external" href="https://github.com/soundcloud/soundcloud-python">soundcloud-python</a>),</li>
-<li>Dirble internet radio station directory (Dirble REST API + libcurl)</li>
-<li>Plex server client (based on <a class="reference external" href="https://github.com/pkkid/python-plexapi">plexapi</a>),</li>
-<li>Chromecast renderer (based on <a class="reference external" href="https://github.com/balloob/pychromecast">pychromecast</a>),</li>
-<li>mp3 decoders (libmad and libmpg123),</li>
-<li>mpeg audio (mp2) decoder (libmpg123),</li>
-<li>Sampled sound formats decoder (various pcm formats, including wav, etc, based on libsndfile)</li>
-<li>AAC decoder (libfaad),</li>
-<li>OPUS decoders (libopus and libopusfile)</li>
-<li>FLAC decoder (libflac)</li>
-<li>VORBIS decoder (libfishsound)</li>
-<li>PCM renderers (ALSA and Pulseaudio)</li>
-<li>OGG demuxer (liboggz)</li>
-<li>WEBM demuxer (libnestegg)</li>
-<li>HTTP renderer (i.e. ala icecast, for LAN streaming)</li>
-<li>HTTP source (libcurl)</li>
-<li>mp3 encoder (LAME),</li>
-<li>a VP8 video decoder (libvpx),</li>
-<li>a YUV video renderer (libsdl)</li>
-<li>general purpose plugins, like binary file readers and writers</li>
-<li>etc…</li>
+<li><p>A C library for creating OpenMAX IL 1.2 plugins (encoders, decoders, parsers, sinks, etc, for audio/video/other).</p></li>
+<li><p>Full support for OpenMAX IL 1.2 Base and Interop profiles, as required by the OpenMAX IL 1.2 standard.</p></li>
+</ul>
+</div>
+<div class="section" id="libtizplatform-an-os-abstraction-utility-library">
+<h3>‘libtizplatform’ : An OS abstraction/utility library<a class="headerlink" href="#libtizplatform-an-os-abstraction-utility-library" title="Permalink to this headline">¶</a></h3>
+<p>A C library with wrappers and utilities for:</p>
+<ul class="simple">
+<li><p>memory allocation,</p></li>
+<li><p>threading and synchronization primitives,</p></li>
+<li><p>evented I/O (via libev)</p></li>
+<li><p>FIFO and priority queues,</p></li>
+<li><p>dynamic arrays,</p></li>
+<li><p>associative arrays,</p></li>
+<li><p>small object allocation,</p></li>
+<li><p>config file parsing,</p></li>
+<li><p>HTTP parser,</p></li>
+<li><p>uuids,</p></li>
+<li><p>etc..</p></li>
+</ul>
+</div>
+<div class="section" id="openmax-il-1-2-resource-management-rm">
+<h3>OpenMAX IL 1.2 Resource Management (RM)<a class="headerlink" href="#openmax-il-1-2-resource-management-rm" title="Permalink to this headline">¶</a></h3>
+<p>The Resource Management framework is another core piece that is specified in the OpenMAX IL standard.</p>
+<ul class="simple">
+<li><p>‘tizrmd’ : a D-Bus-based Resource Manager (RM) daemon server.</p></li>
+<li><p>‘libtizrmproxy’ : a C client library to interface with the RM server.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="openmax-il-1-2-plugins">
+<h2>OpenMAX IL 1.2 plugins<a class="headerlink" href="#openmax-il-1-2-plugins" title="Permalink to this headline">¶</a></h2>
+<p>There is a large list of OpenMAX IL plugins that implement all the audio and
+multimedia functions used by Tizonia. Here is a (incomplete) list:</p>
+<ul class="simple">
+<li><p>Spotify streaming service client (<a class="reference external" href="https://github.com/mopidy/libspotify-deb">libspotify</a>),</p></li>
+<li><p>Google Play Music streaming service client (based on <a class="reference external" href="https://github.com/simon-weber/gmusicapi">gmusicapi</a>),</p></li>
+<li><p>YouTube audio streaming service client (based on <a class="reference external" href="https://github.com/mps-youtube/pafy">pafy</a>),</p></li>
+<li><p>SoundCloud streaming service client (based on <a class="reference external" href="https://github.com/soundcloud/soundcloud-python">soundcloud-python</a>),</p></li>
+<li><p>Dirble internet radio station directory (Dirble REST API + libcurl)</p></li>
+<li><p>Plex server client (based on <a class="reference external" href="https://github.com/pkkid/python-plexapi">plexapi</a>),</p></li>
+<li><p>Chromecast renderer (based on <a class="reference external" href="https://github.com/balloob/pychromecast">pychromecast</a>),</p></li>
+<li><p>mp3 decoders (libmad and libmpg123),</p></li>
+<li><p>mpeg audio (mp2) decoder (libmpg123),</p></li>
+<li><p>Sampled sound formats decoder (various pcm formats, including wav, etc, based on libsndfile)</p></li>
+<li><p>AAC decoder (libfaad),</p></li>
+<li><p>OPUS decoders (libopus and libopusfile)</p></li>
+<li><p>FLAC decoder (libflac)</p></li>
+<li><p>VORBIS decoder (libfishsound)</p></li>
+<li><p>PCM renderers (ALSA and Pulseaudio)</p></li>
+<li><p>OGG demuxer (liboggz)</p></li>
+<li><p>WEBM demuxer (libnestegg)</p></li>
+<li><p>HTTP renderer (i.e. ala icecast, for LAN streaming)</p></li>
+<li><p>HTTP source (libcurl)</p></li>
+<li><p>mp3 encoder (LAME),</p></li>
+<li><p>a VP8 video decoder (libvpx),</p></li>
+<li><p>a YUV video renderer (libsdl)</p></li>
+<li><p>general purpose plugins, like binary file readers and writers</p></li>
+<li><p>etc…</p></li>
 </ul>
 </div>
 <div class="section" id="skema-tizonia-s-test-execution-framework-for-openmax-il-components">
 <h2>Skema: Tizonia’s test execution framework for OpenMAX IL components.<a class="headerlink" href="#skema-tizonia-s-test-execution-framework-for-openmax-il-components" title="Permalink to this headline">¶</a></h2>
+<p>There is also a bespoke test execution framework for testing the
+graphs/pipelines of OpenMAX IL components used in Tizonia:</p>
 <ul class="simple">
-<li>Test execution framework to build and test arbitrary OpenMAX IL graphs (tunneled and
-non-tunneled) using a custom, <a class="reference external" href="http://github.com/tizonia/tizonia-openmax-il/wiki/Mp3Playback101">easy-to-write XML syntax</a>.</li>
-<li>Skema’s Github repo: http://github.com/tizonia/skema</li>
-<li>Skema’s documentation is located in Tizonia’s wiki: https://github.com/tizonia/tizonia-openmax-il/wiki/Skema</li>
+<li><p>Test execution framework to build and test arbitrary OpenMAX IL graphs/pipelines (tunneled and
+non-tunneled) using a custom, <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/wiki/Mp3Playback101">easy-to-write XML syntax</a>.</p></li>
+<li><p>Skema’s Github repo: <a class="reference external" href="https://github.com/tizonia/skema">https://github.com/tizonia/skema</a></p></li>
+<li><p>Skema’s documentation is located in Tizonia’s wiki: <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/wiki/Skema">https://github.com/tizonia/tizonia-openmax-il/wiki/Skema</a></p></li>
 </ul>
 </div>
 </div>
@@ -252,10 +244,10 @@ non-tunneled) using a custom, <a class="reference external" href="http://github.
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

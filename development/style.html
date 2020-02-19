@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Coding Style &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>Coding Style &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,7 +14,8 @@
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="libtizdirble" href="clients/libtizdirble.html" />
+    <link rel="next" title="Documenting Tizonia" href="documenting.html" />
+    <link rel="prev" title="Building from Source (with Autotools)" href="BUILDING.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -66,25 +65,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="development.html">Development</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="openmaxil/openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Coding Style</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="development.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -93,7 +90,7 @@
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -106,20 +103,19 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="development.html">Development</a><ul>
-      <li>Previous: <a href="clients/libtizdirble.html" title="previous chapter">libtizdirble</a></li>
+  <li><a href="development.html">Developer Guide</a><ul>
+      <li>Previous: <a href="BUILDING.html" title="previous chapter">Building from Source (with Autotools)</a></li>
+      <li>Next: <a href="documenting.html" title="next chapter">Documenting Tizonia</a></li>
   </ul></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -137,19 +133,20 @@
 <div class="section" id="general-philosophy">
 <h2>General Philosophy<a class="headerlink" href="#general-philosophy" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="http://en.wikipedia.org/wiki/Indent_style#GNU_style">GNU Style</a>.</li>
-<li>Line length is generally limited to 80 characters.</li>
-<li>Each file starts with a header containing the short license text.</li>
+<li><p><a class="reference external" href="http://en.wikipedia.org/wiki/Indent_style#GNU_style">GNU Style</a>.</p></li>
+<li><p>Line length is generally limited to 80 characters.</p></li>
+<li><p>Each file starts with a header containing the short license text.</p></li>
 </ul>
 </div>
 <div class="section" id="formatting-the-source-code">
 <h2>Formatting the Source Code<a class="headerlink" href="#formatting-the-source-code" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>clang-format is used and configuration files exist (.clang-format) in various sub-projects:<ul>
-<li>In general, C++ code follows a Google C++/Allman stylet (e.g. the tizonia
-command-line application, and the tizrmd daemon).</li>
-<li>C-based libraries, like libtizonia, libtizcore, libtizplatform, etc, follow
-the GNU style.</li>
+<li><p>clang-format is used and configuration files exist (.clang-format) in various sub-projects:</p>
+<ul>
+<li><p>In general, C++ code follows a Google C++/Allman stylet (e.g. the tizonia
+command-line application, and the tizrmd daemon).</p></li>
+<li><p>C-based libraries, like libtizonia, libtizcore, libtizplatform, etc, follow
+the GNU style.</p></li>
 </ul>
 </li>
 </ul>
@@ -157,8 +154,8 @@ the GNU style.</li>
 <div class="section" id="indentation">
 <h2>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Indentation is always done using spaces, tabs are never used.</li>
-<li>One level of indentation is 2 characters long.</li>
+<li><p>Indentation is always done using spaces, tabs are never used.</p></li>
+<li><p>One level of indentation is 2 characters long.</p></li>
 </ul>
 </div>
 <div class="section" id="naming-variables-functions-and-files">
@@ -175,10 +172,10 @@ the GNU style.</li>
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

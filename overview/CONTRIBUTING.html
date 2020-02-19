@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Contributing to Tizonia &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>Contributing &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +14,8 @@
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Issue Template" href="ISSUE_TEMPLATE.html" />
-    <link rel="prev" title="The Project’s Building Blocks" href="PROJECT.html" />
+    <link rel="next" title="Changelog" href="CHANGELOG.html" />
+    <link rel="prev" title="The Tizonia Project" href="README.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -67,28 +65,29 @@
 <li class="toctree-l1"><a class="reference internal" href="README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-can-i-contribute">How Can I Contribute?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/manual.html">User Guide</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Developer Guide</a></li>
 </ul>
 
 
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -101,19 +100,17 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="PROJECT.html" title="previous chapter">The Project’s Building Blocks</a></li>
-      <li>Next: <a href="ISSUE_TEMPLATE.html" title="next chapter">Issue Template</a></li>
+      <li>Previous: <a href="README.html" title="previous chapter">The Tizonia Project</a></li>
+      <li>Next: <a href="CHANGELOG.html" title="next chapter">Changelog</a></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -126,61 +123,106 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="contributing-to-tizonia">
-<h1>Contributing to Tizonia<a class="headerlink" href="#contributing-to-tizonia" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
 <p>Welcome!, and many thanks in advance if you finally decide to contribute to
 Tizonia.</p>
 <p>The following is a set of guidelines for contributing to the project,
-definitely not rules. Use your best judgment, and feel free to suggest changes.</p>
-<div class="section" id="table-of-contents">
-<h2>Table Of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="#how-can-i-contribute">How Can I Contribute?</a></p>
-<ul class="simple">
-<li><a class="reference external" href="#reporting-bugs">Reporting Bugs</a></li>
-<li><a class="reference external" href="#suggesting-new-features">Suggesting New Features</a></li>
-<li><a class="reference external" href="#first-code-contribution">First Code Contribution</a></li>
+definitely not rules. Use your best judgement, and feel free to suggest
+changes.</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update --><!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --><ul class="simple">
+<li><p><a class="reference external" href="#how-can-i-contribute">How Can I Contribute?</a></p>
+<ul>
+<li><p><a class="reference external" href="#reporting-bugs">Reporting Bugs</a></p></li>
+<li><p><a class="reference external" href="#suggesting-new-features">Suggesting New Features</a></p></li>
+<li><p><a class="reference external" href="#improving-the-documentation">Improving the Documentation</a></p></li>
+<li><p><a class="reference external" href="#contributing-with-code">Contributing with Code</a></p></li>
+<li><p><a class="reference external" href="#spreading-the-word">Spreading the Word</a></p></li>
 </ul>
-<p><a class="reference external" href="#issue-labels">Issue Labels</a></p>
-</div>
+</li>
+<li><p><a class="reference external" href="#resources">Resources</a></p></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update --><p><a class="reference external" href="#issue-labels">Issue Labels</a></p>
 <div class="section" id="how-can-i-contribute">
 <h2>How Can I Contribute?<a class="headerlink" href="#how-can-i-contribute" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="reporting-bugs">
 <h3>Reporting Bugs<a class="headerlink" href="#reporting-bugs" title="Permalink to this headline">¶</a></h3>
-<p>When you are creating a bug report, please include as many details as
-possible. Have a look at the <a class="reference internal" href="ISSUE_TEMPLATE.html"><span class="doc">issue template</span></a> for ideas.</p>
-<blockquote>
-<div><strong>Note:</strong> If you find a <strong>Closed</strong> issue that seems like it is the same thing
-that you’re experiencing, open a new issue and include a link to the original
-issue in the body of your new one.</div></blockquote>
+<p>Bug reports are absolutely necessary to keep the project alive. When you are
+creating a bug report, please provide as many details as possible.</p>
 </div>
 <div class="section" id="suggesting-new-features">
 <h3>Suggesting New Features<a class="headerlink" href="#suggesting-new-features" title="Permalink to this headline">¶</a></h3>
-<p>You are welcome to submit ideas for new features and enhancements, just include
-as many details as possible, including potential implementation options.</p>
+<p>You are more than welcome to submit ideas for new features and enhancements
+through the bug tracker, just include as many details as you can, including
+potential implementation options.</p>
 </div>
-<div class="section" id="first-code-contribution">
-<h3>First Code Contribution<a class="headerlink" href="#first-code-contribution" title="Permalink to this headline">¶</a></h3>
-<p>Unsure where to begin? You can start by looking through the <code class="docutils literal notranslate"><span class="pre">good-first-issue</span></code>
+<div class="section" id="improving-the-documentation">
+<h3>Improving the Documentation<a class="headerlink" href="#improving-the-documentation" title="Permalink to this headline">¶</a></h3>
+<p>Documentation is always a work-in-progress. Doxygen and Sphinx are the tools we
+use to produce the official documentation. We also have a Wiki (in need of some
+love!):</p>
+<ul class="simple">
+<li><p>See <a class="reference external" href="https://docs.tizonia.org/">docs.tizonia.org</a> for the project’s official documentation.</p></li>
+<li><p>The <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/wiki">Wiki</a> may also
+contain some useful information (although in need of an update).</p></li>
+</ul>
+<p>Here there is a tutorial that will get you going quickly with the documentation
+processes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.tizonia.org/development/documenting.html">https://docs.tizonia.org/development/documenting.html</a></p></li>
+</ul>
+</div>
+<div class="section" id="contributing-with-code">
+<h3>Contributing with Code<a class="headerlink" href="#contributing-with-code" title="Permalink to this headline">¶</a></h3>
+<p>Tizonia has a hybrid codebase with some modules written in C, other written in
+C++ and some other written in Python. There are also various tools that are
+written in Bash and Perl.</p>
+<script type='text/javascript' src='https://www.openhub.net/p/tizonia/widgets/project_languages?format=js'></script><p>Unsure where to begin? You can start by looking through the <code class="docutils literal notranslate"><span class="pre">good-first-issue</span></code>
 or <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> issues:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">Good first issues</a> - issues which should only require a few lines of code.</li>
-<li><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues?q=os+x+label%3A%22help+wanted%22">Help wanted issues</a> - issues which should be a bit more involved than <code class="docutils literal notranslate"><span class="pre">good-first-issue</span></code> issues.</li>
+<li><p><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">Good first issues</a> - issues which should only require a few lines of code.</p></li>
+<li><p><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues?q=os+x+label%3A%22help+wanted%22">Help wanted issues</a> - issues which should be a bit more involved than <code class="docutils literal notranslate"><span class="pre">good-first-issue</span></code> issues.</p></li>
 </ul>
-<div class="section" id="local-development">
-<h4>Local Development<a class="headerlink" href="#local-development" title="Permalink to this headline">¶</a></h4>
-<p>Have a look at the <a class="reference internal" href="PROJECT.html"><span class="doc">project’s components</span></a>, and follow the
-instructions on how to <a class="reference internal" href="BUILDING.html"><span class="doc">build Tizonia from source</span></a>. And of course,
-don’t hesitate to ask.</p>
-</div>
-<div class="section" id="documentation">
-<h4>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h4>
+<p>There are also a good number of proposed features that should be quite fun for
+someone looking for a challenge:</p>
 <ul class="simple">
-<li>See <a class="reference external" href="http://docs.tizonia.org/">docs.tizonia.org</a> for the project’s official documentation.</li>
-<li>The <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/wiki">Wiki</a> may also
-contain some useful information (although in need of an update).</li>
+<li><p><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement">Enhancements</a> - Newly proposed features and other improvements.</p></li>
 </ul>
+<p>Have a look at the <a class="reference internal" href="PROJECT.html"><span class="doc">project’s components</span></a>, and follow the
+instructions to build and run the codebase locally.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="BUILDING_with_meson.html"><span class="doc">Build Tizonia from source (with Meson) (RECOMMENDED)</span></a>.</p></li>
+<li><p><a class="reference internal" href="BUILDING.html"><span class="doc">Build Tizonia from source (with Autotools)</span></a>.</p></li>
+</ul>
+<p>And of course, don’t hesitate to ask!.</p>
+</div>
+<div class="section" id="spreading-the-word">
+<h3>Spreading the Word<a class="headerlink" href="#spreading-the-word" title="Permalink to this headline">¶</a></h3>
+<p>Do you use Tizonia and have fun with it?. Do you enjoy listening to your music
+easily and without fuss, directly from your command-line? Then why not
+spreading the word among colleagues and friends.</p>
+<p>Or simply starring any of the repositories in the Tizonia
+<a class="reference external" href="https://github.com/tizonia">organization</a> would be a good way of showing your
+appreciation.</p>
 </div>
 </div>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>See <a class="reference internal" href="PROJECT.html"><span class="doc">PROJECT.md</span></a> to learn about the various parts of project.</p></li>
+<li><p>See <a class="reference internal" href="ROADMAP.html"><span class="doc">ROADMAP.md</span></a> for a view on what things are coming next.</p></li>
+<li><p>See <a class="reference internal" href="CODE_OF_CONDUCT.html"><span class="doc">CODE_OF_CONDUCT.md</span></a> to keep Tizonia an open and welcoming environment.</p></li>
+<li><p>See <a class="reference internal" href="BUILDING_with_meson.html"><span class="doc">BUILDING_with_meson.md (RECOMMENDED)</span></a> for instructions on how to build Tizonia from source (with the new Meson build system).</p></li>
+<li><p>See <a class="reference internal" href="BUILDING.html"><span class="doc">BUILDING.md</span></a> for instructions on how to build Tizonia from source (with the legacy Autotools build system).</p></li>
+<li><p>See <a class="reference external" href="https://docs.tizonia.org/">docs.tizonia.org</a> for the project’s official documentation.</p></li>
+<li><p>The <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/wiki">Wiki</a> may also
+contain some useful information (although in need of an update).</p></li>
+<li><p>See <a class="reference internal" href="CHANGELOG.html"><span class="doc">CHANGELOG.md</span></a> for details on what has gone into each
+release of the project.</p></li>
+<li><p>Tizonia OpenMAX IL is released under the <a class="reference internal" href="COPYING.LESSER.html"><span class="doc">GNU Lesser General Public
+License</span></a> version 3.</p></li>
+<li><p>Finally, please visit the project web site at https://tizonia.org</p></li>
+</ul>
 </div>
 </div>
 
@@ -192,10 +234,10 @@ contain some useful information (although in need of an update).</li>
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

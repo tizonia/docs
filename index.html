@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Tizonia documentation &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>Tizonia documentation &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -66,28 +64,25 @@
 <li class="toctree-l1"><a class="reference internal" href="overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/manual.html">User Guide</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="development/development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/development.html">Developer Guide</a></li>
 </ul>
 
 
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -105,13 +100,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -126,7 +119,7 @@
             
   <div class="section" id="tizonia-documentation">
 <h1>Tizonia documentation<a class="headerlink" href="#tizonia-documentation" title="Permalink to this headline">¶</a></h1>
-<p>The Tizonia Project - Copyright (C) 2019 Juan A. Rubio</p>
+<p>The Tizonia Project - Copyright (C) 2020 Juan A. Rubio and contributors</p>
 </div>
 <div class="section" id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
@@ -134,53 +127,88 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/README.html#installation">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview/README.html#debian-ubuntu-raspbian">Debian / Ubuntu / Raspbian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/README.html#arch-user-repository-aur">Arch User Repository (AUR)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/README.html#snap-package">Snap Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/README.html#docker-image">Docker Image</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/README.html#upgrade">Upgrade</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview/README.html#id1">Debian / Ubuntu / Raspbian</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/CONTRIBUTING.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview/CONTRIBUTING.html#how-can-i-contribute">How Can I Contribute?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CONTRIBUTING.html#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="overview/CHANGELOG.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-20-0-2020-02-18">v0.20.0 (2020-02-18)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-19-0-2019-12-13">v0.19.0 (2019-12-13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-18-0-2019-03-13">v0.18.0 (2019-03-13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-17-0-2019-01-17">v0.17.0 (2019-01-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-16-0-2018-12-03">v0.16.0 (2018-12-03)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-15-0-2018-06-15">v0.15.0 (2018-06-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-14-0-2018-04-20">v0.14.0 (2018-04-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-13-0-2018-03-11">v0.13.0 (2018-03-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-12-0-2018-02-11">v0.12.0 (2018-02-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-11-0-2017-12-17">v0.11.0 (2017-12-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-10-0-2017-10-22">v0.10.0 (2017-10-22)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-9-0-2017-08-04">v0.9.0 (2017-08-04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-8-0-2017-06-25">v0.8.0 (2017-06-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-7-0-2017-03-02">v0.7.0 (2017-03-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-6-0-2017-01-16">v0.6.0 (2017-01-16)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-5-0-2016-06-17">v0.5.0 (2016-06-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-4-0-2016-05-04">v0.4.0 (2016-05-04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-3-0-2015-12-24">v0.3.0 (2015-12-24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/CHANGELOG.html#v0-2-0-2015-12-14">v0.2.0 (2015-12-14)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="overview/COPYING.LESSER.html">License</a></li>
 </ul>
 </div>
 </div>
-<div class="section" id="usage">
-<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="usage/usage.html">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage/helptopics.html">Help Topics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/global.html">Global Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/openmax.html">OpenMAX IL Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/server.html">Shoutcast Server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/client.html">Shoutcast Client</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/spotify.html">Spotify</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/googlemusic.html">Google Play Music</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/soundcloud.html">SoundCloud</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/dirble.html">Dirble</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/youtube.html">YouTube</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/plex.html">Plex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/chromecast.html">Chromecast</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/keyboard.html">Keyboard Shortcuts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/config.html">Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage/localmedia.html">Local Media Playback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/manual.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/helptopics.html">Help Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/config.html">Configuration File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/keyboard.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/global.html">Global Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/spotify.html">Spotify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/googlemusic.html">Google Play Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/soundcloud.html">SoundCloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/youtube.html">YouTube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/tunein.html">TuneIn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/plex.html">Plex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/server.html">Shoutcast Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/client.html">Shoutcast Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/chromecast.html">Chromecast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/themes.html">Color Themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/openmax.html">OpenMAX IL Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/localmedia.html">Local Media Playback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/mprisv2.html">Remote Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/raspberrypi.html">Raspberry Pi</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div class="section" id="development">
-<h1>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="developer-guide">
+<h1>Developer Guide<a class="headerlink" href="#developer-guide" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="development/development.html">Development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development/openmaxil/openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development/plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development/clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development/style.html">Coding Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/development.html">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -189,9 +217,9 @@
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </div>
 
@@ -203,10 +231,10 @@
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

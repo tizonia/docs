@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>tizrcfile &#8212; Tizonia 0.18.0 documentation</title>
+    <meta charset="utf-8" />
+    <title>tizrcfile &#8212; Tizonia 0.20.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -67,25 +65,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#roadmap">Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#resources">Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/PROJECT.html">The Project’s Building Blocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing to Tizonia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/ISSUE_TEMPLATE.html">Issue Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/BUILDING.html">Building from Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">GNU LESSER GENERAL PUBLIC LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">License</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Development</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../openmaxil.html">OpenMAX IL Framework</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plugins/plugins.html">OpenMAX IL Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../clients/clients.html">Streaming Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../style.html">Coding Style</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../development.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#building-from-source">Building from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#coding-guidelines">Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../development.html#api-documentation">API Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -94,7 +90,7 @@
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://www.tizonia.org">Tizonia Website</a></li>
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
     
     <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
     
@@ -107,7 +103,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../../index.html">Documentation overview</a><ul>
-  <li><a href="../../development.html">Development</a><ul>
+  <li><a href="../../development.html">Developer Guide</a><ul>
   <li><a href="../openmaxil.html">OpenMAX IL Framework</a><ul>
   <li><a href="libtizplatform.html">libtizplatform</a><ul>
       <li>Previous: <a href="tizqueue.html" title="previous chapter">tizqueue</a></li>
@@ -119,13 +115,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -142,20 +136,19 @@
 <h1>tizrcfile<a class="headerlink" href="#tizrcfile" title="Permalink to this headline">¶</a></h1>
 <dl class="group">
 <dt>
-<span class="target" id="group__tizrcfile"></span><em>group</em> <code class="descname">tizrcfile</code></dt>
+<span class="target" id="group__tizrcfile"></span><em>group</em> <code class="sig-name descname">tizrcfile</code></dt>
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="function">
 <dt id="c.tiz_rcfile_get_value">
-<span class="target" id="group__tizrcfile_1ga8005bf6a3a2362372bedef6f6d932e9a"></span>const char* <code class="descname">tiz_rcfile_get_value</code><span class="sig-paren">(</span>const char *<em>&nbsp;section</em>, const char *<em>&nbsp;key</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_get_value" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizrcfile_1ga8005bf6a3a2362372bedef6f6d932e9a"></span>const char* <code class="sig-name descname">tiz_rcfile_get_value</code><span class="sig-paren">(</span>const char *<em> section</em>, const char *<em> key</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_get_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a value string from a give section using the value’s key</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>A newly allocated string or NULL if the specified key cannot be found. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">section</span></code>: String indicating the section where the key-value list pair is to be found.</li>
-<li><code class="docutils literal notranslate"><span class="pre">key</span></code>: A search key in the specified section.</li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>A newly allocated string or NULL if the specified key cannot be found. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">section</span></code>: String indicating the section where the key-value list pair is to be found.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code>: A search key in the specified section.</p></li>
 </ul>
 </dd>
 </dl>
@@ -164,16 +157,15 @@
 
 <dl class="function">
 <dt id="c.tiz_rcfile_get_value_list">
-<span class="target" id="group__tizrcfile_1ga228128b3eb32257c6401f0553a5d83ba"></span>char** <code class="descname">tiz_rcfile_get_value_list</code><span class="sig-paren">(</span>const char *<em>&nbsp;section</em>, const char *<em>&nbsp;key</em>, unsigned long *<em>&nbsp;length</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_get_value_list" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizrcfile_1ga228128b3eb32257c6401f0553a5d83ba"></span>char** <code class="sig-name descname">tiz_rcfile_get_value_list</code><span class="sig-paren">(</span>const char *<em> section</em>, const char *<em> key</em>, unsigned long *<em> length</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_get_value_list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a value string from a give section using the value’s key</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>An array of NULL-terminated strings or NULL if the specified key cannot be found. The array should be freed by the caller. </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">section</span></code>: String indicating the section where the key-value list pair is to be found.</li>
-<li><code class="docutils literal notranslate"><span class="pre">key</span></code>: A search key in the specified section.</li>
-<li><code class="docutils literal notranslate"><span class="pre">length</span></code>: The length of the returned list.</li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>An array of NULL-terminated strings or NULL if the specified key cannot be found. The array should be freed by the caller. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">section</span></code>: String indicating the section where the key-value list pair is to be found.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code>: A search key in the specified section.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">length</span></code>: The length of the returned list.</p></li>
 </ul>
 </dd>
 </dl>
@@ -182,16 +174,15 @@
 
 <dl class="function">
 <dt id="c.tiz_rcfile_compare_value">
-<span class="target" id="group__tizrcfile_1gace48ac77d676bb7f2074345c9e907304"></span>int <code class="descname">tiz_rcfile_compare_value</code><span class="sig-paren">(</span>const char *<em>&nbsp;section</em>, const char *<em>&nbsp;key</em>, const char *<em>&nbsp;value</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_compare_value" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizrcfile_1gace48ac77d676bb7f2074345c9e907304"></span>int <code class="sig-name descname">tiz_rcfile_compare_value</code><span class="sig-paren">(</span>const char *<em> section</em>, const char *<em> key</em>, const char *<em> value</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_compare_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns an integer less than, equal to, or greater than zero if the section-key-value triad provided is respectively, not found, found and matching, or found and no matching.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>Returns an integer less than (key or section not found), equal to (section and key found, value matched), or greater than zero (section and key found, value unmatched). </dd>
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last simple">
-<li><code class="docutils literal notranslate"><span class="pre">section</span></code>: String indicating the section where the key-value pair is to be found.</li>
-<li><code class="docutils literal notranslate"><span class="pre">key</span></code>: A search key in the specified section.</li>
-<li><code class="docutils literal notranslate"><span class="pre">value</span></code>: The value to be matched against.</li>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Returns an integer less than (key or section not found), equal to (section and key found, value matched), or greater than zero (section and key found, value unmatched). </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">section</span></code>: String indicating the section where the key-value pair is to be found.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code>: A search key in the specified section.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">value</span></code>: The value to be matched against.</p></li>
 </ul>
 </dd>
 </dl>
@@ -200,11 +191,11 @@
 
 <dl class="function">
 <dt id="c.tiz_rcfile_status">
-<span class="target" id="group__tizrcfile_1ga2ef75e4a49d824024c019e676724e1ea"></span>int <code class="descname">tiz_rcfile_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_status" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizrcfile_1ga2ef75e4a49d824024c019e676724e1ea"></span>int <code class="sig-name descname">tiz_rcfile_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_rcfile_status" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns 0 if the status of the configuration file is such that a tizonia configuration file has been found at one of the expected locations and the file can be opened and read by the current user.</p>
-<p><dl class="docutils">
-<dt><strong>Return</strong></dt>
-<dd>On success, zero is returned. On error, -1 is returned. </dd>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>On success, zero is returned. On error, -1 is returned. </p>
+</dd>
 </dl>
 </p>
 </dd></dl>
@@ -222,10 +213,10 @@
     <div class="clearer"></div>
   </div>
     <div class="footer">
-      &copy;2019, Aratelia Limited - Juan A. Rubio.
+      &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
