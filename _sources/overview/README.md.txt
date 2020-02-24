@@ -125,7 +125,8 @@ been added and the documentation site has been refreshed. Also `tizonia-remote`
 is now distributed in the Debian package plus a good number of fixes, including
 reviving Chromecast support (still more work needed).
 
-> See Tizonia's website: [TODO](https://tizonia.org/news/2019/03/19/release-0-19-0/)
+> See Tizonia's website: [TuneIn Internet radio and podcasts, and color-themes
+> in Tizonia 0.20.0](https://tizonia.org/news/2020/02/20/release-0-20-0/)
 
 <details><summary><b>Show more</b></summary>
 
@@ -388,8 +389,8 @@ $ sudo -H pip2 install --upgrade gmusicapi soundcloud youtube-dl pafy pycountry 
 # Hall of Fame
 
 If you are interested in participating, please read our [contribution
-guidelines](CONTRIBUTING.md) and don't hesitate to ask (via the bug tracker or
-any other means!).
+guidelines](CONTRIBUTING.md) and don't hesitate to ask (via the bug tracker,
+[chat](https://gitter.im/tizonia/Lobby) or any other means!).
 
 Here are some of our contributors:
 
