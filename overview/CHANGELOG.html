@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Changelog &#8212; Tizonia 0.20.0 documentation</title>
+    <title>Changelog &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -70,7 +70,10 @@
 <li class="toctree-l1"><a class="reference internal" href="README.html#hall-of-fame">Hall of Fame</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#v0-20-0-2020-02-18">v0.20.0 (2020-02-18)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-21-0-2020-03-08">v0.21.0 (2020-03-08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-20-2-2020-02-21">v0.20.2 (2020-02-21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-20-1-2020-02-21">v0.20.1 (2020-02-21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-20-0-2020-02-19">v0.20.0 (2020-02-19)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#v0-19-0-2019-12-13">v0.19.0 (2019-12-13)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#v0-18-0-2019-03-13">v0.18.0 (2019-03-13)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#v0-17-0-2019-01-17">v0.17.0 (2019-01-17)</a></li>
@@ -142,11 +145,53 @@
             
   <div class="section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="v0-20-0-2020-02-18">
-<h2><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/tree/v0.20.0">v0.20.0</a> (2020-02-18)<a class="headerlink" href="#v0-20-0-2020-02-18" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="v0-21-0-2020-03-08">
+<h2><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/tree/v0.21.0">v0.21.0</a> (2020-03-08)<a class="headerlink" href="#v0-21-0-2020-03-08" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.20.2...v0.21.0">Full Changelog</a></p>
+<p><strong>Improvements:</strong></p>
+<ul class="simple">
+<li><p>youtube: add caching of requests to minimize quota issues <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/697">#697</a></p></li>
+<li><p>youtube: allow users to specify API keys to avoid quota issues <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/696">#696</a></p></li>
+<li><p>Youtube Error 403: The request cannot be completed because you have exceeded your quota <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/695">#695</a></p></li>
+<li><p>google music: display genre and album art info if available <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/694">#694</a></p></li>
+</ul>
+<p><strong>Fixed bugs:</strong></p>
+<ul class="simple">
+<li><p>[YouTube] (GdataError) : Youtube Error 403: Access Not Configured. YouTube Data API has not been used in project 422897895433 before or it is disabled <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/689">#689</a></p></li>
+<li><p>Potential ASCII conversion regression in v0.19 <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/652">#652</a></p></li>
+<li><p>player: ‘segmentation fault (core dumped)’ while exiting the command-line application by pressing ‘q’ <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/317">#317</a></p></li>
+<li><p>Plex audio cuts out after 18 seconds on Arch distro <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/679">#679</a></p></li>
+<li><p>[Google Play Music] (RuntimeError) : maximum recursion depth exceeded in cmp <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/646">#646</a></p></li>
+<li><p>Google Music Free Radio Stations Load Queued Items List But Nothing Happens. <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/596">#596</a></p></li>
+<li><p>soundcloud-users-likes: OMX.Aratelia.audio_source.http:port:0  <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/576">#576</a></p></li>
+</ul>
+<p><strong>Closed issues:</strong></p>
+<ul class="simple">
+<li><p>spotify: ‘connection refused’ (playlist displayed but music not streaming) <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/693">#693</a></p></li>
+<li><p>release v0.21.0 <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/699">#699</a></p></li>
+</ul>
+</div>
+<div class="section" id="v0-20-2-2020-02-21">
+<h2><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/tree/v0.20.2">v0.20.2</a> (2020-02-21)<a class="headerlink" href="#v0-20-2-2020-02-21" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.20.1...v0.20.2">Full Changelog</a></p>
+</div>
+<div class="section" id="v0-20-1-2020-02-21">
+<h2><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/tree/v0.20.1">v0.20.1</a> (2020-02-21)<a class="headerlink" href="#v0-20-1-2020-02-21" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.20.0...v0.20.1">Full Changelog</a></p>
+<p><strong>Merged pull requests:</strong></p>
+<ul class="simple">
+<li><p>Fixing for python 3.8 <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/pull/688">#688</a> (<a class="reference external" href="https://github.com/SolarAquarion">SolarAquarion</a>)</p></li>
+<li><p>it’s tizonia.1 not tizonia <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/pull/687">#687</a> (<a class="reference external" href="https://github.com/SolarAquarion">SolarAquarion</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="v0-20-0-2020-02-19">
+<h2><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/tree/v0.20.0">v0.20.0</a> (2020-02-19)<a class="headerlink" href="#v0-20-0-2020-02-19" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.19.0...v0.20.0">Full Changelog</a></p>
 <p><strong>Improvements:</strong></p>
 <ul class="simple">
+<li><p>Man page <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/655">#655</a></p></li>
+<li><p>Colored output options? <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/586">#586</a></p></li>
+<li><p>Build system: enhance existing configuration options to allow minimal dependencies <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/541">#541</a></p></li>
 <li><p>New build system based on Meson (phase I) <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/685">#685</a></p></li>
 <li><p>Add support for TuneIn Internet radios <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/684">#684</a></p></li>
 <li><p>tizonia-remote: publish in debian packages <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/683">#683</a></p></li>
@@ -161,12 +206,16 @@
 </ul>
 <p><strong>Closed issues:</strong></p>
 <ul class="simple">
+<li><p>release v0.20.0 <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/682">#682</a></p></li>
 <li><p>Display Current Playing / RC.Local output via SSH <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/654">#654</a></p></li>
 <li><p>Using Tizonia in Cron jobs <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/651">#651</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--without-libspotify</span></code> does not seem to work <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/648">#648</a></p></li>
 <li><p>AttributeError: module ‘importlib’ has no attribute ‘util’ <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/647">#647</a></p></li>
 <li><p>Error 404 on bintray raspbian buster 0.19 <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/645">#645</a></p></li>
 <li><p>Python modules ‘spotifyapi’ or ‘fuzzywuzzy’ not found. <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/644">#644</a></p></li>
+<li><p>docs: document Spotify authentication options <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/539">#539</a></p></li>
 <li><p>[news] gst-omx now makes use of non-pre-announce buffer mode for OMX_UseBuffer <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/416">#416</a></p></li>
+<li><p>docs: Google Play Music authentication methods <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/394">#394</a></p></li>
 </ul>
 <p><strong>Merged pull requests:</strong></p>
 <ul class="simple">
