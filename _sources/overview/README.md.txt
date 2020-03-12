@@ -118,9 +118,10 @@
 **Latest news**
 
 - [2020-03-08] Tizonia
-[v0.21.0](https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.21.0). TODO.
+[v0.21.0](https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.21.0). A
+maintenance release with fixes for YouTube API quota issues, among others.
 
-> See Tizonia's website: [TODO](https://tizonia.org/news/2020/02/20/release-0-20-0/)
+> See Tizonia's website: [Tizonia 0.21.0 brings changes to minimize the YouTube API quota issues](https://tizonia.org/news/2020/03/08/release-0-21-0/)
 
 <details><summary><b>Show more</b></summary>
 
@@ -235,6 +236,7 @@ following distro/arch combinations:
                 <th align="center">Ubuntu Bionic</th>
                 <th align="center">Debian Buster</th>
                 <th align="center">Debian Bullseye</th>
+                <th align="center">Raspbian Stretch</th>
                 <th align="center">Raspbian Buster</th>
             </tr>
             <tr>
@@ -242,6 +244,7 @@ following distro/arch combinations:
                 <th align="center">(18.04)</th>
                 <th align="center">(10)</th>
                 <th align="center">(11)</th>
+                <th align="center">(9)</th>
                 <th align="center">(10)</th>
             </tr>
         </thead>
@@ -251,6 +254,7 @@ following distro/arch combinations:
                 <td align="center">amd64, armhf</td>
                 <td align="center">amd64, armhf</td>
                 <td align="center">amd64</td>
+                <td align="center">armhf</td>
                 <td align="center">armhf</td>
             </tr>
         </tbody>
