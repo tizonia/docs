@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Documenting Tizonia &#8212; Tizonia 0.21.0 documentation</title>
+    <title>Environment Variables &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -14,8 +14,7 @@
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="OpenMAX IL Framework" href="openmaxil/openmaxil.html" />
-    <link rel="prev" title="Coding Style" href="style.html" />
+    <link rel="prev" title="Logging configuration" href="logging.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -80,9 +79,9 @@
 <li class="toctree-l2"><a class="reference internal" href="development.html#components">Components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development.html#building-from-source">Building from Source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development.html#coding-guidelines">Coding Guidelines</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="development.html#writting-documentation">Writting Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#writting-documentation">Writting Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development.html#api-documentation">API Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development.html#debugging-tools">Debugging Tools</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="development.html#debugging-tools">Debugging Tools</a></li>
 </ul>
 </li>
 </ul>
@@ -105,8 +104,7 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="development.html">Developer Guide</a><ul>
-      <li>Previous: <a href="style.html" title="previous chapter">Coding Style</a></li>
-      <li>Next: <a href="openmaxil/openmaxil.html" title="next chapter">OpenMAX IL Framework</a></li>
+      <li>Previous: <a href="logging.html" title="previous chapter">Logging configuration</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -129,41 +127,27 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="documenting-tizonia">
-<h1>Documenting Tizonia<a class="headerlink" href="#documenting-tizonia" title="Permalink to this headline">¶</a></h1>
-<p>We use <a class="reference external" href="http://www.doxygen.nl/">Doxygen</a> to document the C APIs and <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> to produce our manuals and to give
-everything a nicer look.</p>
-<div class="section" id="how-to-build-the-documentation">
-<h2>How To Build the Documentation<a class="headerlink" href="#how-to-build-the-documentation" title="Permalink to this headline">¶</a></h2>
-<p>The documentation is built in 2 steps:</p>
-<ol class="arabic simple">
-<li><p>The Doxygen API docs are generated first.</p></li>
-<li><p>The Sphinx docs are generated next. The Doxygen API documentation generated
-in the first step is consumed during this stage as they are embedded into
-the final Sphinx output.</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install the dependencies</span>
-$ sudo apt install doxygen
-$ sudo -H pip3 install --upgrade sphinx breathe alabaster recommonmark
-
-<span class="c1"># Clone the repo</span>
-$ git clone https://github.com/tizonia/tizonia-openmax-il
-
-<span class="c1"># Change into the &#39;docs&#39; directory</span>
-<span class="nb">cd</span> tizonia-openmax-il/docs
-
-<span class="c1"># Configuration</span>
-$ autoreconf -ifs <span class="o">&amp;&amp;</span> ./configure
-
-<span class="c1"># Generate the Doxygen API docs</span>
-$ make
-
-<span class="c1"># Now change into the &#39;sphinx-src&#39; dir and generate the Sphinx docs website</span>
-<span class="c1"># and the man page</span>
-$ <span class="nb">cd</span> sphinx-src
-$ make html <span class="o">&amp;&amp;</span> make man
-</pre></div>
+  <div class="section" id="environment-variables">
+<h1>Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tizonia-s-environment-variables">
+<h2>Tizonia’s Environment Variables<a class="headerlink" href="#tizonia-s-environment-variables" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_CORE_STARTS_LOG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_DEBUG_COLOR_TRACE=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_GMUSICPROXY_DEBUG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_PLEXPROXY_DEBUG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_SPOTIFYPROXY_DEBUG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_SOUNDCLOUDPROXY_DEBUG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_PLEXPROXY_DEBUG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_CHROMECASTPROXY_DEBUG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_YOUTUBEPROXY_DEBUG=1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">TIZONIA_TUNEINPROXY_DEBUG=1</span></code></p>
 </div>
+<div class="section" id="other-environment-variables">
+<h2>Other Environment Variables<a class="headerlink" href="#other-environment-variables" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GNUTLS_DEBUG_LEVEL=99</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">MALLOC_CHECK_=0</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">MALLOC_CHECK_=3</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">MALLOC_PERTURB_=$(($RANDOM</span> <span class="pre">%</span> <span class="pre">255</span> <span class="pre">+</span> <span class="pre">1))</span></code></p>
 </div>
 </div>
 
@@ -182,7 +166,7 @@ $ make html <span class="o">&amp;&amp;</span> make man
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../_sources/development/documenting.rst.txt"
+      <a href="../_sources/development/envvars.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
