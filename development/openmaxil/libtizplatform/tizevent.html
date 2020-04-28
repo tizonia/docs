@@ -163,39 +163,6 @@
 </p>
 </dd></dl>
 
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizevent_1gae7a73afe22b85074857bb317a8659112"></span><em class="property">typedef </em><em class="property">struct</em> tiz_event_io <code class="sig-name descname">tiz_event_io_t</code><br /></dt>
-<dd><p>Handle to an io event </p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizevent_1ga61beba9d851389a306528773ddd9a8ad"></span><em class="property">typedef </em><em class="property">struct</em> tiz_event_timer <code class="sig-name descname">tiz_event_timer_t</code><br /></dt>
-<dd><p>Handle to a timer event </p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizevent_1ga931c3365eb26ccdc029967af0c381f19"></span><em class="property">typedef </em><em class="property">struct</em> tiz_event_stat <code class="sig-name descname">tiz_event_stat_t</code><br /></dt>
-<dd><p>Handle to a file status change event </p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizevent_1ga9335be6fe0430667a10ebcccc22e9b60"></span><em class="property">typedef </em>void (*<code class="sig-name descname">tiz_event_io_cb_f</code>)<span class="sig-paren">(</span>void *ap_arg0, <a class="reference internal" href="#c.tiz_event_io_t" title="tiz_event_io_t">tiz_event_io_t</a> *ap_ev_io, void *ap_arg1, <em class="property">const</em> uint32_t a_id, int a_fd, int a_events<span class="sig-paren">)</span><br /></dt>
-<dd><p>Callback prototype for io events</p>
-<p><dl class="simple">
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">p_ev_io</span></code>: The io event being notified</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">fd</span></code>: The associated file descriptor</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">events</span></code>: The event types notified </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>

@@ -148,24 +148,6 @@
 <dd><p>The maximum number of types that may be registered with a Tizonia component. </p>
 </dd></dl>
 
-<dl class="c macro">
-<dt>
-<span class="target" id="group__tizscheduler_1ga460363153b0fa22c65d5bd266c658a5e"></span><code class="sig-name descname">TIZ_COMP_MAX_PORTS</code><br /></dt>
-<dd><p>Maximum number of OpenMAX IL ports that may be registered with a Tizonia component. </p>
-</dd></dl>
-
-<dl class="c macro">
-<dt>
-<span class="target" id="group__tizscheduler_1ga1dc9a50936bd8dbd424eef2671d7ea94"></span><code class="sig-name descname">TIZ_COMP_MAX_ROLES</code><br /></dt>
-<dd><p>Maximum number of roles that may be registered with a Tizonia component. </p>
-</dd></dl>
-
-<dl class="c macro">
-<dt>
-<span class="target" id="group__tizscheduler_1ga2cb2722a68881ec306bf10f5c28331c7"></span><code class="sig-name descname">TIZ_COMP_MAX_TYPES</code><br /></dt>
-<dd><p>The maximum number of types that may be registered with a Tizonia component. </p>
-</dd></dl>
-
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
@@ -228,68 +210,6 @@
 <dl class="c type">
 <dt id="c.tiz_event_pluggable_t">
 <span class="target" id="group__tizscheduler_1gac29f5b4b6b6d09ee0b77b87c126709f3"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#c.tiz_event_pluggable" title="tiz_event_pluggable">tiz_event_pluggable</a> <code class="sig-name descname">tiz_event_pluggable_t</code><a class="headerlink" href="#c.tiz_event_pluggable_t" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>‘Pluggable’ event structure (typedef). </p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizscheduler_1gac0a59cecb8220b1c26cb66d8a8e36880"></span><em class="property">typedef </em>OMX_PTR (*<code class="sig-name descname">tiz_role_config_port_init_f</code>)<span class="sig-paren">(</span>OMX_HANDLETYPE ap_hdl<span class="sig-paren">)</span><br /></dt>
-<dd><p>‘Configuration port’ factory function prototype. </p>
-<p>This function instantiates a ‘configuration port’ object for a specific component role. The ‘configuration’ port is a pseudo-port, it does not have an associated OpenMAX IL port index. It is used in libtizonia to encapsulate the logic for the component’s OpenMAX IL structures that are not associated to an actual OpenMAX IL port, i.e. OpenMAX IL parameter structures without an ‘nIndex’ member (e.g. OMX_PARAM_CONTENTURITYPE).</p>
-<p><dl class="simple">
-<dt><strong>Note</strong></dt><dd><p>Tizonia components require exactly one ‘configuration port’ to be functional.</p>
-</dd>
-<dt><strong>Return</strong></dt><dd><p>A pointer to a newly instantiated ‘configuration port’ object. </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizscheduler_1ga1ceaceb8c8767980ff35305aaee82e36"></span><em class="property">typedef </em>OMX_PTR (*<code class="sig-name descname">tiz_role_port_init_f</code>)<span class="sig-paren">(</span>OMX_HANDLETYPE ap_hdl<span class="sig-paren">)</span><br /></dt>
-<dd><p>‘port’ factory function prototype. </p>
-<p>This function instantiates an OpenMAX IL ‘port’ object for a specific component role. Tizonia components require one or more ‘port’ objects to be functional.</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>A pointer to a newly instantiated ‘port’ object. </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizscheduler_1ga1a129d05ee5520454b230d8ece4743b2"></span><em class="property">typedef </em>OMX_PTR (*<code class="sig-name descname">tiz_role_proc_init_f</code>)<span class="sig-paren">(</span>OMX_HANDLETYPE ap_hdl<span class="sig-paren">)</span><br /></dt>
-<dd><p>‘processor’ factory function prototype. </p>
-<p>This function instantiates an OpenMAX IL ‘processor’ object for a specific component role. Tizonia components require exactly one ‘processor’ object to be functional.</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>A pointer to a newly instantiated ‘processor’ object. </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">ap_hdl</span></code>: The component’s OpenMAX IL handle. </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizscheduler_1ga04f5399d42c5924c4bc4c15e18a59e34"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#c.tiz_role_factory" title="tiz_role_factory">tiz_role_factory</a> <code class="sig-name descname">tiz_role_factory_t</code><br /></dt>
-<dd><p>OpenMAX IL role registration factory structure (typedef). </p>
-</dd></dl>
-
-<dl class="c type">
-<dt>
-<span class="target" id="group__tizscheduler_1gac29f5b4b6b6d09ee0b77b87c126709f3"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#c.tiz_event_pluggable" title="tiz_event_pluggable">tiz_event_pluggable</a> <code class="sig-name descname">tiz_event_pluggable_t</code><br /></dt>
 <dd><p>‘Pluggable’ event structure (typedef). </p>
 </dd></dl>
 
@@ -600,7 +520,7 @@
 
 <dl class="c var">
 <dt id="c.tiz_role_factory.role">
-<span class="target" id="structtiz__role__factory_1a3ef5d8cfc3a3b7a3d25bb8eede42fa7a"></span>OMX_U8 <code class="sig-name descname">role</code><a class="headerlink" href="#c.tiz_role_factory.role" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="structtiz__role__factory_1a1b524bf51117c23a4533b9eef7d9bea2"></span>OMX_U8 <code class="sig-name descname">role</code>[<code class="sig-name descname">OMX_MAX_STRINGNAME_SIZE</code>]<a class="headerlink" href="#c.tiz_role_factory.role" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>the role name </p>
 </dd></dl>
 
