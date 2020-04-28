@@ -1,21 +1,21 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Building from Source (with Autotools) &#8212; Tizonia 0.21.0 documentation</title>
+    <title>&lt;no title&gt; &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Coding Style" href="style.html" />
-    <link rel="prev" title="Building from Source (with Meson) [RECOMMENDED]" href="BUILDING_with_meson.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="BUILDING_with_meson.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -62,29 +62,10 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#upgrade">Upgrade</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#hall-of-fame">Hall of Fame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/CONTRIBUTING.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/CHANGELOG.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/COPYING.LESSER.html">License</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../manual/manual.html">User Guide</a></li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="development.html">Developer Guide</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="development.html#components">Components</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="development.html#building-from-source">Building from Source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development.html#coding-guidelines">Coding Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development.html#writting-documentation">Writting Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development.html#api-documentation">API Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development.html#debugging-tools">Debugging Tools</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Developer Guide</a></li>
 </ul>
 
 
@@ -105,7 +86,7 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="development.html">Developer Guide</a><ul>
-      <li>Previous: <a href="BUILDING_with_meson.html" title="previous chapter">Building from Source (with Meson) [RECOMMENDED]</a></li>
+      <li>Previous: <a href="BUILDING_with_meson.html" title="previous chapter">&lt;no title&gt;</a></li>
       <li>Next: <a href="style.html" title="next chapter">Coding Style</a></li>
   </ul></li>
   </ul></li>
@@ -120,7 +101,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
@@ -129,278 +110,241 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="building-from-source-with-autotools">
-<h1>Building from Source (with Autotools)<a class="headerlink" href="#building-from-source-with-autotools" title="Permalink to this headline">¶</a></h1>
-<!-- START doctoc generated TOC please keep comment here to allow auto update --><!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --><ul class="simple">
-<li><p><a class="reference external" href="#prerequisites">Prerequisites</a></p></li>
-<li><p><a class="reference external" href="#dependencies">Dependencies</a></p></li>
-<li><p><a class="reference external" href="#building">Building</a></p>
+  <p># Building from Source (with Autotools)</p>
+<p>&lt;!– START doctoc generated TOC please keep comment here to allow auto update –&gt;
+&lt;!– DON’T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE –&gt;</p>
 <ul>
-<li><p><a class="reference external" href="#debug-variant">‘Debug’ variant</a></p></li>
-<li><p><a class="reference external" href="#release-variant">‘Release’ variant</a></p></li>
-<li><p><a class="reference external" href="#single-debian-package-created-with-checkinstall">Single Debian package created with ‘checkinstall’</a></p></li>
-<li><p><a class="reference external" href="#the-traditional-method">The traditional method</a></p></li>
-<li><p><a class="reference external" href="#conditional-compilation-of-sub-projects">Conditional compilation of sub-projects</a></p>
-<ul>
-<li><p><a class="reference external" href="#excluding-the-player-sub-project">Excluding the <code class="docutils literal notranslate"><span class="pre">player</span></code> sub-project</a></p></li>
-<li><p><a class="reference external" href="#excluding-the-pluginsspotify_source-sub-project">Excluding the <code class="docutils literal notranslate"><span class="pre">plugins/spotify_source</span></code> sub-project</a></p></li>
-<li><p><a class="reference external" href="#excluding-the-pluginspcm_renderer_alsa-sub-project">Excluding the <code class="docutils literal notranslate"><span class="pre">plugins/pcm_renderer_alsa</span></code> sub-project</a></p></li>
+<li><p>[Prerequisites](#prerequisites)</p></li>
+<li><p>[Dependencies](#dependencies)</p></li>
+<li><p>[Building](#building)
+- [‘Debug’ variant](#debug-variant)
+- [‘Release’ variant](#release-variant)
+- [Single Debian package created with ‘checkinstall’](#single-debian-package-created-with-checkinstall)
+- [The traditional method](#the-traditional-method)
+- [Conditional compilation of sub-projects](#conditional-compilation-of-sub-projects)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[Excluding the <cite>player</cite> sub-project](#excluding-the-player-sub-project)</p></li>
+<li><p>[Excluding the <cite>plugins/spotify_source</cite> sub-project](#excluding-the-pluginsspotify_source-sub-project)</p></li>
+<li><p>[Excluding the <cite>plugins/pcm_renderer_alsa</cite> sub-project](#excluding-the-pluginspcm_renderer_alsa-sub-project)</p></li>
 </ul>
+</div></blockquote>
 </li>
+<li><p>[Tizonia’s configuration file](#tizonias-configuration-file)</p></li>
+<li><p>[Resource Manager’s D-BUS service activation file (optional)](#resource-managers-d-bus-service-activation-file-optional)</p></li>
+<li><p>[Known issues](#known-issues)</p></li>
+<li><p>[Speeding up (re-)compilation using ccache](#speeding-up-re-compilation-using-ccache)</p></li>
+<li><p>[Creating a JSON compilation database, for use with e.g. Emacs RTags](#creating-a-json-compilation-database-for-use-with-eg-emacs-rtags)</p></li>
 </ul>
-</li>
-<li><p><a class="reference external" href="#tizonias-configuration-file">Tizonia’s configuration file</a></p></li>
-<li><p><a class="reference external" href="#resource-managers-d-bus-service-activation-file-optional">Resource Manager’s D-BUS service activation file (optional)</a></p></li>
-<li><p><a class="reference external" href="#known-issues">Known issues</a></p></li>
-<li><p><a class="reference external" href="#speeding-up-re-compilation-using-ccache">Speeding up (re-)compilation using ccache</a></p></li>
-<li><p><a class="reference external" href="#creating-a-json-compilation-database-for-use-with-eg-emacs-rtags">Creating a JSON compilation database, for use with e.g. Emacs RTags</a></p></li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update --><p>To build and install from source, please read the following sections. Ubuntu
+<p>&lt;!– END doctoc generated TOC please keep comment here to allow auto update –&gt;</p>
+<p>To build and install from source, please read the following sections. Ubuntu
 18.04 is assumed, but should work on other recent Debian-based distros.</p>
-<div class="section" id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>### Prerequisites</p>
 <p>Please make sure you have enough RAM available on your system to build
 Tizonia. A good 8GB of RAM may be needed if you are planning to build
 everything, including the ‘tizonia’ player application. You might encounter
 problems if you are trying to run the compilation while large programs like
-Chrome or Firefox are running. See <a class="reference external" href="#known-issues">Known issues</a> for the kind
-of errors that you might encounter in those cases. Also look at <a class="reference external" href="#conditional-compilation-of-sub-projects">Conditional
-compilation of sub-projects</a> for
+Chrome or Firefox are running. See [Known issues](#known-issues) for the kind
+of errors that you might encounter in those cases. Also look at [Conditional
+compilation of sub-projects](#conditional-compilation-of-sub-projects) for
 instructions on how to disable certain parts of the software.</p>
-<blockquote>
-<div><p>NOTE: Also make sure you have some time in your hands. Building Tizonia may
-take at least 20 minutes on a fast SSD-based system. You may want to look at
-<a class="reference external" href="#speeding-up-re-compilation-using-ccache">Speeding up (re-)compilation
-usingccache</a> if you are planning to
-build the Tizonia tree multiple times.</p>
-</div></blockquote>
-</div>
-<div class="section" id="dependencies">
-<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
-<p>To install all the development dependencies, the <code class="docutils literal notranslate"><span class="pre">tizonia-dev-build</span></code> tool is
-the recommended way. This script lives under the <code class="docutils literal notranslate"><span class="pre">tools</span></code> directory and internally
+<p>&gt; NOTE: Also make sure you have some time in your hands. Building Tizonia may
+&gt; take at least 20 minutes on a fast SSD-based system. You may want to look at
+&gt; [Speeding up (re-)compilation
+&gt; usingccache](#speeding-up-re-compilation-using-ccache) if you are planning to
+&gt; build the Tizonia tree multiple times.</p>
+<p>### Dependencies</p>
+<p>To install all the development dependencies, the <cite>tizonia-dev-build</cite> tool is
+the recommended way. This script lives under the <cite>tools</cite> directory and internally
 maintains an up-to-date list of all the packages that are required in a
 Debian-compatible system to build Tizonia from source.</p>
-<blockquote>
-<div><p>NOTE: The following command installs Mopidy’s ‘libspotify-dev’ package, and
-the ‘gmusicapi’, ‘soundcloud’, ‘pafy’ and ‘youtube-dl’ Python PIP packages,
-plus a few other necessary debian packages.</p>
-</div></blockquote>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Setup the following environment variables</span>
-$ <span class="nb">export</span> <span class="nv">TIZONIA_REPO_DIR</span><span class="o">=</span>/path/to/tizonia/repo <span class="c1"># (e.g. /home/user/tizonia-openmax-il)</span>
-$ <span class="nb">export</span> <span class="nv">TIZONIA_INSTALL_DIR</span><span class="o">=</span>/path/to/install/dir <span class="c1"># (e.g. /usr or /home/user/temp)</span>
-$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$TIZONIA_REPO_DIR</span>/tools:<span class="nv">$PATH</span>
-
-<span class="c1"># Set the PYTHONPATH accordingly (replace X to match the python version on your system)</span>
-$ <span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$TIZONIA_INSTALL_DIR</span>/lib/python3.X/site-packages:<span class="nv">$PYTHONPATH</span>
-
-<span class="c1"># Now install everything that is required to build Tizonia from source (Debian derivative assumed)</span>
-$ tizonia-dev-build --deps
-</pre></div>
-</div>
-</div>
-<div class="section" id="building">
-<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
+<p>&gt; NOTE: The following command installs Mopidy’s ‘libspotify-dev’ package, and
+&gt; the ‘gmusicapi’, ‘soundcloud’, ‘pafy’ and ‘youtube-dl’ Python PIP packages,
+&gt; plus a few other necessary debian packages.</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>bash
+# Setup the following environment variables
+$ export TIZONIA_REPO_DIR=/path/to/tizonia/repo # (e.g. /home/user/tizonia-openmax-il)
+$ export TIZONIA_INSTALL_DIR=/path/to/install/dir # (e.g. /usr or /home/user/temp)
+$ export PATH=$TIZONIA_REPO_DIR/tools:$PATH</p>
+<p># Set the PYTHONPATH accordingly (replace X to match the python version on your system)
+$ export PYTHONPATH=$TIZONIA_INSTALL_DIR/lib/python3.X/site-packages:$PYTHONPATH</p>
+<p># Now install everything that is required to build Tizonia from source (Debian derivative assumed)
+$ tizonia-dev-build –deps
+<a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
+<p>### Building</p>
 <p>Once all the dependencies have been installed, build and install the OpenMAX IL
 framework, all plugins and the ‘tizonia’ command-line application, using any of
 the following methods.</p>
-<div class="section" id="debug-variant">
-<h3>‘Debug’ variant<a class="headerlink" href="#debug-variant" title="Permalink to this headline">¶</a></h3>
+<p>#### ‘Debug’ variant</p>
 <p>The following command re-configures all sub-projects with ‘debug’ type of
 flags, and then proceeds to build and install them.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tizonia-dev-build --debug --install
-</pre></div>
-</div>
-</div>
-<div class="section" id="release-variant">
-<h3>‘Release’ variant<a class="headerlink" href="#release-variant" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">$</span> <span class="pre">tizonia-dev-build</span> <span class="pre">--debug</span> <span class="pre">--install</span>
+<span class="pre">`</span></code></p>
+<p>#### ‘Release’ variant</p>
 <p>The following command re-configures all sub-projects with ‘release’ type of
 flags, builds and installs them.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tizonia-dev-build --release --install
-</pre></div>
-</div>
-</div>
-<div class="section" id="single-debian-package-created-with-checkinstall">
-<h3>Single Debian package created with ‘checkinstall’<a class="headerlink" href="#single-debian-package-created-with-checkinstall" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">$</span> <span class="pre">tizonia-dev-build</span> <span class="pre">--release</span> <span class="pre">--install</span>
+<span class="pre">`</span></code></p>
+<p>#### Single Debian package created with ‘checkinstall’</p>
 <p>The following command configures all sub-projects with ‘release’ flags
 appropriate for a Debian/Ubuntu system, builds the whole repo, then using
-<a class="reference external" href="https://debian-administration.org/article/147/Installing_packages_from_source_code_with_checkinstall">checkinstall</a>
+[checkinstall](<a class="reference external" href="https://debian-administration.org/article/147/Installing_packages_from_source_code_with_checkinstall">https://debian-administration.org/article/147/Installing_packages_from_source_code_with_checkinstall</a>)
 creates a single Debian package and installs it in the system. The package can
 then be removed via ‘dpkg’ or even moved to another machine for testing.</p>
-<blockquote>
-<div><p>NOTE: This is the best way to build Tizonia if all you want is to install it
-on a system that for which there are no official binaries.</p>
-</div></blockquote>
-<blockquote>
-<div><p>NOTE: This is not how the Debian packages hosted on Bintray are created. The
-packages hosted on Bintray are fully ‘debianized’ packages created using the
+<dl class="simple">
+<dt>&gt; NOTE: This is the best way to build Tizonia if all you want is to install it</dt><dd><p>on a system that for which there are no official binaries.</p>
+</dd>
+<dt>&gt; NOTE: This is not how the Debian packages hosted on Bintray are created. The</dt><dd><p>packages hosted on Bintray are fully ‘debianized’ packages created using the
 ‘tizonia-qemu-debootstrap-env’ script.</p>
-</div></blockquote>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># This produces and install a Debian package called &#39;tizonia-all-testing&#39;</span>
-$ tizonia-dev-build --debian
-
-<span class="c1"># To remove from the system, run:</span>
+</dd>
+</dl>
+<p><a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a>bash
+# This produces and install a Debian package called ‘tizonia-all-testing’
+$ tizonia-dev-build –debian</p>
+<p># To remove from the system, run:
 $ dpkg -r tizonia-all-testing
-</pre></div>
-</div>
-</div>
-<div class="section" id="the-traditional-method">
-<h3>The traditional method<a class="headerlink" href="#the-traditional-method" title="Permalink to this headline">¶</a></h3>
+<a href="#id13"><span class="problematic" id="id14">``</span></a><a href="#id15"><span class="problematic" id="id16">`</span></a></p>
+<p>#### The traditional method</p>
 <p>Alternatively, from the top of Tizonia’s repo, one can also do the familiar:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ autoreconf -ifs
-$ ./configure    <span class="c1"># or ./configure --disable-player to disable the command-line player program</span>
-$ make
-$ make install
-</pre></div>
-</div>
-</div>
-<div class="section" id="conditional-compilation-of-sub-projects">
-<h3>Conditional compilation of sub-projects<a class="headerlink" href="#conditional-compilation-of-sub-projects" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="excluding-the-player-sub-project">
-<h4>Excluding the <code class="docutils literal notranslate"><span class="pre">player</span></code> sub-project<a class="headerlink" href="#excluding-the-player-sub-project" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">$</span> <span class="pre">autoreconf</span> <span class="pre">-ifs</span>
+<span class="pre">$</span> <span class="pre">./configure</span>&#160;&#160;&#160; <span class="pre">#</span> <span class="pre">or</span> <span class="pre">./configure</span> <span class="pre">--disable-player</span> <span class="pre">to</span> <span class="pre">disable</span> <span class="pre">the</span> <span class="pre">command-line</span> <span class="pre">player</span> <span class="pre">program</span>
+<span class="pre">$</span> <span class="pre">make</span>
+<span class="pre">$</span> <span class="pre">make</span> <span class="pre">install</span>
+<span class="pre">`</span></code></p>
+<p>#### Conditional compilation of sub-projects</p>
+<p>##### Excluding the <cite>player</cite> sub-project</p>
 <p>Some people are only interested in building the OpenMAX IL framework, without
-the <code class="docutils literal notranslate"><span class="pre">tizonia</span></code> player application (that lives under the ‘player’
+the <cite>tizonia</cite> player application (that lives under the ‘player’
 sub-directory). During configuration, it can be disabled by including the
-<code class="docutils literal notranslate"><span class="pre">--disable-player</span></code> option:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Disable compilation of the command-line player program.</span>
-$ ./configure --disable-player
-</pre></div>
-</div>
-<p>Alternatively, the <code class="docutils literal notranslate"><span class="pre">--no-player</span></code> option may be added to <code class="docutils literal notranslate"><span class="pre">tizonia-dev-build</span></code> to
-disable configuration and build of the <code class="docutils literal notranslate"><span class="pre">tizonia</span></code> player.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build and install in DEBUG mode without the command-line player program.</span>
-$ tizonia-dev-build --no-player --debug --install
-</pre></div>
-</div>
-</div>
-<div class="section" id="excluding-the-plugins-spotify-source-sub-project">
-<h4>Excluding the <code class="docutils literal notranslate"><span class="pre">plugins/spotify_source</span></code> sub-project<a class="headerlink" href="#excluding-the-plugins-spotify-source-sub-project" title="Permalink to this headline">¶</a></h4>
-<p>The <code class="docutils literal notranslate"><span class="pre">--without-libspotify</span></code> option may be included to disable configuration and
+<cite>–disable-player</cite> option:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">#</span> <span class="pre">Disable</span> <span class="pre">compilation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">command-line</span> <span class="pre">player</span> <span class="pre">program.</span>
+<span class="pre">$</span> <span class="pre">./configure</span> <span class="pre">--disable-player</span>
+<span class="pre">`</span></code></p>
+<p>Alternatively, the <cite>–no-player</cite> option may be added to <cite>tizonia-dev-build</cite> to
+disable configuration and build of the <cite>tizonia</cite> player.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">#</span> <span class="pre">Build</span> <span class="pre">and</span> <span class="pre">install</span> <span class="pre">in</span> <span class="pre">DEBUG</span> <span class="pre">mode</span> <span class="pre">without</span> <span class="pre">the</span> <span class="pre">command-line</span> <span class="pre">player</span> <span class="pre">program.</span>
+<span class="pre">$</span> <span class="pre">tizonia-dev-build</span> <span class="pre">--no-player</span> <span class="pre">--debug</span> <span class="pre">--install</span>
+<span class="pre">`</span></code></p>
+<p>##### Excluding the <cite>plugins/spotify_source</cite> sub-project</p>
+<p>The <cite>–without-libspotify</cite> option may be included to disable configuration and
 build of the libspotify-based OpenMAX IL component. This option will also
-disable the support for this plugin in the <code class="docutils literal notranslate"><span class="pre">tizonia</span></code> player program.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Disable support for the spotify_source plugin.</span>
-$ ./configure --without-libspotify
-</pre></div>
-</div>
-</div>
-<div class="section" id="excluding-the-plugins-pcm-renderer-alsa-sub-project">
-<h4>Excluding the <code class="docutils literal notranslate"><span class="pre">plugins/pcm_renderer_alsa</span></code> sub-project<a class="headerlink" href="#excluding-the-plugins-pcm-renderer-alsa-sub-project" title="Permalink to this headline">¶</a></h4>
-<p>The <code class="docutils literal notranslate"><span class="pre">--without-alsa</span></code> option may be included to disable configuration and
+disable the support for this plugin in the <cite>tizonia</cite> player program.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">#</span> <span class="pre">Disable</span> <span class="pre">support</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">spotify_source</span> <span class="pre">plugin.</span>
+<span class="pre">$</span> <span class="pre">./configure</span> <span class="pre">--without-libspotify</span>
+<span class="pre">`</span></code></p>
+<p>##### Excluding the <cite>plugins/pcm_renderer_alsa</cite> sub-project</p>
+<p>The <cite>–without-alsa</cite> option may be included to disable configuration and
 build of the ALSA-based OpenMAX IL pcm renderer.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Disable support for the ALSA pcm renderer plugin.</span>
-$ ./configure --without-alsa
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="tizonia-s-configuration-file">
-<h2>Tizonia’s configuration file<a class="headerlink" href="#tizonia-s-configuration-file" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">#</span> <span class="pre">Disable</span> <span class="pre">support</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">ALSA</span> <span class="pre">pcm</span> <span class="pre">renderer</span> <span class="pre">plugin.</span>
+<span class="pre">$</span> <span class="pre">./configure</span> <span class="pre">--without-alsa</span>
+<span class="pre">`</span></code></p>
+<p>### Tizonia’s configuration file</p>
 <p>Copy <em>tizonia.conf</em> into the user’s config folder:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir -p <span class="nv">$HOME</span>/.config/tizonia <span class="se">\</span>
-    <span class="o">&amp;&amp;</span> cp <span class="nv">$TIZONIA_REPO_DIR</span>/config/src/tizonia.conf <span class="nv">$HOME</span>/.config/tizonia
-</pre></div>
-</div>
-</div>
-<div class="section" id="resource-manager-s-d-bus-service-activation-file-optional">
-<h2>Resource Manager’s D-BUS service activation file (optional)<a class="headerlink" href="#resource-manager-s-d-bus-service-activation-file-optional" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id17"><span class="problematic" id="id18">``</span></a><a href="#id19"><span class="problematic" id="id20">`</span></a>bash
+$ mkdir -p $HOME/.config/tizonia </p>
+<blockquote>
+<div><p>&amp;&amp; cp $TIZONIA_REPO_DIR/config/src/tizonia.conf $HOME/.config/tizonia</p>
+</div></blockquote>
+<p><a href="#id21"><span class="problematic" id="id22">``</span></a><a href="#id23"><span class="problematic" id="id24">`</span></a></p>
+<p>### Resource Manager’s D-BUS service activation file (optional)</p>
 <p>OpenMAX IL Resource Management is present but disabled by default. This is a
 feature required on an compliant OpenMAX IL 1.2 implementation. Currently,
 there is no other use beyond enabling OpenMAX IL compliance. In case this is to
 be used during OpenMAX IL conformance testing (prior to that, it needs to be
 explicitly enabled in tizonia.conf), copy the Resource Manager’s D-BUS
 activation file to some place where it can be found by the DBUS services. E.g:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ~/.local/share/dbus-1/services <span class="se">\</span>
-    <span class="o">&amp;&amp;</span> cp rm/tizrmd/dbus/com.aratelia.tiz.rm.service ~/.local/share/dbus-1/services
-</pre></div>
-</div>
-</div>
-<div class="section" id="known-issues">
-<h2>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">tizonia</span></code> player app makes heavy use the the the
-<a class="reference external" href="http://www.boost.org/doc/libs/1_55_0/libs/msm/doc/HTML/index.html">Boost Meta State Machine (MSM)</a>
+<p><a href="#id25"><span class="problematic" id="id26">``</span></a><a href="#id27"><span class="problematic" id="id28">`</span></a>bash
+$ mkdir -p ~/.local/share/dbus-1/services </p>
+<blockquote>
+<div><p>&amp;&amp; cp rm/tizrmd/dbus/com.aratelia.tiz.rm.service ~/.local/share/dbus-1/services</p>
+</div></blockquote>
+<p><a href="#id29"><span class="problematic" id="id30">``</span></a><a href="#id31"><span class="problematic" id="id32">`</span></a></p>
+<p>### Known issues</p>
+<p>The <cite>tizonia</cite> player app makes heavy use the the the
+[Boost Meta State Machine (MSM)](<a class="reference external" href="http://www.boost.org/doc/libs/1_55_0/libs/msm/doc/HTML/index.html">http://www.boost.org/doc/libs/1_55_0/libs/msm/doc/HTML/index.html</a>)
 library by Christophe Henry (MSM is in turn based on
-<a class="reference external" href="http://www.boost.org/doc/libs/1_56_0/libs/mpl/doc/index.html">Boost MPL</a>).</p>
+[Boost MPL](<a class="reference external" href="http://www.boost.org/doc/libs/1_56_0/libs/mpl/doc/index.html">http://www.boost.org/doc/libs/1_56_0/libs/mpl/doc/index.html</a>)).</p>
 <p>MSM is used to generate a number of state machines that control the tunneled
 OpenMAX IL components for the various playback uses cases. The state machines
 are quite large and MSM is known for not being easy on the compilers. Building
-the <code class="docutils literal notranslate"><span class="pre">tizonia</span></code> command-line app in ‘debug’ configuration (with debug symbols,
+the <cite>tizonia</cite> command-line app in ‘debug’ configuration (with debug symbols,
 etc) requires quite a bit of RAM.</p>
-<p>You may see GCC crashing like below; simply keep running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">-j1</span></code> or <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">-j1</span> <span class="pre">install</span></code> until the application is fully built (it will finish eventually,
+<p>You may see GCC crashing like below; simply keep running <cite>make -j1</cite> or <cite>make
+-j1 install</cite> until the application is fully built (it will finish eventually,
 given the sufficient amount RAM). An alternative to that is to build in
 ‘release’ mode (especially if you are on a 32-bit distro).</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Making all in src
-  CXX      tizonia-tizplayapp.o
-  CXX      tizonia-main.o
-  CXX      tizonia-tizomxutil.o
-  CXX      tizonia-tizprogramopts.o
-  CXX      tizonia-tizgraphutil.o
-  CXX      tizonia-tizgraphcback.o
-  CXX      tizonia-tizprobe.o
-  CXX      tizonia-tizdaemon.o
-  CXX      tizonia-tizplaylist.o
-  CXX      tizonia-tizgraphfactory.o
-  CXX      tizonia-tizgraphmgrcmd.o
-  CXX      tizonia-tizgraphmgrops.o
-  CXX      tizonia-tizgraphmgrfsm.o
-  CXX      tizonia-tizgraphmgr.o
-  CXX      tizonia-tizdecgraphmgr.o
-g++: internal compiler error: Killed <span class="o">(</span>program cc1plus<span class="o">)</span>
+<p><a href="#id33"><span class="problematic" id="id34">``</span></a><a href="#id35"><span class="problematic" id="id36">`</span></a>bash
+Making all in src</p>
+<blockquote>
+<div><p>CXX      tizonia-tizplayapp.o
+CXX      tizonia-main.o
+CXX      tizonia-tizomxutil.o
+CXX      tizonia-tizprogramopts.o
+CXX      tizonia-tizgraphutil.o
+CXX      tizonia-tizgraphcback.o
+CXX      tizonia-tizprobe.o
+CXX      tizonia-tizdaemon.o
+CXX      tizonia-tizplaylist.o
+CXX      tizonia-tizgraphfactory.o
+CXX      tizonia-tizgraphmgrcmd.o
+CXX      tizonia-tizgraphmgrops.o
+CXX      tizonia-tizgraphmgrfsm.o
+CXX      tizonia-tizgraphmgr.o
+CXX      tizonia-tizdecgraphmgr.o</p>
+</div></blockquote>
+<p>g++: internal compiler error: Killed (program cc1plus)
 Please submit a full bug report,
-with preprocessed <span class="nb">source</span> <span class="k">if</span> appropriate.
-See &lt;file:///usr/share/doc/gcc-4.8/README.Bugs&gt; <span class="k">for</span> instructions.
-make<span class="o">[</span><span class="m">2</span><span class="o">]</span>: *** <span class="o">[</span>tizonia-tizplayapp.o<span class="o">]</span> Error <span class="m">4</span>
-make<span class="o">[</span><span class="m">2</span><span class="o">]</span>: *** Waiting <span class="k">for</span> unfinished jobs....
-g++: internal compiler error: Killed <span class="o">(</span>program cc1plus<span class="o">)</span>
+with preprocessed source if appropriate.
+See &lt;<a class="reference external" href="file:///usr/share/doc/gcc-4.8/README.Bugs">file:///usr/share/doc/gcc-4.8/README.Bugs</a>&gt; for instructions.
+make[2]: <strong>* [tizonia-tizplayapp.o] Error 4
+make[2]: *</strong> Waiting for unfinished jobs….
+g++: internal compiler error: Killed (program cc1plus)
 Please submit a full bug report,
-with preprocessed <span class="nb">source</span> <span class="k">if</span> appropriate.
-See &lt;file:///usr/share/doc/gcc-4.8/README.Bugs&gt; <span class="k">for</span> instructions.
-</pre></div>
-</div>
-</div>
-<div class="section" id="speeding-up-re-compilation-using-ccache">
-<h2>Speeding up (re-)compilation using ccache<a class="headerlink" href="#speeding-up-re-compilation-using-ccache" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://ccache.samba.org/">ccache</a> is a compiler cache. It speeds up
+with preprocessed source if appropriate.
+See &lt;<a class="reference external" href="file:///usr/share/doc/gcc-4.8/README.Bugs">file:///usr/share/doc/gcc-4.8/README.Bugs</a>&gt; for instructions.</p>
+<p><a href="#id37"><span class="problematic" id="id38">``</span></a><a href="#id39"><span class="problematic" id="id40">`</span></a></p>
+<p>### Speeding up (re-)compilation using ccache</p>
+<p>[ccache](<a class="reference external" href="https://ccache.samba.org/">https://ccache.samba.org/</a>) is a compiler cache. It speeds up
 recompilation by caching previous compilations. With Tizonia, this is very
 useful during development, especially since the ‘player’ application is so hard
 to build due to the boost machinery.</p>
 <p>On a debian system, ccache can be installed using:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install ccache
-</pre></div>
-</div>
-<p>Once ccache is installed, <code class="docutils literal notranslate"><span class="pre">tizonia-dev-build</span></code> will detect its presence and
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">ccache</span>
+<span class="pre">`</span></code></p>
+<p>Once ccache is installed, <cite>tizonia-dev-build</cite> will detect its presence and
 start making use of it to (dramatically) reduce compilation time in most cases.</p>
-</div>
-<div class="section" id="creating-a-json-compilation-database-for-use-with-e-g-emacs-rtags">
-<h2>Creating a JSON compilation database, for use with e.g. Emacs RTags<a class="headerlink" href="#creating-a-json-compilation-database-for-use-with-e-g-emacs-rtags" title="Permalink to this headline">¶</a></h2>
+<p>### Creating a JSON compilation database, for use with e.g. Emacs RTags</p>
 <p>JSON compilation databases are used nowdays by many tools to provide
 information on how a single compilation unit is processed. This helps these
 programs to perform many useful tasks, like static analyses of various
-kinds. <a class="reference external" href="https://github.com/Andersbakken/rtags">RTags</a> is an example of program
+kinds. [RTags](<a class="reference external" href="https://github.com/Andersbakken/rtags">https://github.com/Andersbakken/rtags</a>) is an example of program
 that uses a JSON compilation database to index C/C++ code and keep a persistent
 file-based database, for use within Emacs to provide powerful integrations.</p>
-<p><code class="docutils literal notranslate"><span class="pre">tizonia-dev-build</span></code> has support for <code class="docutils literal notranslate"><span class="pre">bear</span></code> (a program that creates JSON
+<p><cite>tizonia-dev-build</cite> has support for <cite>bear</cite> (a program that creates JSON
 databases) and RTags. To use, install both programs:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install bear
-
-# For RTags, visit its GitHub for up-to-date installation instructions
-# https://github.com/Andersbakken/rtags
-</pre></div>
-</div>
+<p><a href="#id41"><span class="problematic" id="id42">``</span></a>`
+$ sudo apt-get install bear</p>
+<p># For RTags, visit its GitHub for up-to-date installation instructions
+# <a class="reference external" href="https://github.com/Andersbakken/rtags">https://github.com/Andersbakken/rtags</a></p>
+<p><a href="#id43"><span class="problematic" id="id44">``</span></a><a href="#id45"><span class="problematic" id="id46">`</span></a></p>
 <p>and finally, create the compilation db with these two commands:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ tizonia-dev-build --debug (or --release)
-
-# followed by
-
-$ tizonia-dev-build --bear
-</pre></div>
-</div>
+<p><a href="#id47"><span class="problematic" id="id48">``</span></a>`
+$ tizonia-dev-build –debug (or –release)</p>
+<p># followed by</p>
+<p>$ tizonia-dev-build –bear
+<a href="#id49"><span class="problematic" id="id50">``</span></a><a href="#id51"><span class="problematic" id="id52">`</span></a></p>
 <p>After that, to keep the database up-to-date after code changes, use:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ tizonia-dev-build --make (or --install)
-</pre></div>
-</div>
-</div>
-</div>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">$</span> <span class="pre">tizonia-dev-build</span> <span class="pre">--make</span> <span class="pre">(or</span> <span class="pre">--install)</span>
+<span class="pre">`</span></code></p>
 
 
           </div>
@@ -413,7 +357,7 @@ $ tizonia-dev-build --bear
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

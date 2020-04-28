@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>libtizchromecast &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="libtizgmusic" href="libtizgmusic.html" />
@@ -62,17 +62,6 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#upgrade">Upgrade</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CONTRIBUTING.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CHANGELOG.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/COPYING.LESSER.html">License</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
@@ -122,7 +111,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
@@ -140,18 +129,24 @@
 <p>A C/C++ library to access and control a Chromecast device. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_chromecast_t">
-<span class="target" id="group__libtizchromecast_1ga637350a622835eebbca951716a6d4b11"></span><em class="property">typedef </em>struct tiz_chromecast <code class="sig-name descname">tiz_chromecast_t</code><a class="headerlink" href="#c.tiz_chromecast_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1ga637350a622835eebbca951716a6d4b11"></span><em class="property">typedef </em><em class="property">struct</em> tiz_chromecast <code class="sig-name descname">tiz_chromecast_t</code><a class="headerlink" href="#c.tiz_chromecast_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The Tizonia Chromecast opaque handle. </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizchromecast_1ga637350a622835eebbca951716a6d4b11"></span><em class="property">typedef </em><em class="property">struct</em> tiz_chromecast <code class="sig-name descname">tiz_chromecast_t</code><br /></dt>
 <dd><p>The Tizonia Chromecast opaque handle. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_init">
-<span class="target" id="group__libtizchromecast_1ga39d73f1dd549ec732ac708d6417c61e4"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_init</code><span class="sig-paren">(</span>tiz_chromecast_ptr_t  *<em> app_chromecast</em>, const  tiz_chromecast_ctx_t  *<em> p_cc_ctx_</em>, const char *<em> ap_name_or_ip</em>, const  tiz_chromecast_callbacks_t  *<em> ap_cbacks</em>, void *<em> ap_user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1ga39d73f1dd549ec732ac708d6417c61e4"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_init</code><span class="sig-paren">(</span>tiz_chromecast_ptr_t *<em>app_chromecast</em>, <em class="property">const</em> tiz_chromecast_ctx_t *<em>p_cc_ctx_</em>, <em class="property">const</em> char *<em>ap_name_or_ip</em>, <em class="property">const</em> tiz_chromecast_callbacks_t *<em>ap_cbacks</em>, void *<em>ap_user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize the tiz_chromecast_t handle.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success. </p>
@@ -168,9 +163,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_poll">
-<span class="target" id="group__libtizchromecast_1gac7a2f1c372b895700e466d2ec4f319d5"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_poll</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em>, int<em> a_poll_time_ms</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_poll" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1gac7a2f1c372b895700e466d2ec4f319d5"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_poll</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em>, int <em>a_poll_time_ms</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_poll" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Poll to read any events received on the chromecast socket. This function needs to be called periodically (e.g. from the client’s event loop).</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success. </p>
@@ -184,9 +179,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_load_url">
-<span class="target" id="group__libtizchromecast_1ga0284c85c02443a08be70169ab3f4ca90"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_load_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em>, const char *<em> ap_url</em>, const char *<em> ap_content_type</em>, const char *<em> ap_title</em>, const char *<em> ap_album_art</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_load_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1ga0284c85c02443a08be70169ab3f4ca90"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_load_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em>, <em class="property">const</em> char *<em>ap_url</em>, <em class="property">const</em> char *<em>ap_content_type</em>, <em class="property">const</em> char *<em>ap_title</em>, <em class="property">const</em> char *<em>ap_album_art</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_load_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Load a new audio stream URL on the Chromecast device’s default media application.</p>
 <p>After calling this method, the various playback methods (pause, stop, volume, etc) can be used to interact with the media application in the Chromecast device.</p>
 <p><dl class="simple">
@@ -204,9 +199,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_play">
-<span class="target" id="group__libtizchromecast_1gac5c5bafdc76bcad3610183a946fedbec"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_play</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_play" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1gac5c5bafdc76bcad3610183a946fedbec"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_play</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_play" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Resume media playback.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success </p>
@@ -219,9 +214,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_stop">
-<span class="target" id="group__libtizchromecast_1gad464dbce0589638dff022a79a9fcc5a6"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_stop</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_stop" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1gad464dbce0589638dff022a79a9fcc5a6"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_stop</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_stop" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Stop media playback.</p>
 <p>After this command the content will no longer remain loaded.</p>
 <p><dl class="simple">
@@ -235,9 +230,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_pause">
-<span class="target" id="group__libtizchromecast_1gad5ddb71bd71c5d492a5bd11a6979ea65"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_pause</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_pause" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1gad5ddb71bd71c5d492a5bd11a6979ea65"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_pause</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_pause" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Pause media playback.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success </p>
@@ -250,9 +245,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_volume">
-<span class="target" id="group__libtizchromecast_1ga28fce68f77ad6fc8132ded4bd27a2f8a"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_volume</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em>, int<em> a_volume</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_volume" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1ga28fce68f77ad6fc8132ded4bd27a2f8a"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_volume</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em>, int <em>a_volume</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_volume" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set a volume level (0-100).</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success </p>
@@ -266,9 +261,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_volume_up">
-<span class="target" id="group__libtizchromecast_1gafe1313d6decb214916116e395f49d8df"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_volume_up</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_volume_up" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1gafe1313d6decb214916116e395f49d8df"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_volume_up</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_volume_up" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Increase playback volumen.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success </p>
@@ -281,9 +276,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_volume_down">
-<span class="target" id="group__libtizchromecast_1ga41f8ca3748848f10cab31696d4e37f9e"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_volume_down</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_volume_down" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1ga41f8ca3748848f10cab31696d4e37f9e"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_volume_down</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_volume_down" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Decrease playback volume.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success </p>
@@ -296,9 +291,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_mute">
-<span class="target" id="group__libtizchromecast_1ga1daa86ffa9061f47883bfd2ea230472b"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_mute</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_mute" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1ga1daa86ffa9061f47883bfd2ea230472b"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_mute</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_mute" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Mute playback.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success </p>
@@ -311,9 +306,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_unmute">
-<span class="target" id="group__libtizchromecast_1ga91328c92dc763acb85267ce00d601fdf"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_unmute</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_unmute" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1ga91328c92dc763acb85267ce00d601fdf"></span>tiz_chromecast_error_t <code class="sig-name descname">tiz_chromecast_unmute</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_unmute" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Unmute playback.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>ETizCcErrorNoError on success </p>
@@ -326,9 +321,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_destroy">
-<span class="target" id="group__libtizchromecast_1gaca56c26f231891bac1c92e7ba6fbd696"></span>void <code class="sig-name descname">tiz_chromecast_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a>  *<em> ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1gaca56c26f231891bac1c92e7ba6fbd696"></span>void <code class="sig-name descname">tiz_chromecast_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_chromecast_t" title="tiz_chromecast_t">tiz_chromecast_t</a> *<em>ap_chromecast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_destroy" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Destroy the Tizonia Chromecast object.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -339,9 +334,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_chromecast_error_str">
-<span class="target" id="group__libtizchromecast_1gadbbf0930abcc6d8be1e647de15bb2c73"></span>const char* <code class="sig-name descname">tiz_chromecast_error_str</code><span class="sig-paren">(</span>const tiz_chromecast_error_t<em> error</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_error_str" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizchromecast_1gadbbf0930abcc6d8be1e647de15bb2c73"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_chromecast_error_str</code><span class="sig-paren">(</span><em class="property">const</em> tiz_chromecast_error_t <em>error</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_chromecast_error_str" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Return an error code string.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -368,7 +363,7 @@
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>tizatomic &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="tizbuffer" href="tizbuffer.html" />
@@ -61,17 +61,6 @@
 
 
 <h3>Navigation</h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#upgrade">Upgrade</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CONTRIBUTING.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/CHANGELOG.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../overview/COPYING.LESSER.html">License</a></li>
-</ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../manual/manual.html">User Guide</a></li>
 </ul>
@@ -124,7 +113,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
@@ -141,18 +130,24 @@
 <dd><p>Atomic operations. This module is work-in-progress. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_atomic_var_t">
-<span class="target" id="group__tizatomic_1ga2b73653e002f3f569ebaf114b1f5a5f2"></span><em class="property">typedef </em>struct tiz_atomic_var <code class="sig-name descname">tiz_atomic_var_t</code><a class="headerlink" href="#c.tiz_atomic_var_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizatomic_1ga2b73653e002f3f569ebaf114b1f5a5f2"></span><em class="property">typedef </em><em class="property">struct</em> tiz_atomic_var <code class="sig-name descname">tiz_atomic_var_t</code><a class="headerlink" href="#c.tiz_atomic_var_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Atomic variable opaque handle. </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__tizatomic_1ga2b73653e002f3f569ebaf114b1f5a5f2"></span><em class="property">typedef </em><em class="property">struct</em> tiz_atomic_var <code class="sig-name descname">tiz_atomic_var_t</code><br /></dt>
 <dd><p>Atomic variable opaque handle. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_atomic_var_init">
-<span class="target" id="group__tizatomic_1gadf1fcd2a14f24d23df596d17abf6db15"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_atomic_var_init</code><span class="sig-paren">(</span>tiz_atomic_var_ptr_t  *<em> app_atomic_var</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_atomic_var_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizatomic_1gadf1fcd2a14f24d23df596d17abf6db15"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_atomic_var_init</code><span class="sig-paren">(</span>tiz_atomic_var_ptr_t *<em>app_atomic_var</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_atomic_var_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Create a new atomic binary variable.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </p>
@@ -165,9 +160,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_atomic_var_test_and_set">
-<span class="target" id="group__tizatomic_1gab586c8e84079fdf61c911df018d192e3"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_atomic_var_test_and_set</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_atomic_var_t" title="tiz_atomic_var_t">tiz_atomic_var_t</a>  *<em> ap_atomic_var</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_atomic_var_test_and_set" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizatomic_1gab586c8e84079fdf61c911df018d192e3"></span>OMX_ERRORTYPE <code class="sig-name descname">tiz_atomic_var_test_and_set</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_atomic_var_t" title="tiz_atomic_var_t">tiz_atomic_var_t</a> *<em>ap_atomic_var</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_atomic_var_test_and_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Atomic test and set.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>OMX_ErrorNone if success, OMX_ErrorUndefined otherwise. </p>
@@ -180,9 +175,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_atomic_var_destroy">
-<span class="target" id="group__tizatomic_1gae62b3ec4102a5709f96e3447a67e09a4"></span>void <code class="sig-name descname">tiz_atomic_var_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_atomic_var_t" title="tiz_atomic_var_t">tiz_atomic_var_t</a>  *<em> ap_atomic_var</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_atomic_var_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__tizatomic_1gae62b3ec4102a5709f96e3447a67e09a4"></span>void <code class="sig-name descname">tiz_atomic_var_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_atomic_var_t" title="tiz_atomic_var_t">tiz_atomic_var_t</a> *<em>ap_atomic_var</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_atomic_var_destroy" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Destroy the atomic binary variable. <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">app_atomic_var</span></code>: An atomic variable opaque handle. </p></li>
@@ -208,7 +203,7 @@
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

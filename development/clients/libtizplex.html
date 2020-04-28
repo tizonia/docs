@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>libtizplex &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="libtizsoundcloud" href="libtizsoundcloud.html" />
@@ -62,17 +62,6 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#upgrade">Upgrade</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CONTRIBUTING.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CHANGELOG.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/COPYING.LESSER.html">License</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
@@ -122,7 +111,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
@@ -140,39 +129,103 @@
 <p>A C library to access audio from a Plex server. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_plex_t">
-<span class="target" id="group__libtizplex_1gae174a9a854549d9efbcbf82d5570e0f7"></span><em class="property">typedef </em>struct tiz_plex <code class="sig-name descname">tiz_plex_t</code><a class="headerlink" href="#c.tiz_plex_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gae174a9a854549d9efbcbf82d5570e0f7"></span><em class="property">typedef </em><em class="property">struct</em> tiz_plex <code class="sig-name descname">tiz_plex_t</code><a class="headerlink" href="#c.tiz_plex_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>The plex opaque structure </p>
 </dd></dl>
 
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_plex_playback_mode_t">
-<span class="target" id="group__libtizplex_1gaa46d17062ecc0edbbc3a1b6508e2c520"></span><em class="property">typedef </em>enum tiz_plex_playback_mode  <code class="sig-name descname">tiz_plex_playback_mode_t</code><a class="headerlink" href="#c.tiz_plex_playback_mode_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gaa46d17062ecc0edbbc3a1b6508e2c520"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_plex_playback_mode" title="tiz_plex_playback_mode">tiz_plex_playback_mode</a> <code class="sig-name descname">tiz_plex_playback_mode_t</code><a class="headerlink" href="#c.tiz_plex_playback_mode_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizplex_1gae174a9a854549d9efbcbf82d5570e0f7"></span><em class="property">typedef </em><em class="property">struct</em> tiz_plex <code class="sig-name descname">tiz_plex_t</code><br /></dt>
+<dd><p>The plex opaque structure </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizplex_1gaa46d17062ecc0edbbc3a1b6508e2c520"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_plex_playback_mode" title="tiz_plex_playback_mode">tiz_plex_playback_mode</a> <code class="sig-name descname">tiz_plex_playback_mode_t</code><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Enums</p>
-<dl class="enum">
-<dt id="c.libtizplex::tiz_plex_playback_mode">
-<span class="target" id="group__libtizplex_1ga77d93e144ad1a1daf8b973d95b840cf1"></span><code class="sig-name descname">tiz_plex_playback_mode</code><a class="headerlink" href="#c.libtizplex::tiz_plex_playback_mode" title="Permalink to this definition">¶</a></dt>
+<dl class="c enum">
+<dt id="c.tiz_plex_playback_mode">
+<span class="target" id="group__libtizplex_1ga77d93e144ad1a1daf8b973d95b840cf1"></span><em class="property">enum </em><code class="sig-name descname">tiz_plex_playback_mode</code><a class="headerlink" href="#c.tiz_plex_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 <p><em>Values:</em></p>
-<dl class="enumvalue">
-<dt id="c.libtizplex::ETIZPlexPlaybackModeNormal">
-<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a38111dc90862e4a8610aac567bb3e754"></span><code class="sig-name descname">ETIZPlexPlaybackModeNormal</code><a class="headerlink" href="#c.libtizplex::ETIZPlexPlaybackModeNormal" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZPlexPlaybackModeNormal">
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a38111dc90862e4a8610aac567bb3e754"></span><code class="sig-name descname">ETIZPlexPlaybackModeNormal</code><a class="headerlink" href="#c.ETIZPlexPlaybackModeNormal" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizplex::ETIZPlexPlaybackModeShuffle">
-<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a22a8eb507054dc5bdfd1e86bc5160580"></span><code class="sig-name descname">ETIZPlexPlaybackModeShuffle</code><a class="headerlink" href="#c.libtizplex::ETIZPlexPlaybackModeShuffle" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZPlexPlaybackModeShuffle">
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a22a8eb507054dc5bdfd1e86bc5160580"></span><code class="sig-name descname">ETIZPlexPlaybackModeShuffle</code><a class="headerlink" href="#c.ETIZPlexPlaybackModeShuffle" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizplex::ETIZPlexPlaybackModeMax">
-<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a00132ef7395a30390788a7ce33f612eb"></span><code class="sig-name descname">ETIZPlexPlaybackModeMax</code><a class="headerlink" href="#c.libtizplex::ETIZPlexPlaybackModeMax" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZPlexPlaybackModeMax">
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a00132ef7395a30390788a7ce33f612eb"></span><code class="sig-name descname">ETIZPlexPlaybackModeMax</code><a class="headerlink" href="#c.ETIZPlexPlaybackModeMax" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a38111dc90862e4a8610aac567bb3e754"></span><code class="sig-name descname">ETIZPlexPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a22a8eb507054dc5bdfd1e86bc5160580"></span><code class="sig-name descname">ETIZPlexPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a00132ef7395a30390788a7ce33f612eb"></span><code class="sig-name descname">ETIZPlexPlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="c enum">
+<dt>
+<span class="target" id="group__libtizplex_1ga77d93e144ad1a1daf8b973d95b840cf1"></span><em class="property">enum </em><code class="sig-name descname">tiz_plex_playback_mode</code><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+<p><em>Values:</em></p>
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a38111dc90862e4a8610aac567bb3e754"></span><code class="sig-name descname">ETIZPlexPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a22a8eb507054dc5bdfd1e86bc5160580"></span><code class="sig-name descname">ETIZPlexPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a00132ef7395a30390788a7ce33f612eb"></span><code class="sig-name descname">ETIZPlexPlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a38111dc90862e4a8610aac567bb3e754"></span><code class="sig-name descname">ETIZPlexPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a22a8eb507054dc5bdfd1e86bc5160580"></span><code class="sig-name descname">ETIZPlexPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizplex_1gga77d93e144ad1a1daf8b973d95b840cf1a00132ef7395a30390788a7ce33f612eb"></span><code class="sig-name descname">ETIZPlexPlaybackModeMax</code><br /></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -180,9 +233,9 @@
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_init">
-<span class="target" id="group__libtizplex_1ga77c2187fb4a075078f9b15f6ee9dda84"></span>int <code class="sig-name descname">tiz_plex_init</code><span class="sig-paren">(</span>tiz_plex_ptr_t  *<em> app_plex</em>, const char *<em> ap_base_url</em>, const char *<em> ap_auth_token</em>, const char *<em> ap_music_section</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga77c2187fb4a075078f9b15f6ee9dda84"></span>int <code class="sig-name descname">tiz_plex_init</code><span class="sig-paren">(</span>tiz_plex_ptr_t *<em>app_plex</em>, <em class="property">const</em> char *<em>ap_base_url</em>, <em class="property">const</em> char *<em>ap_auth_token</em>, <em class="property">const</em> char *<em>ap_music_section</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize the tiz_plex handle.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 on success. </p>
@@ -198,9 +251,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_clear_queue">
-<span class="target" id="group__libtizplex_1ga46b2c15fa3f66b68e96487771cc113f9"></span>void <code class="sig-name descname">tiz_plex_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_clear_queue" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga46b2c15fa3f66b68e96487771cc113f9"></span>void <code class="sig-name descname">tiz_plex_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_clear_queue" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -211,9 +264,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_index">
-<span class="target" id="group__libtizplex_1ga6160f8f8489ac035a19a3e6f2a9bef9b"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_index</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_index" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga6160f8f8489ac035a19a3e6f2a9bef9b"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_index</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_index" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the index in the playback queue of the stream currently selected.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -224,9 +277,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_queue_length">
-<span class="target" id="group__libtizplex_1ga120c5b3e0cffa31775a9684892fe2def"></span>const char* <code class="sig-name descname">tiz_plex_get_current_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_queue_length" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga120c5b3e0cffa31775a9684892fe2def"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_queue_length" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current length of playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -237,9 +290,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_queue_progress">
-<span class="target" id="group__libtizplex_1ga7ce94758d1bc3cf12f2f9f14b9368600"></span>const char* <code class="sig-name descname">tiz_plex_get_current_queue_progress</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_queue_progress" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga7ce94758d1bc3cf12f2f9f14b9368600"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_queue_progress</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_queue_progress" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current queue progress (e.g. ‘5 of 17’, where 5 is the current stream index, and 17 is the total streams in the queue).</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -250,9 +303,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_set_playback_mode">
-<span class="target" id="group__libtizplex_1gab7e3c94860a7e21ea4f8e9e1ff9099b5"></span>void <code class="sig-name descname">tiz_plex_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em>, const  <a class="reference internal" href="#c.tiz_plex_playback_mode_t" title="tiz_plex_playback_mode_t">tiz_plex_playback_mode_t</a><em> mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_set_playback_mode" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gab7e3c94860a7e21ea4f8e9e1ff9099b5"></span>void <code class="sig-name descname">tiz_plex_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em>, <em class="property">const</em> <a class="reference internal" href="#c.tiz_plex_playback_mode_t" title="tiz_plex_playback_mode_t">tiz_plex_playback_mode_t</a> <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_set_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set the playback mode (normal, shuffle).</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -263,9 +316,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_play_audio_tracks">
-<span class="target" id="group__libtizplex_1gab1e7617ad2a44096caa965b829f59dde"></span>int <code class="sig-name descname">tiz_plex_play_audio_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em>, const char *<em> ap_track_name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_tracks" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gab1e7617ad2a44096caa965b829f59dde"></span>int <code class="sig-name descname">tiz_plex_play_audio_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em>, <em class="property">const</em> char *<em>ap_track_name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_tracks" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add a Plex audio stream to the playback queue.</p>
 <p>After calling this method, the various tiz_plex_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -280,9 +333,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_play_audio_artist">
-<span class="target" id="group__libtizplex_1ga8f4aa36406a70a57a3519aea992fc637"></span>int <code class="sig-name descname">tiz_plex_play_audio_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em>, const char *<em> ap_artist_name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_artist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga8f4aa36406a70a57a3519aea992fc637"></span>int <code class="sig-name descname">tiz_plex_play_audio_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em>, <em class="property">const</em> char *<em>ap_artist_name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_artist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add a Plex audio stream to the playback queue.</p>
 <p>After calling this method, the various tiz_plex_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -297,9 +350,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_play_audio_album">
-<span class="target" id="group__libtizplex_1ga99b443b303ec562036cc5cb4c7b67fd3"></span>int <code class="sig-name descname">tiz_plex_play_audio_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em>, const char *<em> ap_album</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_album" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga99b443b303ec562036cc5cb4c7b67fd3"></span>int <code class="sig-name descname">tiz_plex_play_audio_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em>, <em class="property">const</em> char *<em>ap_album</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_album" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add all the audio streams of a Plex playlist to the playback queue.</p>
 <p>After calling this method, the various tiz_plex_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -314,9 +367,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_play_audio_playlist">
-<span class="target" id="group__libtizplex_1ga8a87ed5a2418f3c8cbfedaadbd1b9d08"></span>int <code class="sig-name descname">tiz_plex_play_audio_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em>, const char *<em> ap_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_playlist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga8a87ed5a2418f3c8cbfedaadbd1b9d08"></span>int <code class="sig-name descname">tiz_plex_play_audio_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em>, <em class="property">const</em> char *<em>ap_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_play_audio_playlist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add all the audio streams of a Plex playlist to the playback queue.</p>
 <p>After calling this method, the various tiz_plex_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -331,9 +384,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_next_url">
-<span class="target" id="group__libtizplex_1ga2dcdd81afa4d26347a9f925eba0fa778"></span>const char* <code class="sig-name descname">tiz_plex_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em>, const bool<em> a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_next_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga2dcdd81afa4d26347a9f925eba0fa778"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em>, <em class="property">const</em> bool <em>a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_next_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the next stream url</p>
 <p>The playback queue pointer moves one position forwards.</p>
 <p><dl class="simple">
@@ -348,9 +401,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_prev_url">
-<span class="target" id="group__libtizplex_1ga10f146cf683490916dbb626190faa0b2"></span>const char* <code class="sig-name descname">tiz_plex_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em>, const bool<em> a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_prev_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga10f146cf683490916dbb626190faa0b2"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em>, <em class="property">const</em> bool <em>a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_prev_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the previous stream url.</p>
 <p>The playback queue pointer moves one position backwards.</p>
 <p><dl class="simple">
@@ -365,9 +418,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_title">
-<span class="target" id="group__libtizplex_1ga0ff7c68e611db820ae57b153175e734b"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_title" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga0ff7c68e611db820ae57b153175e734b"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_title" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s title.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -378,9 +431,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_artist">
-<span class="target" id="group__libtizplex_1gafe32fbba01521cdafb83748b671b7e7c"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_artist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gafe32fbba01521cdafb83748b671b7e7c"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_artist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s artist.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -391,9 +444,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_album">
-<span class="target" id="group__libtizplex_1ga35e26a153403e90e406ff9950729a651"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_album" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga35e26a153403e90e406ff9950729a651"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_album" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s album.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -404,9 +457,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_year">
-<span class="target" id="group__libtizplex_1gaf4a431b7e13639548de15855f6862dcd"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_year</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_year" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gaf4a431b7e13639548de15855f6862dcd"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_year</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_year" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s publication year.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -417,9 +470,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_file_size">
-<span class="target" id="group__libtizplex_1ga6ddbd07e9503879fd0bd8c506f748fb6"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_file_size</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_file_size" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga6ddbd07e9503879fd0bd8c506f748fb6"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_file_size</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_file_size" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s file size.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -430,9 +483,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_file_size_as_int">
-<span class="target" id="group__libtizplex_1gaf7776364709691b2e9fa9396d113e98c"></span>int <code class="sig-name descname">tiz_plex_get_current_audio_track_file_size_as_int</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_file_size_as_int" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gaf7776364709691b2e9fa9396d113e98c"></span>int <code class="sig-name descname">tiz_plex_get_current_audio_track_file_size_as_int</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_file_size_as_int" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s file size (as int).</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -443,9 +496,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_duration">
-<span class="target" id="group__libtizplex_1gaca6daca330e304a21daf670c9f525cfe"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_duration" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1gaca6daca330e304a21daf670c9f525cfe"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_duration" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s duration.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -456,9 +509,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_bitrate">
-<span class="target" id="group__libtizplex_1ga268faa7ab9d82f7a8166cd9e6798fff3"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_bitrate</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_bitrate" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga268faa7ab9d82f7a8166cd9e6798fff3"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_bitrate</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_bitrate" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s bitrate.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -469,9 +522,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_codec">
-<span class="target" id="group__libtizplex_1ga0ebfdbf818d415398c6948c51fdf792b"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_codec</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_codec" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga0ebfdbf818d415398c6948c51fdf792b"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_codec</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_codec" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio track’s codec id.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -482,9 +535,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_get_current_audio_track_album_art">
-<span class="target" id="group__libtizplex_1ga4a4e9900053916080ad5675f0f6bf7f1"></span>const char* <code class="sig-name descname">tiz_plex_get_current_audio_track_album_art</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_album_art" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga4a4e9900053916080ad5675f0f6bf7f1"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_plex_get_current_audio_track_album_art</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_get_current_audio_track_album_art" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s album art.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -495,9 +548,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_plex_destroy">
-<span class="target" id="group__libtizplex_1ga8e978b2372e33c4eef0dacbcea57df9a"></span>void <code class="sig-name descname">tiz_plex_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a>  *<em> ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizplex_1ga8e978b2372e33c4eef0dacbcea57df9a"></span>void <code class="sig-name descname">tiz_plex_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_plex_t" title="tiz_plex_t">tiz_plex_t</a> *<em>ap_plex</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_plex_destroy" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Destroy the tiz_plex handle.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -524,7 +577,7 @@
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

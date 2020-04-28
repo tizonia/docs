@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>libtizgmusic &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="libtizplex" href="libtizplex.html" />
@@ -62,17 +62,6 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#upgrade">Upgrade</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CONTRIBUTING.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CHANGELOG.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/COPYING.LESSER.html">License</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
@@ -122,7 +111,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
@@ -139,39 +128,103 @@
 <dd><p>A C library to access the Google Play Music streaming service (using Simon Weber’s ‘gmusicapi’ python library). </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_gmusic_t">
-<span class="target" id="group__libtizgmusic_1gab98d3ae646974c3cc9290bf5384d4477"></span><em class="property">typedef </em>struct tiz_gmusic <code class="sig-name descname">tiz_gmusic_t</code><a class="headerlink" href="#c.tiz_gmusic_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gab98d3ae646974c3cc9290bf5384d4477"></span><em class="property">typedef </em><em class="property">struct</em> tiz_gmusic <code class="sig-name descname">tiz_gmusic_t</code><a class="headerlink" href="#c.tiz_gmusic_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>The gmusic opaque structure </p>
 </dd></dl>
 
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_gmusic_playback_mode_t">
-<span class="target" id="group__libtizgmusic_1gaee23a0b2cd42d287f3a6505f7e966dd4"></span><em class="property">typedef </em>enum tiz_gmusic_playback_mode  <code class="sig-name descname">tiz_gmusic_playback_mode_t</code><a class="headerlink" href="#c.tiz_gmusic_playback_mode_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gaee23a0b2cd42d287f3a6505f7e966dd4"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_gmusic_playback_mode" title="tiz_gmusic_playback_mode">tiz_gmusic_playback_mode</a> <code class="sig-name descname">tiz_gmusic_playback_mode_t</code><a class="headerlink" href="#c.tiz_gmusic_playback_mode_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizgmusic_1gab98d3ae646974c3cc9290bf5384d4477"></span><em class="property">typedef </em><em class="property">struct</em> tiz_gmusic <code class="sig-name descname">tiz_gmusic_t</code><br /></dt>
+<dd><p>The gmusic opaque structure </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizgmusic_1gaee23a0b2cd42d287f3a6505f7e966dd4"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_gmusic_playback_mode" title="tiz_gmusic_playback_mode">tiz_gmusic_playback_mode</a> <code class="sig-name descname">tiz_gmusic_playback_mode_t</code><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Enums</p>
-<dl class="enum">
-<dt id="c.libtizgmusic::tiz_gmusic_playback_mode">
-<span class="target" id="group__libtizgmusic_1ga0dd7a71dc0ccbcda77ab4624a1829d73"></span><code class="sig-name descname">tiz_gmusic_playback_mode</code><a class="headerlink" href="#c.libtizgmusic::tiz_gmusic_playback_mode" title="Permalink to this definition">¶</a></dt>
+<dl class="c enum">
+<dt id="c.tiz_gmusic_playback_mode">
+<span class="target" id="group__libtizgmusic_1ga0dd7a71dc0ccbcda77ab4624a1829d73"></span><em class="property">enum </em><code class="sig-name descname">tiz_gmusic_playback_mode</code><a class="headerlink" href="#c.tiz_gmusic_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 <p><em>Values:</em></p>
-<dl class="enumvalue">
-<dt id="c.libtizgmusic::ETIZGmusicPlaybackModeNormal">
-<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73aaf81c08dc7e55cabd9e80a6cbb03ca08"></span><code class="sig-name descname">ETIZGmusicPlaybackModeNormal</code><a class="headerlink" href="#c.libtizgmusic::ETIZGmusicPlaybackModeNormal" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZGmusicPlaybackModeNormal">
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73aaf81c08dc7e55cabd9e80a6cbb03ca08"></span><code class="sig-name descname">ETIZGmusicPlaybackModeNormal</code><a class="headerlink" href="#c.ETIZGmusicPlaybackModeNormal" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizgmusic::ETIZGmusicPlaybackModeShuffle">
-<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a65f0ce11e10a1ff8fb70f4bc799b6176"></span><code class="sig-name descname">ETIZGmusicPlaybackModeShuffle</code><a class="headerlink" href="#c.libtizgmusic::ETIZGmusicPlaybackModeShuffle" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZGmusicPlaybackModeShuffle">
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a65f0ce11e10a1ff8fb70f4bc799b6176"></span><code class="sig-name descname">ETIZGmusicPlaybackModeShuffle</code><a class="headerlink" href="#c.ETIZGmusicPlaybackModeShuffle" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizgmusic::ETIZGmusicPlaybackModeMax">
-<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a2b6198e3a891114f0de120e43b634e54"></span><code class="sig-name descname">ETIZGmusicPlaybackModeMax</code><a class="headerlink" href="#c.libtizgmusic::ETIZGmusicPlaybackModeMax" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZGmusicPlaybackModeMax">
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a2b6198e3a891114f0de120e43b634e54"></span><code class="sig-name descname">ETIZGmusicPlaybackModeMax</code><a class="headerlink" href="#c.ETIZGmusicPlaybackModeMax" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73aaf81c08dc7e55cabd9e80a6cbb03ca08"></span><code class="sig-name descname">ETIZGmusicPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a65f0ce11e10a1ff8fb70f4bc799b6176"></span><code class="sig-name descname">ETIZGmusicPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a2b6198e3a891114f0de120e43b634e54"></span><code class="sig-name descname">ETIZGmusicPlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="c enum">
+<dt>
+<span class="target" id="group__libtizgmusic_1ga0dd7a71dc0ccbcda77ab4624a1829d73"></span><em class="property">enum </em><code class="sig-name descname">tiz_gmusic_playback_mode</code><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+<p><em>Values:</em></p>
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73aaf81c08dc7e55cabd9e80a6cbb03ca08"></span><code class="sig-name descname">ETIZGmusicPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a65f0ce11e10a1ff8fb70f4bc799b6176"></span><code class="sig-name descname">ETIZGmusicPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a2b6198e3a891114f0de120e43b634e54"></span><code class="sig-name descname">ETIZGmusicPlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73aaf81c08dc7e55cabd9e80a6cbb03ca08"></span><code class="sig-name descname">ETIZGmusicPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a65f0ce11e10a1ff8fb70f4bc799b6176"></span><code class="sig-name descname">ETIZGmusicPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizgmusic_1gga0dd7a71dc0ccbcda77ab4624a1829d73a2b6198e3a891114f0de120e43b634e54"></span><code class="sig-name descname">ETIZGmusicPlaybackModeMax</code><br /></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -179,9 +232,9 @@
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_init">
-<span class="target" id="group__libtizgmusic_1gac05cfc9f85e9780559b28bfad16fabaa"></span>int <code class="sig-name descname">tiz_gmusic_init</code><span class="sig-paren">(</span>tiz_gmusic_ptr_t  *<em> app_gmusic</em>, const char *<em> ap_user</em>, const char *<em> ap_pass</em>, const char *<em> ap_device_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gac05cfc9f85e9780559b28bfad16fabaa"></span>int <code class="sig-name descname">tiz_gmusic_init</code><span class="sig-paren">(</span>tiz_gmusic_ptr_t *<em>app_gmusic</em>, <em class="property">const</em> char *<em>ap_user</em>, <em class="property">const</em> char *<em>ap_pass</em>, <em class="property">const</em> char *<em>ap_device_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize the gmusic handle.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 on success. </p>
@@ -197,9 +250,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_set_playback_mode">
-<span class="target" id="group__libtizgmusic_1ga1706db3b843da7d8f253bc3a5d73cf48"></span>void <code class="sig-name descname">tiz_gmusic_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const  <a class="reference internal" href="#c.tiz_gmusic_playback_mode_t" title="tiz_gmusic_playback_mode_t">tiz_gmusic_playback_mode_t</a><em> mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_set_playback_mode" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga1706db3b843da7d8f253bc3a5d73cf48"></span>void <code class="sig-name descname">tiz_gmusic_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> <a class="reference internal" href="#c.tiz_gmusic_playback_mode_t" title="tiz_gmusic_playback_mode_t">tiz_gmusic_playback_mode_t</a> <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_set_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set the playback mode.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -210,9 +263,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_library">
-<span class="target" id="group__libtizgmusic_1ga0bb8dc810f58a7528f52bf1cbab42667"></span>int <code class="sig-name descname">tiz_gmusic_play_library</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_library" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga0bb8dc810f58a7528f52bf1cbab42667"></span>int <code class="sig-name descname">tiz_gmusic_play_library</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_library" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add all tracks in the user’s library to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -226,9 +279,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_tracks">
-<span class="target" id="group__libtizgmusic_1ga09cbb7b3ed2cd77963233d508f277c58"></span>int <code class="sig-name descname">tiz_gmusic_play_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_tracks</em>, const bool<em> a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_tracks" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga09cbb7b3ed2cd77963233d508f277c58"></span>int <code class="sig-name descname">tiz_gmusic_play_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_tracks</em>, <em class="property">const</em> bool <em>a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_tracks" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks corresponding to the specified search term to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -244,9 +297,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_album">
-<span class="target" id="group__libtizgmusic_1ga68e4685f32917fe9395698f6991f78d1"></span>int <code class="sig-name descname">tiz_gmusic_play_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_album</em>, const bool<em> a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_album" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga68e4685f32917fe9395698f6991f78d1"></span>int <code class="sig-name descname">tiz_gmusic_play_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_album</em>, <em class="property">const</em> bool <em>a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_album" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of the specified album to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -262,9 +315,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_artist">
-<span class="target" id="group__libtizgmusic_1gacc0612aa03f832aa5cce1a4cda31fdce"></span>int <code class="sig-name descname">tiz_gmusic_play_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_artist</em>, const bool<em> a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_artist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gacc0612aa03f832aa5cce1a4cda31fdce"></span>int <code class="sig-name descname">tiz_gmusic_play_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_artist</em>, <em class="property">const</em> bool <em>a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_artist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of the specified artist to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -280,9 +333,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_playlist">
-<span class="target" id="group__libtizgmusic_1gaa168856fbaf90fa99a23a7597a469608"></span>int <code class="sig-name descname">tiz_gmusic_play_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_playlist</em>, const bool<em> a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_playlist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gaa168856fbaf90fa99a23a7597a469608"></span>int <code class="sig-name descname">tiz_gmusic_play_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_playlist</em>, <em class="property">const</em> bool <em>a_unlimited_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_playlist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of the specified playlist to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -298,9 +351,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_free_station">
-<span class="target" id="group__libtizgmusic_1gaa40a06ad996dc540ed1c229e849bf3ce"></span>int <code class="sig-name descname">tiz_gmusic_play_free_station</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_station</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_free_station" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gaa40a06ad996dc540ed1c229e849bf3ce"></span>int <code class="sig-name descname">tiz_gmusic_play_free_station</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_station</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_free_station" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of a free station to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -315,9 +368,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_station">
-<span class="target" id="group__libtizgmusic_1gaf3cf55fffc0c0092ba1de2f8510beaf7"></span>int <code class="sig-name descname">tiz_gmusic_play_station</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_station</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_station" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gaf3cf55fffc0c0092ba1de2f8510beaf7"></span>int <code class="sig-name descname">tiz_gmusic_play_station</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_station</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_station" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of the specified station to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -334,9 +387,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_genre">
-<span class="target" id="group__libtizgmusic_1gaf9e92adbcd282ad31b99704f7725d721"></span>int <code class="sig-name descname">tiz_gmusic_play_genre</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_genre</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_genre" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gaf9e92adbcd282ad31b99704f7725d721"></span>int <code class="sig-name descname">tiz_gmusic_play_genre</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_genre</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_genre" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of the specified genre to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -353,9 +406,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_situation">
-<span class="target" id="group__libtizgmusic_1gade7bed7b0b162a4f8170910af40e851d"></span>int <code class="sig-name descname">tiz_gmusic_play_situation</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_situation</em>, const char *<em> ap_additional_keywords</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_situation" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gade7bed7b0b162a4f8170910af40e851d"></span>int <code class="sig-name descname">tiz_gmusic_play_situation</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_situation</em>, <em class="property">const</em> char *<em>ap_additional_keywords</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_situation" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of the specified situation to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -373,9 +426,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_podcast">
-<span class="target" id="group__libtizgmusic_1gad5d53e6eca17fe6b69d7ace1c8aa9c26"></span>int <code class="sig-name descname">tiz_gmusic_play_podcast</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em>, const char *<em> ap_podcast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_podcast" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gad5d53e6eca17fe6b69d7ace1c8aa9c26"></span>int <code class="sig-name descname">tiz_gmusic_play_podcast</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em>, <em class="property">const</em> char *<em>ap_podcast</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_podcast" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks of the specified podcast to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -392,9 +445,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_play_promoted_tracks">
-<span class="target" id="group__libtizgmusic_1ga93000f5e6371befd75167fbfeee7488d"></span>int <code class="sig-name descname">tiz_gmusic_play_promoted_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_promoted_tracks" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga93000f5e6371befd75167fbfeee7488d"></span>int <code class="sig-name descname">tiz_gmusic_play_promoted_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_play_promoted_tracks" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add Google Play Unlimited promoted tracks to the playback queue.</p>
 <p>After calling this method, the various tiz_gmusic_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -410,9 +463,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_clear_queue">
-<span class="target" id="group__libtizgmusic_1ga63badba99ac68e1100417f14c9e69c85"></span>void <code class="sig-name descname">tiz_gmusic_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_clear_queue" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga63badba99ac68e1100417f14c9e69c85"></span>void <code class="sig-name descname">tiz_gmusic_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_clear_queue" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -423,9 +476,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_next_url">
-<span class="target" id="group__libtizgmusic_1ga7558d35c5d0c67aed484df2ce2359a67"></span>const char* <code class="sig-name descname">tiz_gmusic_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_next_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga7558d35c5d0c67aed484df2ce2359a67"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_next_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the next track url</p>
 <p>The the playback queue pointer moves one position forwards.</p>
 <p><dl class="simple">
@@ -437,9 +490,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_prev_url">
-<span class="target" id="group__libtizgmusic_1ga1f515498736092fe0852416243b43c57"></span>const char* <code class="sig-name descname">tiz_gmusic_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_prev_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga1f515498736092fe0852416243b43c57"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_prev_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the previous track url.</p>
 <p>The the playback queue pointer moves one position backwards.</p>
 <p><dl class="simple">
@@ -451,9 +504,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_artist">
-<span class="target" id="group__libtizgmusic_1ga5d97ff345cd6b628a78d0aaf22162b07"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_artist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga5d97ff345cd6b628a78d0aaf22162b07"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_artist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s artist.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -464,9 +517,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_title">
-<span class="target" id="group__libtizgmusic_1ga865327cddb092f9eda1be0fc2667c750"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_title" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga865327cddb092f9eda1be0fc2667c750"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_title" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s title.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -477,9 +530,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_album">
-<span class="target" id="group__libtizgmusic_1ga5d46830927c5604193b07dc782ec79f3"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_album" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga5d46830927c5604193b07dc782ec79f3"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_album" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s album.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -490,9 +543,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_duration">
-<span class="target" id="group__libtizgmusic_1gad08d6769bbeee946ac5897ae6e9e9b30"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_duration" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gad08d6769bbeee946ac5897ae6e9e9b30"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_duration" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s duration.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -503,9 +556,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_track_number">
-<span class="target" id="group__libtizgmusic_1gab0d2e46d74db7e2360e1dc7d3ae32a79"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_track_number</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_track_number" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gab0d2e46d74db7e2360e1dc7d3ae32a79"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_track_number</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_track_number" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s track number.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -516,9 +569,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_tracks_in_album">
-<span class="target" id="group__libtizgmusic_1ga9fdd7b253a1bce7a7f8d55be7c4e84df"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_tracks_in_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_tracks_in_album" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga9fdd7b253a1bce7a7f8d55be7c4e84df"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_tracks_in_album</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_tracks_in_album" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the number of tracks in the current song’s album.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -529,9 +582,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_year">
-<span class="target" id="group__libtizgmusic_1gae56b42dc8050575e5fcc81d09a29f278"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_year</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_year" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gae56b42dc8050575e5fcc81d09a29f278"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_year</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_year" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s publication year.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -542,9 +595,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_genre">
-<span class="target" id="group__libtizgmusic_1ga1b8911d6eafa497e281cbed72ffce8b8"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_genre</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_genre" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga1b8911d6eafa497e281cbed72ffce8b8"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_genre</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_genre" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s genre.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -555,9 +608,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_get_current_song_album_art">
-<span class="target" id="group__libtizgmusic_1gac7c8fadd453fdc6979a2ef31b36687d5"></span>const char* <code class="sig-name descname">tiz_gmusic_get_current_song_album_art</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_album_art" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1gac7c8fadd453fdc6979a2ef31b36687d5"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_gmusic_get_current_song_album_art</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_get_current_song_album_art" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current song’s album art.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -568,9 +621,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_gmusic_destroy">
-<span class="target" id="group__libtizgmusic_1ga4a5575fed1668e7c5c67c1898c411f8b"></span>void <code class="sig-name descname">tiz_gmusic_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a>  *<em> ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizgmusic_1ga4a5575fed1668e7c5c67c1898c411f8b"></span>void <code class="sig-name descname">tiz_gmusic_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_gmusic_t" title="tiz_gmusic_t">tiz_gmusic_t</a> *<em>ap_gmusic</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_gmusic_destroy" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Destroy the gmusic handle.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -597,7 +650,7 @@
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

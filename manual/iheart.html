@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Remote Control &#8212; Tizonia 0.21.0 documentation</title>
+    <title>iHeart &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -14,8 +14,8 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Raspberry Pi" href="raspberrypi.html" />
-    <link rel="prev" title="Local Media Playback" href="localmedia.html" />
+    <link rel="next" title="Shoutcast Server" href="server.html" />
+    <link rel="prev" title="Plex" href="plex.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -73,14 +73,14 @@
 <li class="toctree-l2"><a class="reference internal" href="youtube.html">YouTube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tunein.html">TuneIn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plex.html">Plex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="iheart.html">iHeart</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">iHeart</a></li>
 <li class="toctree-l2"><a class="reference internal" href="server.html">Shoutcast Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="client.html">Shoutcast Client</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chromecast.html">Chromecast</a></li>
 <li class="toctree-l2"><a class="reference internal" href="themes.html">Color Themes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="openmax.html">OpenMAX IL Options</a></li>
 <li class="toctree-l2"><a class="reference internal" href="localmedia.html">Local Media Playback</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Remote Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mprisv2.html">Remote Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="raspberrypi.html">Raspberry Pi</a></li>
 </ul>
 </li>
@@ -107,8 +107,8 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="manual.html">User Guide</a><ul>
-      <li>Previous: <a href="localmedia.html" title="previous chapter">Local Media Playback</a></li>
-      <li>Next: <a href="raspberrypi.html" title="next chapter">Raspberry Pi</a></li>
+      <li>Previous: <a href="plex.html" title="previous chapter">Plex</a></li>
+      <li>Next: <a href="server.html" title="next chapter">Shoutcast Server</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -131,116 +131,55 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="remote-control">
-<h1>Remote Control<a class="headerlink" href="#remote-control" title="Permalink to this headline">¶</a></h1>
-<p>Remote control of Tizonia is possible on environments that support <a class="reference external" href="https://en.wikipedia.org/wiki/D-Bus">D-Bus</a>. Tizonia implements a subset of the
-<a class="reference external" href="https://www.freedesktop.org/wiki/Specifications/mpris-spec/">Media Player Remote Interfacing Specification</a>. More
-specifically a subset of the <a class="reference external" href="https://specifications.freedesktop.org/mpris-spec/latest/">MPRIS D-Bus Interface Specification (version 2)</a></p>
-<p>Tizonia ships with a tool called <code class="docutils literal notranslate"><span class="pre">tizonia-remote</span></code>. This tool provides an easy
-way access to the subset of the MPRISv2 commands that are implemented.</p>
+  <div class="section" id="iheart">
+<h1>iHeart<a class="headerlink" href="#iheart" title="Permalink to this headline">¶</a></h1>
+<p>User credentials are not need to stream radio stations from iHeart. Simply use
+one of the command-line options provided to search and listeb to radio stations
+from the iHeart Internet radio directory.</p>
 <div class="section" id="configuration">
 <h2>CONFIGURATION<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-<p>The Tizonia configuration file contains a block like this one (see
-<a class="reference internal" href="config.html#tizonia-config-label"><span class="std std-ref">Configuration File</span></a>) under the <code class="docutils literal notranslate"><span class="pre">[tizonia]</span></code> section.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># MPRIS v2 interface enable/disable switch</span>
+<p>The Tizonia configuration file contains a block under the <code class="docutils literal notranslate"><span class="pre">[tizonia]</span></code> section
+like the one pictured below (see also <a class="reference internal" href="config.html#tizonia-config-label"><span class="std std-ref">Configuration File</span></a>).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># iHeart configuration</span>
 <span class="c1"># -------------------------------------------------------------------------</span>
-<span class="c1"># Valid values are: true | false</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
+<span class="c1"># configure here.</span>
 <span class="c1">#</span>
-mpris-enabled <span class="o">=</span> <span class="nb">false</span>
+<span class="c1">#</span>
+<span class="c1"># iheart.buffer_seconds = size of the audio buffer (in seconds) to use</span>
+<span class="c1">#                         while downloading streams. Default: 120.</span>
+<span class="c1">#                         Increase in case of cuts.</span>
 </pre></div>
 </div>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">mpris-enabled</span></code></dt><dd><p>Set to <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code> to enable or disable the MPRISv2 remote control
-interface. When this element is set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">tizonia-remote</span></code> will be
-able to control a running instance of Tizonia.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">iheart.buffer_seconds</span></code></dt><dd><p>This is the minimum size of the audio buffer (in seconds) that Tizonia will
+use while downloading the audio streams. It may be increased in case of
+cuts, but usually not required. Default: 120.</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="options">
 <h2>OPTIONS<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
-<p>This is the help message provided by <code class="docutils literal notranslate"><span class="pre">tizonia-remote</span></code>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tizonia-remote <span class="nb">help</span>
-This software is part of the Tizonia project &lt;https://tizonia.org&gt;
-
-GNU Lesser GPL version <span class="m">3</span> &lt;http://gnu.org/licenses/lgpl.html&gt;
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-
-MPRIS2 remote control <span class="k">for</span> tizonia.
-http://specifications.freedesktop.org/mpris-spec/latest/
-
-Usage: /usr/bin/tizonia-remote <span class="o">[</span>command<span class="o">]</span>
-
-    Misc. commands
-    -----------------------------------------
-
-    <span class="nb">help</span>                 this <span class="nb">help</span> text.
-    <span class="nb">kill</span>                 sends the TERM signal.
-
-    org.mpris.MediaPlayer2 interface
-    --------------------------------
-    ::Methods::
-
-    quit                 causes the application to stop running.
-
-    ::Properties::
-
-    canquit              whether the media player quit.
-    canraise             whether the media player can raise its UI.
-    hastracklist         whether the org.mpris.MediaPlayer2.TrackList interface
-                         is implemented.
-    identity             returns the name that identifies the media player.
-    urischemes           returns the URI schemes supported.
-    mimetypes            returns the mime types supported.
-
-    org.mpris.MediaPlayer2.Player interface
-    ---------------------------------------
-    ::Methods::
-
-    play                 starts or resumes playback.
-    stop                 stops playback.
-    pause                pauses playback.
-    next                 skips to the next track in the tracklist.
-    prev                 skips to the previous track in the tracklist.
-    seek                 <span class="o">(</span>NOT IMPLEMENTED<span class="o">)</span> seeks forward in the current
-                         track by the specified number of microseconds.
-
-    ::Properties::
-
-    playstatus           the current playback status <span class="o">(</span><span class="s2">&quot;Playing&quot;</span>, <span class="s2">&quot;Paused&quot;</span> or <span class="s2">&quot;Stopped&quot;</span><span class="o">)</span>.
-    loopstatus           the current loop / repeat status <span class="o">(</span><span class="s2">&quot;None&quot;</span>, <span class="s2">&quot;Track&quot;</span>, <span class="s2">&quot;Playlist&quot;</span><span class="o">)</span>
-                         <span class="o">(</span>Read/Write<span class="o">)</span>.
-    rate                 the current playback rate <span class="o">(</span>Read/Write<span class="o">)</span>.
-    shuffle              the current shuffled playback status <span class="o">(</span><span class="nb">true</span> or <span class="nb">false</span><span class="o">)</span>.
-    metadata             the metadata of the current track <span class="o">(</span>Read/Write<span class="o">)</span> <span class="o">(</span>NOT IMPLEMENTED<span class="o">)</span>.
-    volume               the volume level <span class="o">(</span>Read/Write<span class="o">)</span>.
-
-    org.mpris.MediaPlayer2.TrackList interface
-    ------------------------------------------
-    NOT IMPLEMENTED
-
-    org.mpris.MediaPlayer2.Playlists interface
-    ------------------------------------------
-    NOT IMPLEMENTED
-</pre></div>
-</div>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">--iheart-search</span> <span class="pre">arg</span></code></dt><dd><p>iheart station search.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">--iheart-keywords</span> <span class="pre">arg</span></code></dt><dd><p>Additional keywords that may be used in conjunction with the iheart search option. Optional (may be repeated).</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>EXAMPLES<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tizonia-remote next
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tizonia --iheart-search <span class="s2">&quot;top 40&quot;</span>
 
-$ tizonia-remote prev
+$ tizonia --iheart-search <span class="s2">&quot;kiss&quot;</span>
 
-$ tizonia-remote pause
+$ tizonia --iheart-search <span class="s2">&quot;ny&quot;</span>
 
-$ tizonia-remote play
+$ tizonia --iheart-search <span class="s2">&quot;albuquerque&quot;</span>
 
-$ tizonia-remote quit
+$ tizonia --iheart-search <span class="s2">&quot;90s&quot;</span>
 
-$ tizonia-remote volume .9
-
-$ tizonia-remote volume
-<span class="m">0</span>.9
+$ tizonia --iheart-search <span class="s2">&quot;rock&quot;</span> --iheart-keywords <span class="s1">&#39;The Rocket&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -261,7 +200,7 @@ $ tizonia-remote volume
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../_sources/manual/mprisv2.rst.txt"
+      <a href="../_sources/manual/iheart.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>libtizsoundcloud &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="libtizspotify" href="libtizspotify.html" />
@@ -62,17 +62,6 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#upgrade">Upgrade</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CONTRIBUTING.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CHANGELOG.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/COPYING.LESSER.html">License</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
@@ -122,7 +111,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
@@ -140,39 +129,103 @@
 <p>A C library to access the SoundCloud streaming service. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_scloud_t">
-<span class="target" id="group__libtizsoundcloud_1ga92d7b1eda302091998d94a5d88089c90"></span><em class="property">typedef </em>struct tiz_scloud <code class="sig-name descname">tiz_scloud_t</code><a class="headerlink" href="#c.tiz_scloud_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga92d7b1eda302091998d94a5d88089c90"></span><em class="property">typedef </em><em class="property">struct</em> tiz_scloud <code class="sig-name descname">tiz_scloud_t</code><a class="headerlink" href="#c.tiz_scloud_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>The soundcloud opaque structure </p>
 </dd></dl>
 
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_scloud_playback_mode_t">
-<span class="target" id="group__libtizsoundcloud_1gaeb3cde8779706315e03042c568c09da9"></span><em class="property">typedef </em>enum tiz_scloud_playback_mode  <code class="sig-name descname">tiz_scloud_playback_mode_t</code><a class="headerlink" href="#c.tiz_scloud_playback_mode_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gaeb3cde8779706315e03042c568c09da9"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_scloud_playback_mode" title="tiz_scloud_playback_mode">tiz_scloud_playback_mode</a> <code class="sig-name descname">tiz_scloud_playback_mode_t</code><a class="headerlink" href="#c.tiz_scloud_playback_mode_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1ga92d7b1eda302091998d94a5d88089c90"></span><em class="property">typedef </em><em class="property">struct</em> tiz_scloud <code class="sig-name descname">tiz_scloud_t</code><br /></dt>
+<dd><p>The soundcloud opaque structure </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gaeb3cde8779706315e03042c568c09da9"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_scloud_playback_mode" title="tiz_scloud_playback_mode">tiz_scloud_playback_mode</a> <code class="sig-name descname">tiz_scloud_playback_mode_t</code><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Enums</p>
-<dl class="enum">
-<dt id="c.libtizsoundcloud::tiz_scloud_playback_mode">
-<span class="target" id="group__libtizsoundcloud_1ga292f0d755ef1128a460d6f7105b63e2f"></span><code class="sig-name descname">tiz_scloud_playback_mode</code><a class="headerlink" href="#c.libtizsoundcloud::tiz_scloud_playback_mode" title="Permalink to this definition">¶</a></dt>
+<dl class="c enum">
+<dt id="c.tiz_scloud_playback_mode">
+<span class="target" id="group__libtizsoundcloud_1ga292f0d755ef1128a460d6f7105b63e2f"></span><em class="property">enum </em><code class="sig-name descname">tiz_scloud_playback_mode</code><a class="headerlink" href="#c.tiz_scloud_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 <p><em>Values:</em></p>
-<dl class="enumvalue">
-<dt id="c.libtizsoundcloud::ETIZScloudPlaybackModeNormal">
-<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2faa8ed6fe241ab43673780e928ca6a4213"></span><code class="sig-name descname">ETIZScloudPlaybackModeNormal</code><a class="headerlink" href="#c.libtizsoundcloud::ETIZScloudPlaybackModeNormal" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZScloudPlaybackModeNormal">
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2faa8ed6fe241ab43673780e928ca6a4213"></span><code class="sig-name descname">ETIZScloudPlaybackModeNormal</code><a class="headerlink" href="#c.ETIZScloudPlaybackModeNormal" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizsoundcloud::ETIZScloudPlaybackModeShuffle">
-<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fabbe75c771c878211b4f58b9f0f4ed55b"></span><code class="sig-name descname">ETIZScloudPlaybackModeShuffle</code><a class="headerlink" href="#c.libtizsoundcloud::ETIZScloudPlaybackModeShuffle" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZScloudPlaybackModeShuffle">
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fabbe75c771c878211b4f58b9f0f4ed55b"></span><code class="sig-name descname">ETIZScloudPlaybackModeShuffle</code><a class="headerlink" href="#c.ETIZScloudPlaybackModeShuffle" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizsoundcloud::ETIZScloudPlaybackModeMax">
-<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fa833d2459e13b0caec9d93c32ed5c03a0"></span><code class="sig-name descname">ETIZScloudPlaybackModeMax</code><a class="headerlink" href="#c.libtizsoundcloud::ETIZScloudPlaybackModeMax" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZScloudPlaybackModeMax">
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fa833d2459e13b0caec9d93c32ed5c03a0"></span><code class="sig-name descname">ETIZScloudPlaybackModeMax</code><a class="headerlink" href="#c.ETIZScloudPlaybackModeMax" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2faa8ed6fe241ab43673780e928ca6a4213"></span><code class="sig-name descname">ETIZScloudPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fabbe75c771c878211b4f58b9f0f4ed55b"></span><code class="sig-name descname">ETIZScloudPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fa833d2459e13b0caec9d93c32ed5c03a0"></span><code class="sig-name descname">ETIZScloudPlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="c enum">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1ga292f0d755ef1128a460d6f7105b63e2f"></span><em class="property">enum </em><code class="sig-name descname">tiz_scloud_playback_mode</code><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+<p><em>Values:</em></p>
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2faa8ed6fe241ab43673780e928ca6a4213"></span><code class="sig-name descname">ETIZScloudPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fabbe75c771c878211b4f58b9f0f4ed55b"></span><code class="sig-name descname">ETIZScloudPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fa833d2459e13b0caec9d93c32ed5c03a0"></span><code class="sig-name descname">ETIZScloudPlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2faa8ed6fe241ab43673780e928ca6a4213"></span><code class="sig-name descname">ETIZScloudPlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fabbe75c771c878211b4f58b9f0f4ed55b"></span><code class="sig-name descname">ETIZScloudPlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizsoundcloud_1gga292f0d755ef1128a460d6f7105b63e2fa833d2459e13b0caec9d93c32ed5c03a0"></span><code class="sig-name descname">ETIZScloudPlaybackModeMax</code><br /></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -180,9 +233,9 @@
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_init">
-<span class="target" id="group__libtizsoundcloud_1ga419962019faa6b14eb421c709049cfb3"></span>int <code class="sig-name descname">tiz_scloud_init</code><span class="sig-paren">(</span>tiz_scloud_ptr_t  *<em> app_scloud</em>, const char *<em> ap_oauth_token</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga419962019faa6b14eb421c709049cfb3"></span>int <code class="sig-name descname">tiz_scloud_init</code><span class="sig-paren">(</span>tiz_scloud_ptr_t *<em>app_scloud</em>, <em class="property">const</em> char *<em>ap_oauth_token</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize the soundcloud handle.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 on success. </p>
@@ -196,9 +249,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_set_playback_mode">
-<span class="target" id="group__libtizsoundcloud_1gabc1f4e809a4149553d95afe92126a923"></span>void <code class="sig-name descname">tiz_scloud_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em>, const  <a class="reference internal" href="#c.tiz_scloud_playback_mode_t" title="tiz_scloud_playback_mode_t">tiz_scloud_playback_mode_t</a><em> mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_set_playback_mode" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gabc1f4e809a4149553d95afe92126a923"></span>void <code class="sig-name descname">tiz_scloud_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> <a class="reference internal" href="#c.tiz_scloud_playback_mode_t" title="tiz_scloud_playback_mode_t">tiz_scloud_playback_mode_t</a> <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_set_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -209,9 +262,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_user_stream">
-<span class="target" id="group__libtizsoundcloud_1gafddc5e255327ebfa893dbdfdafd3323c"></span>int <code class="sig-name descname">tiz_scloud_play_user_stream</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_user_stream" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gafddc5e255327ebfa893dbdfdafd3323c"></span>int <code class="sig-name descname">tiz_scloud_play_user_stream</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_user_stream" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks in the user’s stream to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -225,9 +278,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_user_likes">
-<span class="target" id="group__libtizsoundcloud_1ga8819db2dff50f1089bd5e5ff94f05b22"></span>int <code class="sig-name descname">tiz_scloud_play_user_likes</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_user_likes" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga8819db2dff50f1089bd5e5ff94f05b22"></span>int <code class="sig-name descname">tiz_scloud_play_user_likes</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_user_likes" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the tracks in the user’s likes to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -241,9 +294,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_user_playlist">
-<span class="target" id="group__libtizsoundcloud_1ga413b1142872fe53951f73d75fede4b15"></span>int <code class="sig-name descname">tiz_scloud_play_user_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em>, const char *<em> ap_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_user_playlist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga413b1142872fe53951f73d75fede4b15"></span>int <code class="sig-name descname">tiz_scloud_play_user_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> char *<em>ap_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_user_playlist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Search the user’s collection for a playlist add its tracks to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -258,9 +311,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_creator">
-<span class="target" id="group__libtizsoundcloud_1ga24350d8a9ffe3e3dd7024c312b1ab1e7"></span>int <code class="sig-name descname">tiz_scloud_play_creator</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em>, const char *<em> ap_creator</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_creator" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga24350d8a9ffe3e3dd7024c312b1ab1e7"></span>int <code class="sig-name descname">tiz_scloud_play_creator</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> char *<em>ap_creator</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_creator" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add the last 50 tracks uploaded by a user/creator to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -275,9 +328,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_tracks">
-<span class="target" id="group__libtizsoundcloud_1ga2797c223fbadabdd761a317655b73c52"></span>int <code class="sig-name descname">tiz_scloud_play_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em>, const char *<em> ap_tracks</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_tracks" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga2797c223fbadabdd761a317655b73c52"></span>int <code class="sig-name descname">tiz_scloud_play_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> char *<em>ap_tracks</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_tracks" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Search SoundCloud for tracks and add them to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -292,9 +345,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_playlists">
-<span class="target" id="group__libtizsoundcloud_1ga1e822b76342d44971686b53981978578"></span>int <code class="sig-name descname">tiz_scloud_play_playlists</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em>, const char *<em> ap_playlists</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_playlists" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga1e822b76342d44971686b53981978578"></span>int <code class="sig-name descname">tiz_scloud_play_playlists</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> char *<em>ap_playlists</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_playlists" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Search SoundCloud for playlists and add them to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -309,9 +362,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_genres">
-<span class="target" id="group__libtizsoundcloud_1ga72e0f7ee1fdf4ae109c0c8ed2c150a0e"></span>int <code class="sig-name descname">tiz_scloud_play_genres</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em>, const char *<em> ap_genres</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_genres" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga72e0f7ee1fdf4ae109c0c8ed2c150a0e"></span>int <code class="sig-name descname">tiz_scloud_play_genres</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> char *<em>ap_genres</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_genres" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Search SoundCloud for genres and tracks to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -326,9 +379,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_play_tags">
-<span class="target" id="group__libtizsoundcloud_1gaf57c5f2ec11b0da7c7fd90ec7a1ee5eb"></span>int <code class="sig-name descname">tiz_scloud_play_tags</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em>, const char *<em> ap_tags</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_tags" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gaf57c5f2ec11b0da7c7fd90ec7a1ee5eb"></span>int <code class="sig-name descname">tiz_scloud_play_tags</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> char *<em>ap_tags</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_play_tags" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Search SoundCloud for tags and tracks to the playback queue.</p>
 <p>After calling this method, the various tiz_scloud_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -343,9 +396,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_clear_queue">
-<span class="target" id="group__libtizsoundcloud_1ga587ae64c77e07e930d7e066e9dd220d7"></span>void <code class="sig-name descname">tiz_scloud_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_clear_queue" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga587ae64c77e07e930d7e066e9dd220d7"></span>void <code class="sig-name descname">tiz_scloud_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_clear_queue" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -356,9 +409,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_next_url">
-<span class="target" id="group__libtizsoundcloud_1gac577e9091406d6c4aa921603f68a94a3"></span>const char* <code class="sig-name descname">tiz_scloud_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_next_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gac577e9091406d6c4aa921603f68a94a3"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_next_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the next track url</p>
 <p>The the playback queue pointer moves one position forwards.</p>
 <p><dl class="simple">
@@ -370,9 +423,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_prev_url">
-<span class="target" id="group__libtizsoundcloud_1gaa1798371de98185cbe5d5ac5e14ca01c"></span>const char* <code class="sig-name descname">tiz_scloud_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_prev_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gaa1798371de98185cbe5d5ac5e14ca01c"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_prev_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the previous track url.</p>
 <p>The the playback queue pointer moves one position backwards.</p>
 <p><dl class="simple">
@@ -384,9 +437,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_user">
-<span class="target" id="group__libtizsoundcloud_1ga013df88f34c3c16b5597e7bb69aeaf22"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_user</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_user" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga013df88f34c3c16b5597e7bb69aeaf22"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_user</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_user" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s uploader/creator/artist.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -397,9 +450,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_title">
-<span class="target" id="group__libtizsoundcloud_1ga8adbd7d9d883571dd1b3d92569c00ab5"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_title" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga8adbd7d9d883571dd1b3d92569c00ab5"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_title" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s title.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -410,9 +463,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_duration">
-<span class="target" id="group__libtizsoundcloud_1ga8322e72ea42024521fc0951e54ff01b5"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_duration" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga8322e72ea42024521fc0951e54ff01b5"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_duration" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s duration.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -423,9 +476,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_year">
-<span class="target" id="group__libtizsoundcloud_1gade8031b29749674452c1e37641fc33a5"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_year</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_year" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gade8031b29749674452c1e37641fc33a5"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_year</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_year" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s publication year.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -436,9 +489,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_permalink">
-<span class="target" id="group__libtizsoundcloud_1ga4606e473b6b9aeaed163b4e298d4f346"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_permalink</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_permalink" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga4606e473b6b9aeaed163b4e298d4f346"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_permalink</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_permalink" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s permalink.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -449,9 +502,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_license">
-<span class="target" id="group__libtizsoundcloud_1ga6eb80efa1da2c4270184794d4e968aa6"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_license</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_license" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga6eb80efa1da2c4270184794d4e968aa6"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_license</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_license" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s license.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -462,9 +515,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_likes">
-<span class="target" id="group__libtizsoundcloud_1ga639ba320bbc8cc9548cd8fe707864364"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_likes</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_likes" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga639ba320bbc8cc9548cd8fe707864364"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_likes</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_likes" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current track’s likes count.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -475,9 +528,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_get_current_track_user_avatar">
-<span class="target" id="group__libtizsoundcloud_1gab4750c04b2f4ef6d655ce70a485d7067"></span>const char* <code class="sig-name descname">tiz_scloud_get_current_track_user_avatar</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_user_avatar" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1gab4750c04b2f4ef6d655ce70a485d7067"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_track_user_avatar</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_track_user_avatar" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the avatar of the user associated to the current track.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -488,9 +541,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_scloud_destroy">
-<span class="target" id="group__libtizsoundcloud_1ga74584dd6bb28da4b37369d40e31a2a52"></span>void <code class="sig-name descname">tiz_scloud_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a>  *<em> ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizsoundcloud_1ga74584dd6bb28da4b37369d40e31a2a52"></span>void <code class="sig-name descname">tiz_scloud_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_destroy" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Destroy the soundcloud handle.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -517,7 +570,7 @@
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

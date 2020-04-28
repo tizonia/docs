@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>libtizyoutube &#8212; Tizonia 0.21.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Logging configuration" href="../logging.html" />
@@ -62,17 +62,6 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html">The Tizonia Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#news">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#upgrade">Upgrade</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/README.html#hall-of-fame">Hall of Fame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CONTRIBUTING.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/CHANGELOG.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/COPYING.LESSER.html">License</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
@@ -122,7 +111,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="documentwrapper">
@@ -140,39 +129,103 @@
 <p>A C library to access audio from the YouTube streaming service. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_youtube_t">
-<span class="target" id="group__libtizyoutube_1ga03aa3d46a6657ed7c46231b4393d63d7"></span><em class="property">typedef </em>struct tiz_youtube <code class="sig-name descname">tiz_youtube_t</code><a class="headerlink" href="#c.tiz_youtube_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga03aa3d46a6657ed7c46231b4393d63d7"></span><em class="property">typedef </em><em class="property">struct</em> tiz_youtube <code class="sig-name descname">tiz_youtube_t</code><a class="headerlink" href="#c.tiz_youtube_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>The youtube opaque structure </p>
 </dd></dl>
 
-<dl class="typedef">
+<dl class="c type">
 <dt id="c.tiz_youtube_playback_mode_t">
-<span class="target" id="group__libtizyoutube_1ga5054c011c5802568f735c331c3b7b110"></span><em class="property">typedef </em>enum tiz_youtube_playback_mode  <code class="sig-name descname">tiz_youtube_playback_mode_t</code><a class="headerlink" href="#c.tiz_youtube_playback_mode_t" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga5054c011c5802568f735c331c3b7b110"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_youtube_playback_mode" title="tiz_youtube_playback_mode">tiz_youtube_playback_mode</a> <code class="sig-name descname">tiz_youtube_playback_mode_t</code><a class="headerlink" href="#c.tiz_youtube_playback_mode_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizyoutube_1ga03aa3d46a6657ed7c46231b4393d63d7"></span><em class="property">typedef </em><em class="property">struct</em> tiz_youtube <code class="sig-name descname">tiz_youtube_t</code><br /></dt>
+<dd><p>The youtube opaque structure </p>
+</dd></dl>
+
+<dl class="c type">
+<dt>
+<span class="target" id="group__libtizyoutube_1ga5054c011c5802568f735c331c3b7b110"></span><em class="property">typedef </em><em class="property">enum</em> <a class="reference internal" href="#c.tiz_youtube_playback_mode" title="tiz_youtube_playback_mode">tiz_youtube_playback_mode</a> <code class="sig-name descname">tiz_youtube_playback_mode_t</code><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Enums</p>
-<dl class="enum">
-<dt id="c.libtizyoutube::tiz_youtube_playback_mode">
-<span class="target" id="group__libtizyoutube_1ga3251cb61412f77a0ce354884676e917b"></span><code class="sig-name descname">tiz_youtube_playback_mode</code><a class="headerlink" href="#c.libtizyoutube::tiz_youtube_playback_mode" title="Permalink to this definition">¶</a></dt>
+<dl class="c enum">
+<dt id="c.tiz_youtube_playback_mode">
+<span class="target" id="group__libtizyoutube_1ga3251cb61412f77a0ce354884676e917b"></span><em class="property">enum </em><code class="sig-name descname">tiz_youtube_playback_mode</code><a class="headerlink" href="#c.tiz_youtube_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Various playback modes that control the playback queue. </p>
 <p><em>Values:</em></p>
-<dl class="enumvalue">
-<dt id="c.libtizyoutube::ETIZYoutubePlaybackModeNormal">
-<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917baf19fad60deb45e20bfaabb5961c00ada"></span><code class="sig-name descname">ETIZYoutubePlaybackModeNormal</code><a class="headerlink" href="#c.libtizyoutube::ETIZYoutubePlaybackModeNormal" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZYoutubePlaybackModeNormal">
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917baf19fad60deb45e20bfaabb5961c00ada"></span><code class="sig-name descname">ETIZYoutubePlaybackModeNormal</code><a class="headerlink" href="#c.ETIZYoutubePlaybackModeNormal" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizyoutube::ETIZYoutubePlaybackModeShuffle">
-<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba72b7d228e87a0ceb79c8d9e9106518d9"></span><code class="sig-name descname">ETIZYoutubePlaybackModeShuffle</code><a class="headerlink" href="#c.libtizyoutube::ETIZYoutubePlaybackModeShuffle" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZYoutubePlaybackModeShuffle">
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba72b7d228e87a0ceb79c8d9e9106518d9"></span><code class="sig-name descname">ETIZYoutubePlaybackModeShuffle</code><a class="headerlink" href="#c.ETIZYoutubePlaybackModeShuffle" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="enumvalue">
-<dt id="c.libtizyoutube::ETIZYoutubePlaybackModeMax">
-<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba40dceaf4c104299c2e9652113f34e3e5"></span><code class="sig-name descname">ETIZYoutubePlaybackModeMax</code><a class="headerlink" href="#c.libtizyoutube::ETIZYoutubePlaybackModeMax" title="Permalink to this definition">¶</a></dt>
+<dl class="c enumerator">
+<dt id="c.ETIZYoutubePlaybackModeMax">
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba40dceaf4c104299c2e9652113f34e3e5"></span><code class="sig-name descname">ETIZYoutubePlaybackModeMax</code><a class="headerlink" href="#c.ETIZYoutubePlaybackModeMax" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917baf19fad60deb45e20bfaabb5961c00ada"></span><code class="sig-name descname">ETIZYoutubePlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba72b7d228e87a0ceb79c8d9e9106518d9"></span><code class="sig-name descname">ETIZYoutubePlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba40dceaf4c104299c2e9652113f34e3e5"></span><code class="sig-name descname">ETIZYoutubePlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="c enum">
+<dt>
+<span class="target" id="group__libtizyoutube_1ga3251cb61412f77a0ce354884676e917b"></span><em class="property">enum </em><code class="sig-name descname">tiz_youtube_playback_mode</code><br /></dt>
+<dd><p>Various playback modes that control the playback queue. </p>
+<p><em>Values:</em></p>
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917baf19fad60deb45e20bfaabb5961c00ada"></span><code class="sig-name descname">ETIZYoutubePlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba72b7d228e87a0ceb79c8d9e9106518d9"></span><code class="sig-name descname">ETIZYoutubePlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba40dceaf4c104299c2e9652113f34e3e5"></span><code class="sig-name descname">ETIZYoutubePlaybackModeMax</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917baf19fad60deb45e20bfaabb5961c00ada"></span><code class="sig-name descname">ETIZYoutubePlaybackModeNormal</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba72b7d228e87a0ceb79c8d9e9106518d9"></span><code class="sig-name descname">ETIZYoutubePlaybackModeShuffle</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt>
+<span class="target" id="group__libtizyoutube_1gga3251cb61412f77a0ce354884676e917ba40dceaf4c104299c2e9652113f34e3e5"></span><code class="sig-name descname">ETIZYoutubePlaybackModeMax</code><br /></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -180,9 +233,9 @@
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_init">
-<span class="target" id="group__libtizyoutube_1ga2f4c3ae1f7541ce051fed4c8bf253e9e"></span>int <code class="sig-name descname">tiz_youtube_init</code><span class="sig-paren">(</span>tiz_youtube_ptr_t  *<em> app_youtube</em>, const char *<em> ap_api_key</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_init" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga2f4c3ae1f7541ce051fed4c8bf253e9e"></span>int <code class="sig-name descname">tiz_youtube_init</code><span class="sig-paren">(</span>tiz_youtube_ptr_t *<em>app_youtube</em>, <em class="property">const</em> char *<em>ap_api_key</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize the tiz_youtube handle.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 on success. </p>
@@ -195,9 +248,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_clear_queue">
-<span class="target" id="group__libtizyoutube_1ga887e2f7dff67dc8d2f105b11dabce36c"></span>void <code class="sig-name descname">tiz_youtube_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_clear_queue" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga887e2f7dff67dc8d2f105b11dabce36c"></span>void <code class="sig-name descname">tiz_youtube_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_clear_queue" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -208,9 +261,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_index">
-<span class="target" id="group__libtizyoutube_1ga95b5d32d4ea987d52e037c2371527473"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_index</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_index" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga95b5d32d4ea987d52e037c2371527473"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_index</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_index" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the index in the playback queue of the stream currently selected.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -221,9 +274,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_queue_length">
-<span class="target" id="group__libtizyoutube_1gab43ebb43f84cda162b26ed7ede66b9a9"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_queue_length" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gab43ebb43f84cda162b26ed7ede66b9a9"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_queue_length" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current length of playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -234,9 +287,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_queue_progress">
-<span class="target" id="group__libtizyoutube_1gadebecc97713c564dce7a36700765107c"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_queue_progress</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_queue_progress" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gadebecc97713c564dce7a36700765107c"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_queue_progress</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_queue_progress" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current queue progress (e.g. ‘5 of 17’, where 5 is the current stream index, and 17 is the total streams in the queue).</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -247,9 +300,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_set_playback_mode">
-<span class="target" id="group__libtizyoutube_1ga2d3de28ddfba249a11667e5cde6fec0a"></span>void <code class="sig-name descname">tiz_youtube_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const  <a class="reference internal" href="#c.tiz_youtube_playback_mode_t" title="tiz_youtube_playback_mode_t">tiz_youtube_playback_mode_t</a><em> mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_set_playback_mode" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga2d3de28ddfba249a11667e5cde6fec0a"></span>void <code class="sig-name descname">tiz_youtube_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> <a class="reference internal" href="#c.tiz_youtube_playback_mode_t" title="tiz_youtube_playback_mode_t">tiz_youtube_playback_mode_t</a> <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_set_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set the playback mode (normal, shuffle).</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -260,9 +313,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_play_audio_stream">
-<span class="target" id="group__libtizyoutube_1ga1fbc86939712ef7c838649de1c366233"></span>int <code class="sig-name descname">tiz_youtube_play_audio_stream</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const char *<em> ap_url_or_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_stream" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga1fbc86939712ef7c838649de1c366233"></span>int <code class="sig-name descname">tiz_youtube_play_audio_stream</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> char *<em>ap_url_or_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_stream" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add a YouTube audio stream to the playback queue.</p>
 <p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -277,9 +330,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_play_audio_playlist">
-<span class="target" id="group__libtizyoutube_1gab4da999ae92c7ee4865eccfb48d5cec9"></span>int <code class="sig-name descname">tiz_youtube_play_audio_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const char *<em> ap_url_or_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_playlist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gab4da999ae92c7ee4865eccfb48d5cec9"></span>int <code class="sig-name descname">tiz_youtube_play_audio_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> char *<em>ap_url_or_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_playlist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add all the audio streams of a YouTube playlist to the playback queue.</p>
 <p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -294,9 +347,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_play_audio_mix">
-<span class="target" id="group__libtizyoutube_1ga68124821b76431db7be5552fd471399e"></span>int <code class="sig-name descname">tiz_youtube_play_audio_mix</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const char *<em> ap_url_or_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_mix" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga68124821b76431db7be5552fd471399e"></span>int <code class="sig-name descname">tiz_youtube_play_audio_mix</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> char *<em>ap_url_or_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_mix" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the YouTube mix associated to given video id or url andd all the audio streams of the mix to the playback queue.</p>
 <p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -311,9 +364,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_play_audio_search">
-<span class="target" id="group__libtizyoutube_1gace357f6aee526fc21a1643d79947782f"></span>int <code class="sig-name descname">tiz_youtube_play_audio_search</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const char *<em> ap_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_search" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gace357f6aee526fc21a1643d79947782f"></span>int <code class="sig-name descname">tiz_youtube_play_audio_search</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> char *<em>ap_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_search" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add all the audio streams of a YouTube search to the playback queue.</p>
 <p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -328,9 +381,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_play_audio_mix_search">
-<span class="target" id="group__libtizyoutube_1gaef2a6137dc330faebb828281e58a7292"></span>int <code class="sig-name descname">tiz_youtube_play_audio_mix_search</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const char *<em> ap_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_mix_search" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gaef2a6137dc330faebb828281e58a7292"></span>int <code class="sig-name descname">tiz_youtube_play_audio_mix_search</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> char *<em>ap_search</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_mix_search" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the YouTube mix associated to given search term and add all the audio streams of the mix to the playback queue.</p>
 <p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -345,9 +398,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_play_audio_channel_uploads">
-<span class="target" id="group__libtizyoutube_1ga031efc55ab5e5a89f53ddb0f5c0529ba"></span>int <code class="sig-name descname">tiz_youtube_play_audio_channel_uploads</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const char *<em> ap_channel</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_channel_uploads" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga031efc55ab5e5a89f53ddb0f5c0529ba"></span>int <code class="sig-name descname">tiz_youtube_play_audio_channel_uploads</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> char *<em>ap_channel</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_channel_uploads" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve all video uploads from a YouTube channel and add all the audio streams to the playback queue.</p>
 <p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -362,9 +415,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_play_audio_channel_playlist">
-<span class="target" id="group__libtizyoutube_1ga2edb927d43198792d9d6d0819139f014"></span>int <code class="sig-name descname">tiz_youtube_play_audio_channel_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const char *<em> ap_channel_and_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_channel_playlist" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga2edb927d43198792d9d6d0819139f014"></span>int <code class="sig-name descname">tiz_youtube_play_audio_channel_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> char *<em>ap_channel_and_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_play_audio_channel_playlist" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve all video uploads from a YouTube channel and add all the audio streams to the playback queue.</p>
 <p>After calling this method, the various tiz_youtube_get* methods can be used to interact with the playback queue.</p>
 <p><dl class="simple">
@@ -379,9 +432,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_next_url">
-<span class="target" id="group__libtizyoutube_1ga3c1218c826fb31e3ab8d376d83718600"></span>const char* <code class="sig-name descname">tiz_youtube_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const bool<em> a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_next_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga3c1218c826fb31e3ab8d376d83718600"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_next_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> bool <em>a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_next_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the next stream url</p>
 <p>The playback queue pointer moves one position forwards.</p>
 <p><dl class="simple">
@@ -396,9 +449,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_prev_url">
-<span class="target" id="group__libtizyoutube_1gace69245929e4b901e0e637882bff3f61"></span>const char* <code class="sig-name descname">tiz_youtube_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em>, const bool<em> a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_prev_url" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gace69245929e4b901e0e637882bff3f61"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_prev_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> bool <em>a_remove_current_url</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_prev_url" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the previous stream url.</p>
 <p>The playback queue pointer moves one position backwards.</p>
 <p><dl class="simple">
@@ -413,9 +466,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_title">
-<span class="target" id="group__libtizyoutube_1ga4708400fe9fb6df49db8fc4fe5da8d47"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_title" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga4708400fe9fb6df49db8fc4fe5da8d47"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_title</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_title" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s title.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -426,9 +479,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_author">
-<span class="target" id="group__libtizyoutube_1ga34613f79e39868e2cdafa699180ef836"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_author</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_author" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga34613f79e39868e2cdafa699180ef836"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_author</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_author" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s author.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -439,9 +492,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_file_size">
-<span class="target" id="group__libtizyoutube_1ga843e356984bef644ce67a76be66803c8"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_file_size</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_file_size" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga843e356984bef644ce67a76be66803c8"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_file_size</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_file_size" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s file size.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -452,9 +505,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_duration">
-<span class="target" id="group__libtizyoutube_1ga4a07ae8cb6d7137576b23387fe47c9ce"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_duration" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga4a07ae8cb6d7137576b23387fe47c9ce"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_duration</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_duration" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s duration.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -465,9 +518,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_bitrate">
-<span class="target" id="group__libtizyoutube_1gaed0b404805750171644a63ad3c58d76b"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_bitrate</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_bitrate" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gaed0b404805750171644a63ad3c58d76b"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_bitrate</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_bitrate" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s bitrate.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -478,9 +531,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_view_count">
-<span class="target" id="group__libtizyoutube_1gaf826fd13a90188ee2ebc5891bb17b5b6"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_view_count</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_view_count" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gaf826fd13a90188ee2ebc5891bb17b5b6"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_view_count</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_view_count" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s view count.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -491,9 +544,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_description">
-<span class="target" id="group__libtizyoutube_1gae2931d8f23c9b7b7fb32a9180266028c"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_description</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_description" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gae2931d8f23c9b7b7fb32a9180266028c"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_description</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_description" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s description.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -504,9 +557,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_file_extension">
-<span class="target" id="group__libtizyoutube_1gae293c1a750e3f294b06fb961575df09f"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_file_extension</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_file_extension" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gae293c1a750e3f294b06fb961575df09f"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_file_extension</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_file_extension" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current audio stream’s file extension.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -517,9 +570,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_video_id">
-<span class="target" id="group__libtizyoutube_1gaa6ced230e5bb54df80a5ad48e63fefcd"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_video_id</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_video_id" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gaa6ced230e5bb54df80a5ad48e63fefcd"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_video_id</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_video_id" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current streams video id.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -530,9 +583,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_published">
-<span class="target" id="group__libtizyoutube_1ga703f04fe2624c03960b921c21269d653"></span>const char* <code class="sig-name descname">tiz_youtube_get_current_audio_stream_published</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_published" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1ga703f04fe2624c03960b921c21269d653"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_published</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_published" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current streams upload date and time.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -543,9 +596,9 @@
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="c function">
 <dt id="c.tiz_youtube_destroy">
-<span class="target" id="group__libtizyoutube_1gaa913d12a8a57c37c765fa7568491669b"></span>void <code class="sig-name descname">tiz_youtube_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a>  *<em> ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_destroy" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__libtizyoutube_1gaa913d12a8a57c37c765fa7568491669b"></span>void <code class="sig-name descname">tiz_youtube_destroy</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_destroy" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Destroy the tiz_youtube handle.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -572,7 +625,7 @@
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
