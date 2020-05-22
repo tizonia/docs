@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>libtizspotify &#8212; Tizonia 0.21.0 documentation</title>
+    <title>libtizspotify &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -194,13 +194,15 @@
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="c function">
 <dt id="c.tiz_spotify_init">
-<span class="target" id="group__libtizspotify_1gab1d82efef26f1cc6f69a833ee6216493"></span>int <code class="sig-name descname">tiz_spotify_init</code><span class="sig-paren">(</span>tiz_spotify_ptr_t *<em>app_spotify</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_init" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__libtizspotify_1gafad574865275b41db68320cb6ad24bcf"></span>int <code class="sig-name descname">tiz_spotify_init</code><span class="sig-paren">(</span>tiz_spotify_ptr_t *<em>app_spotify</em>, <em class="property">const</em> char *<em>ap_user</em>, <em class="property">const</em> char *<em>ap_pass</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize the tiz_spotify handle.</p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 on success. </p>
 </dd>
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">app_spotify</span></code>: A pointer to the tiz_spotify handle which will be initialised.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">app_spotify</span></code>: A pointer to the tiz_spotify handle which will be initialised. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_user</span></code>: A Spotify user name (Premium). </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_pass</span></code>: The password associated to the Spotify account.</p></li>
 </ul>
 </dd>
 </dl>
@@ -211,6 +213,19 @@
 <dt id="c.tiz_spotify_clear_queue">
 <span class="target" id="group__libtizspotify_1ga5a7912dd145bbf5285c52c0afb19f1fb"></span>void <code class="sig-name descname">tiz_spotify_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_clear_queue" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_print_queue">
+<span class="target" id="group__libtizspotify_1ga85ef1b638beacac4bd536912f3b3e809"></span>void <code class="sig-name descname">tiz_spotify_print_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_print_queue" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Print to standard output the contents of the playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle. </p></li>
@@ -523,6 +538,40 @@
 </dd></dl>
 
 <dl class="c function">
+<dt id="c.tiz_spotify_play_recommendations_by_track">
+<span class="target" id="group__libtizspotify_1gac8dca5f286f23bd70b2ba8831df78916"></span>int <code class="sig-name descname">tiz_spotify_play_recommendations_by_track</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em>, <em class="property">const</em> char *<em>ap_track_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_recommendations_by_track" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find Spotify recommendations by track name the playback queue.</p>
+<p>After calling this method, the various tiz_spotify_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_track_id</span></code>: A Spotify track ID, URI, or URL.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_play_recommendations_by_artist">
+<span class="target" id="group__libtizspotify_1ga03dd5e950c4097b1728e520cfd1bb5f1"></span>int <code class="sig-name descname">tiz_spotify_play_recommendations_by_artist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em>, <em class="property">const</em> char *<em>ap_artist_id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_recommendations_by_artist" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find Spotify recommendations by artist name to the playback queue.</p>
+<p>After calling this method, the various tiz_spotify_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_artist_id</span></code>: A Spotify artist ID, URI, or URL.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
 <dt id="c.tiz_spotify_play_recommendations_by_genre">
 <span class="target" id="group__libtizspotify_1ga33b7570eb58b5f2c9a86df887c4f0f11"></span>int <code class="sig-name descname">tiz_spotify_play_recommendations_by_genre</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em>, <em class="property">const</em> char *<em>ap_genre</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_recommendations_by_genre" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Find Spotify recommendations by genre and add artists to the playback queue.</p>
@@ -533,6 +582,104 @@
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle. </p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">ap_artist_id</span></code>: A genre name or search term.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_play_current_user_liked_tracks">
+<span class="target" id="group__libtizspotify_1gae6eaa9db075fdf2059abc61fb5a8fdfc"></span>int <code class="sig-name descname">tiz_spotify_play_current_user_liked_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_current_user_liked_tracks" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find the current user’s liked tracks and add them to the playback queue.</p>
+<p>After calling this method, the various tiz_spotify_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_play_current_user_recent_tracks">
+<span class="target" id="group__libtizspotify_1ga77b23a85b31c8a18582e02b6642e7bcf"></span>int <code class="sig-name descname">tiz_spotify_play_current_user_recent_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_current_user_recent_tracks" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find the current user’s recent tracks and add them to the playback queue.</p>
+<p>After calling this method, the various tiz_spotify_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_play_current_user_top_tracks">
+<span class="target" id="group__libtizspotify_1gae97355b608f3a6811534bc802117d0b4"></span>int <code class="sig-name descname">tiz_spotify_play_current_user_top_tracks</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_current_user_top_tracks" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find the current user’s top tracks and add them to the playback queue.</p>
+<p>After calling this method, the various tiz_spotify_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_play_current_user_top_artists">
+<span class="target" id="group__libtizspotify_1ga237b5055174b178f902a55611231f4ad"></span>int <code class="sig-name descname">tiz_spotify_play_current_user_top_artists</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_current_user_top_artists" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find the current user’s top artists and add their top tracks to the playback queue.</p>
+<p>After calling this method, the various tiz_spotify_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_play_current_user_playlist">
+<span class="target" id="group__libtizspotify_1gac9bd22e6998d61c88a9b1768fd78cce0"></span>int <code class="sig-name descname">tiz_spotify_play_current_user_playlist</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em>, <em class="property">const</em> char *<em>ap_playlist</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_play_current_user_playlist" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find a public or private playlist from the current user’s library and add its tracks to the playback queue.</p>
+<p>After calling this method, the various tiz_spotify_get* methods can be used to interact with the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 on success </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_playlist</span></code>: A playlist name or search term.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_spotify_get_uri">
+<span class="target" id="group__libtizspotify_1ga28099845c4696f03f551a06de80c1786"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_spotify_get_uri</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_spotify_t" title="tiz_spotify_t">tiz_spotify_t</a> *<em>ap_spotify</em>, <em class="property">const</em> int <em>a_position</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_spotify_get_uri" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve the stream url as the specified position in the play queue.</p>
+<p>On success, the playback queue pointer moves to the position indicated.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The specified uri in the playback queue or NULL if the playback queue is empty or the the specified position is out of range. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_spotify</span></code>: The tiz_spotify handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_position</span></code>: A position value in the range [1, len(queue)].</p></li>
 </ul>
 </dd>
 </dl>

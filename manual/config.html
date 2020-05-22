@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Configuration File &#8212; Tizonia 0.21.0 documentation</title>
+    <title>Configuration File &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -73,6 +73,7 @@
 <li class="toctree-l2"><a class="reference internal" href="youtube.html">YouTube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tunein.html">TuneIn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plex.html">Plex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iheart.html">iHeart</a></li>
 <li class="toctree-l2"><a class="reference internal" href="server.html">Shoutcast Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="client.html">Shoutcast Client</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chromecast.html">Chromecast</a></li>
@@ -512,7 +513,19 @@ information at the top of <code class="docutils literal notranslate"><span class
 323
 324
 325
-326</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># -*-Mode: conf; -*-</span>
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># -*-Mode: conf; -*-</span>
 <span class="c1"># tizonia-config v0.21.0 configuration file</span>
 
 <span class="k">[ilcore]</span>
@@ -679,6 +692,18 @@ information at the top of <code class="docutils literal notranslate"><span class
 <span class="c1">#                       Increase in case of cuts.</span>
 <span class="c1"># plex.music_section_name = name of the music section in your plex library</span>
 <span class="c1">#                           (default: Music)</span>
+
+
+<span class="c1"># iHeart configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
+<span class="c1"># configure here.</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># iheart.buffer_seconds = size of the audio buffer (in seconds) to use</span>
+<span class="c1">#                         while downloading streams. Default: 120.</span>
+<span class="c1">#                         Increase in case of cuts.</span>
+
 
 <span class="k">[color-themes]</span>
 <span class="c1"># Tizonia uses around 16 different colors while displaying information on the</span>

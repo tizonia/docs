@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>libtizyoutube &#8212; Tizonia 0.21.0 documentation</title>
+    <title>libtizyoutube &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -198,6 +198,19 @@
 </dd></dl>
 
 <dl class="c function">
+<dt id="c.tiz_youtube_print_queue">
+<span class="target" id="group__libtizyoutube_1gae41ef886c4816b01d3a1899fabff6494"></span>void <code class="sig-name descname">tiz_youtube_print_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_print_queue" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Print to standard output the contents of the playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
 <dt id="c.tiz_youtube_get_current_audio_stream_index">
 <span class="target" id="group__libtizyoutube_1ga95b5d32d4ea987d52e037c2371527473"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_audio_stream_index</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_audio_stream_index" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the index in the playback queue of the stream currently selected.</p>
@@ -214,6 +227,19 @@
 <dt id="c.tiz_youtube_get_current_queue_length">
 <span class="target" id="group__libtizyoutube_1gab43ebb43f84cda162b26ed7ede66b9a9"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_current_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_queue_length" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve the current length of playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_youtube_get_current_queue_length_as_int">
+<span class="target" id="group__libtizyoutube_1ga6f8f0ba235dfb12d0b3c966848f2f0af"></span>int <code class="sig-name descname">tiz_youtube_get_current_queue_length_as_int</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_current_queue_length_as_int" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve the current length of the playback queue as integer.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </p></li>
@@ -362,6 +388,23 @@
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">ap_channel_and_playlist</span></code>: The channel and playlist names, separated by a space character.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_youtube_get_url">
+<span class="target" id="group__libtizyoutube_1ga522de3cbdd7ef10f0061c841f178d9e9"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_youtube_get_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_youtube_t" title="tiz_youtube_t">tiz_youtube_t</a> *<em>ap_youtube</em>, <em class="property">const</em> int <em>a_position</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_youtube_get_url" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve the stream url as the specified position in the play queue.</p>
+<p>On success, the playback queue pointer moves to the position indicated.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The specified url in the playback queue or NULL if the playback queue is empty or the the specified position is out of range. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_youtube</span></code>: The tiz_youtube handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_position</span></code>: A position value in the range [1, len(queue)].</p></li>
 </ul>
 </dd>
 </dl>

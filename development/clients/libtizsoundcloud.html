@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>libtizsoundcloud &#8212; Tizonia 0.21.0 documentation</title>
+    <title>libtizsoundcloud &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -186,12 +186,65 @@
 </dd></dl>
 
 <dl class="c function">
-<dt id="c.tiz_scloud_set_playback_mode">
-<span class="target" id="group__libtizsoundcloud_1gabc1f4e809a4149553d95afe92126a923"></span>void <code class="sig-name descname">tiz_scloud_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> <a class="reference internal" href="#c.tiz_scloud_playback_mode_t" title="tiz_scloud_playback_mode_t">tiz_scloud_playback_mode_t</a> <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_set_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="c.tiz_scloud_clear_queue">
+<span class="target" id="group__libtizsoundcloud_1ga587ae64c77e07e930d7e066e9dd220d7"></span>void <code class="sig-name descname">tiz_scloud_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_clear_queue" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the playback queue.</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ap_scloud</span></code>: The soundcloud handle. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_scloud_get_current_queue_length">
+<span class="target" id="group__libtizsoundcloud_1ga5c83ddf34028bd4ac60f37e52ba49d1b"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_queue_length</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_queue_length" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve the current length of playback queue.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_scloud</span></code>: The tiz_scloud handle. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_scloud_get_current_queue_length_as_int">
+<span class="target" id="group__libtizsoundcloud_1gaf2497f5fd050b4bf466cadec00a871de"></span>int <code class="sig-name descname">tiz_scloud_get_current_queue_length_as_int</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_queue_length_as_int" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve the current length of the playback queue as integer.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_scloud</span></code>: The tiz_scloud handle. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_scloud_get_current_queue_progress">
+<span class="target" id="group__libtizsoundcloud_1gacbda3e2ad4925952b803cbfabb1b941c"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_current_queue_progress</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_current_queue_progress" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve the current queue progress (e.g. ‘5 of 17’, where 5 is the current stream index, and 17 is the total streams in the queue).</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_scloud</span></code>: The tiz_scloud handle. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="c function">
+<dt id="c.tiz_scloud_set_playback_mode">
+<span class="target" id="group__libtizsoundcloud_1gabc1f4e809a4149553d95afe92126a923"></span>void <code class="sig-name descname">tiz_scloud_set_playback_mode</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> <a class="reference internal" href="#c.tiz_scloud_playback_mode_t" title="tiz_scloud_playback_mode_t">tiz_scloud_playback_mode_t</a> <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_set_playback_mode" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the playback mode (normal, shuffle).</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_scloud</span></code>: The soundcloud handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_mode</span></code>: The playback mode (e.g. normal, shuffle) </p></li>
 </ul>
 </dd>
 </dl>
@@ -333,12 +386,16 @@
 </dd></dl>
 
 <dl class="c function">
-<dt id="c.tiz_scloud_clear_queue">
-<span class="target" id="group__libtizsoundcloud_1ga587ae64c77e07e930d7e066e9dd220d7"></span>void <code class="sig-name descname">tiz_scloud_clear_queue</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_clear_queue" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Clear the playback queue.</p>
+<dt id="c.tiz_scloud_get_url">
+<span class="target" id="group__libtizsoundcloud_1ga4bd3d380a8dd2119f1541739b61086da"></span><em class="property">const</em> char *<code class="sig-name descname">tiz_scloud_get_url</code><span class="sig-paren">(</span><a class="reference internal" href="#c.tiz_scloud_t" title="tiz_scloud_t">tiz_scloud_t</a> *<em>ap_scloud</em>, <em class="property">const</em> int <em>a_position</em><span class="sig-paren">)</span><a class="headerlink" href="#c.tiz_scloud_get_url" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve the stream url as the specified position in the play queue.</p>
+<p>On success, the playback queue pointer moves to the position indicated.</p>
 <p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>The specified url in the playback queue or NULL if the playback queue is empty or the the specified position is out of range. </p>
+</dd>
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">ap_scloud</span></code>: The soundcloud handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ap_scloud</span></code>: The tiz_scloud handle. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a_position</span></code>: A position value in the range [1, len(queue)].</p></li>
 </ul>
 </dd>
 </dl>
