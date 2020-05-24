@@ -116,8 +116,9 @@
 <p># The Tizonia Project</p>
 <ul class="simple">
 <li><p>A command-line streaming music client/server for Linux.</p></li>
-<li><p>Support for Spotify (Premium), Google Play Music (free and paid tiers), YouTube,
-SoundCloud, TuneIn Internet Radio, Plex servers and Chromecast devices.</p></li>
+<li><p>Support for Spotify (Premium), Google Play Music (free and paid tiers),
+YouTube, SoundCloud, TuneIn and iHeart Internet Radio directories, Plex
+servers and Chromecast devices.</p></li>
 <li><p>The first open-source implementation of [OpenMAX IL
 1.2](<a class="reference external" href="https://www.khronos.org/news/press/khronos-group-releases-openmax-il-1.2-provisional-specification">https://www.khronos.org/news/press/khronos-group-releases-openmax-il-1.2-provisional-specification</a>).</p></li>
 </ul>
@@ -139,7 +140,7 @@ SoundCloud, TuneIn Internet Radio, Plex servers and Chromecast devices.</p></li>
 </dl>
 <p>&lt;/a&gt;</p>
 <dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.21.0...master">https://github.com/tizonia/tizonia-openmax-il/compare/v0.21.0…master</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://img.shields.io/github/commits-since/tizonia/tizonia-openmax-il/v0.21.0.svg">https://img.shields.io/github/commits-since/tizonia/tizonia-openmax-il/v0.21.0.svg</a>” /&gt;</p>
+<dt>&lt;a href=”<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.22.0...master">https://github.com/tizonia/tizonia-openmax-il/compare/v0.22.0…master</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://img.shields.io/github/commits-since/tizonia/tizonia-openmax-il/v0.22.0.svg">https://img.shields.io/github/commits-since/tizonia/tizonia-openmax-il/v0.22.0.svg</a>” /&gt;</p>
 </dd>
 </dl>
 <p>&lt;/a&gt;</p>
@@ -246,12 +247,21 @@ SoundCloud, TuneIn Internet Radio, Plex servers and Chromecast devices.</p></li>
 <p># News</p>
 <p><strong>Latest news</strong></p>
 <ul class="simple">
+<li><p>[2020-05-22] Tizonia</p></li>
+</ul>
+<p>[v0.22.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.22.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.22.0</a>). Added
+support for iHeart radio, new command-line options to play Spotify
+recommendations by artist and album name, new keyboard shortcuts and a good
+number of other fixes and improvements.</p>
+<p>&gt; See Tizonia’s website: [Tizonia 0.22.0](<a class="reference external" href="https://tizonia.org/news/2020/05/22/release-0-22-0/">https://tizonia.org/news/2020/05/22/release-0-22-0/</a>)</p>
+<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show more&lt;/b&gt;&lt;/summary&gt;</p>
+<ul class="simple">
 <li><p>[2020-03-08] Tizonia</p></li>
 </ul>
 <p>[v0.21.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.21.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.21.0</a>). A
 maintenance release with fixes for YouTube API quota issues, among others.</p>
-<p>&gt; See Tizonia’s website: [Tizonia 0.21.0 brings changes to minimize the YouTube API quota issues](<a class="reference external" href="https://tizonia.org/news/2020/03/08/release-0-21-0/">https://tizonia.org/news/2020/03/08/release-0-21-0/</a>)</p>
-<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show more&lt;/b&gt;&lt;/summary&gt;</p>
+<p>&gt; See Tizonia’s website: [Tizonia 0.21.0 brings changes to minimize the YouTube
+&gt; API quota issues](<a class="reference external" href="https://tizonia.org/news/2020/03/08/release-0-21-0/">https://tizonia.org/news/2020/03/08/release-0-21-0/</a>)</p>
 <ul class="simple">
 <li><p>[2020-01-19] Tizonia</p></li>
 </ul>
@@ -344,28 +354,26 @@ Foundation project, with Gurkirpal Singh and Julien Isorce).</p>
 &gt; release and all the dependencies.</p>
 <p>&gt; DISCLAIMER: Trust no-one. Please have a look at the installation script
 &gt; before running it on your system!.</p>
-<p>Debian packages are stored in [Bintray](<a class="reference external" href="https://bintray.com/tizonia">https://bintray.com/tizonia</a>), with the
+<p>Debian packages are stored on [Bintray](<a class="reference external" href="https://bintray.com/tizonia">https://bintray.com/tizonia</a>), with the
 following distro/arch combinations:</p>
 <dl>
 <dt>&lt;div align=”center”&gt;</dt><dd><dl>
 <dt>&lt;table&gt;</dt><dd><dl>
 <dt>&lt;thead&gt;</dt><dd><dl class="simple">
-<dt>&lt;tr&gt;</dt><dd><p>&lt;th align=”center”&gt;Ubuntu Xenial&lt;/th&gt;
-&lt;th align=”center”&gt;Ubuntu Bionic&lt;/th&gt;
+<dt>&lt;tr&gt;</dt><dd><p>&lt;th align=”center”&gt;Ubuntu Bionic&lt;/th&gt;
+&lt;th align=”center”&gt;Ubuntu Focal&lt;/th&gt;
 &lt;th align=”center”&gt;Debian Buster&lt;/th&gt;
 &lt;th align=”center”&gt;Debian Bullseye&lt;/th&gt;
-&lt;th align=”center”&gt;Raspbian Stretch&lt;/th&gt;
 &lt;th align=”center”&gt;Raspbian Buster&lt;/th&gt;</p>
 </dd>
 </dl>
 <p>&lt;/tr&gt;
 &lt;tr&gt;</p>
 <blockquote>
-<div><p>&lt;th align=”center”&gt;(16.04)&lt;/th&gt;
-&lt;th align=”center”&gt;(18.04)&lt;/th&gt;
+<div><p>&lt;th align=”center”&gt;(18.04)&lt;/th&gt;
+&lt;th align=”center”&gt;(20.04)&lt;/th&gt;
 &lt;th align=”center”&gt;(10)&lt;/th&gt;
 &lt;th align=”center”&gt;(11)&lt;/th&gt;
-&lt;th align=”center”&gt;(9)&lt;/th&gt;
 &lt;th align=”center”&gt;(10)&lt;/th&gt;</p>
 </div></blockquote>
 <p>&lt;/tr&gt;</p>
@@ -375,11 +383,10 @@ following distro/arch combinations:</p>
 &lt;tbody&gt;</p>
 <blockquote>
 <div><dl class="simple">
-<dt>&lt;tr&gt;</dt><dd><p>&lt;td align=”center”&gt;amd64&lt;/td&gt;
-&lt;td align=”center”&gt;amd64, armhf&lt;/td&gt;
+<dt>&lt;tr&gt;</dt><dd><p>&lt;td align=”center”&gt;amd64, armhf&lt;/td&gt;
+&lt;td align=”center”&gt;amd64&lt;/td&gt;
 &lt;td align=”center”&gt;amd64, armhf&lt;/td&gt;
 &lt;td align=”center”&gt;amd64&lt;/td&gt;
-&lt;td align=”center”&gt;armhf&lt;/td&gt;
 &lt;td align=”center”&gt;armhf&lt;/td&gt;</p>
 </dd>
 </dl>
