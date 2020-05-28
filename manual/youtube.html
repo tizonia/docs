@@ -153,7 +153,18 @@ like the one pictured below (see also <a class="reference internal" href="config
 <span class="c1">#                          Increase in case of cuts.</span>
 </pre></div>
 </div>
-<dl class="simple">
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">youtube.api_key</span></code></dt><dd><p>Tizonia is distributed with its own internal YouTube API key which is
+used when making requests to the YouTube service. The YouTube API key has a
+daily quota and the request limit may be exceeded in occasions, as there are
+many users of Tizonia globally.</p>
+<p>E.g.:
+<code class="docutils literal notranslate"><span class="pre">[YouTube]</span> <span class="pre">Youtube</span> <span class="pre">Error</span> <span class="pre">403:</span> <span class="pre">Daily</span> <span class="pre">Limit</span> <span class="pre">Exceeded.</span> <span class="pre">The</span> <span class="pre">quota</span> <span class="pre">will</span> <span class="pre">be</span> <span class="pre">reset</span>
+<span class="pre">at</span> <span class="pre">midnight</span> <span class="pre">Pacific</span> <span class="pre">Time</span> <span class="pre">(PT)...</span></code></p>
+<p>If you see this message, it is RECOMMENDED that you create your own YouTube
+api key, and add it to your tizonia.conf. See info at:
+<a class="reference external" href="https://www.slickremix.com/docs/get-api-key-for-youtube/">https://www.slickremix.com/docs/get-api-key-for-youtube/</a></p>
+</dd>
 <dt><code class="docutils literal notranslate"><span class="pre">youtube.buffer_seconds</span></code></dt><dd><p>This is the minimum size of the audio buffer (in seconds) that Tizonia will
 use while downloading the audio streams. It may be increased in case of
 cuts, but usually not required. Default: 60.</p>
