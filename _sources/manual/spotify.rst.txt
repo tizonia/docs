@@ -22,7 +22,7 @@ like the one pictured below (see also :ref:`tizonia-config-label`).
 
 .. code-block:: bash
 
-# Spotify configuration
+   # Spotify configuration
    # -------------------------------------------------------------------------
    # To avoid passing this information on the command line, uncomment
    # and configure accordingly

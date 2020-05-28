@@ -149,21 +149,20 @@ file system permissions to prevent other users from accessing your
 credentials.</p>
 <p>E.g.: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">chmod</span> <span class="pre">og-rwx</span> <span class="pre">$HOME/.config/tizonia/tizonia.conf</span></code></p>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Spotify configuration</span>
+<span class="c1"># -------------------------------------------------------------------------</span>
+<span class="c1"># To avoid passing this information on the command line, uncomment</span>
+<span class="c1"># and configure accordingly</span>
+<span class="c1">#</span>
+<span class="c1"># spotify.user     = user</span>
+<span class="c1"># spotify.password = pass</span>
+<span class="c1"># spotify.recover_lost_token = false (set to true to continue playback after</span>
+<span class="c1">#                                     the token has been [spuriously?] lost)</span>
+<span class="c1"># spotify.allow_explicit_tracks = false (set to true to allow explicit tracks)</span>
+<span class="c1"># spotify.preferred_bitrate = Three possible values: 96, 160, or 320 ; default: 320</span>
 </pre></div>
 </div>
 <dl class="simple">
-<dt># Spotify configuration</dt><dd><p># ————————————————————————-
-# To avoid passing this information on the command line, uncomment
-# and configure accordingly
-#
-# spotify.user     = user
-# spotify.password = pass
-# spotify.recover_lost_token = false (set to true to continue playback after
-#                                     the token has been [spuriously?] lost)
-# spotify.allow_explicit_tracks = false (set to true to allow explicit tracks)
-# spotify.preferred_bitrate = Three possible values: 96, 160, or 320 ; default: 320</p>
-</dd>
 <dt><code class="docutils literal notranslate"><span class="pre">spotify.user</span></code></dt><dd><p>The username of the Spotify Premium account. For older accounts, the
 username may be related to account email address (i.e. the email address
 without the &#64;domain part). For newer accounts, the username is a random
