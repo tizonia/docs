@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>YouTube &#8212; Tizonia 0.22.0 documentation</title>
+    <title>Snap Package &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -14,8 +14,8 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="TuneIn" href="tunein.html" />
-    <link rel="prev" title="SoundCloud" href="soundcloud.html" />
+    <link rel="next" title="Docker Image" href="docker.html" />
+    <link rel="prev" title="Remote Control" href="mprisv2.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -70,7 +70,7 @@
 <li class="toctree-l2"><a class="reference internal" href="spotify.html">Spotify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="googlemusic.html">Google Play Music</a></li>
 <li class="toctree-l2"><a class="reference internal" href="soundcloud.html">SoundCloud</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">YouTube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="youtube.html">YouTube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tunein.html">TuneIn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plex.html">Plex</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iheart.html">iHeart</a></li>
@@ -81,7 +81,7 @@
 <li class="toctree-l2"><a class="reference internal" href="openmax.html">OpenMAX IL Options</a></li>
 <li class="toctree-l2"><a class="reference internal" href="localmedia.html">Local Media Playback</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mprisv2.html">Remote Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="snap.html">Snap Package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Snap Package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docker.html">Docker Image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="macos.html">macOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="raspberrypi.html">Raspberry Pi</a></li>
@@ -110,8 +110,8 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="manual.html">User Guide</a><ul>
-      <li>Previous: <a href="soundcloud.html" title="previous chapter">SoundCloud</a></li>
-      <li>Next: <a href="tunein.html" title="next chapter">TuneIn</a></li>
+      <li>Previous: <a href="mprisv2.html" title="previous chapter">Remote Control</a></li>
+      <li>Next: <a href="docker.html" title="next chapter">Docker Image</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -134,76 +134,64 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="youtube">
-<h1>YouTube<a class="headerlink" href="#youtube" title="Permalink to this headline">¶</a></h1>
-<p>Streaming from YouTube is possible without credentials. Simply use one of the
-command-line options provided.</p>
+  <div class="section" id="snap-package">
+<h1>Snap Package<a class="headerlink" href="#snap-package" title="Permalink to this headline">¶</a></h1>
+<p>In addition to Debian packages, Tizonia is also available as a Snap package.</p>
+<div class="section" id="snap-store">
+<h2>SNAP STORE<a class="headerlink" href="#snap-store" title="Permalink to this headline">¶</a></h2>
+<p>The official Snap package of Tizonia is available from the Snap Store, for the
+following architectures:</p>
+<ul class="simple">
+<li><p>amd64</p></li>
+<li><p>armhf</p></li>
+<li><p>i386</p></li>
+</ul>
+<iframe
+src="https://snapcraft.io/tizonia/embedded?button=black&channels=true&summary=true&screenshot=true"
+frameborder="0" width="100%" height="1100px" style="background: #FFFFFF;
+border: 1px solid #CCC; border-radius: 2px;"></iframe></div>
 <div class="section" id="configuration">
-<h2>CONFIGURATION<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-<p>The Tizonia configuration file contains a block under the <code class="docutils literal notranslate"><span class="pre">[tizonia]</span></code> section
-like the one pictured below (see also <a class="reference internal" href="config.html#tizonia-config-label"><span class="std std-ref">Configuration File</span></a>).</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># YouTube configuration</span>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Snap packages are a bit different, the <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> directory of a snap package is
+under <code class="docutils literal notranslate"><span class="pre">$HOME/snap/&lt;package-name&gt;/current/</span></code>.  Therefore, when the Snap of
+Tizonia is installed, Tizonia’s configuration file needs to be found under:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$HOME/snap/tizonia/current/.config/tizonia/tizonia.conf</span></code></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tizonia writes its configuration file on first run. That means, you need to run
+Tizonia at least once after installation, in order for <code class="docutils literal notranslate"><span class="pre">tizonia.conf</span></code> to be
+populated in its directory. After that, you can include there your login
+information for the various services supported by Tizonia. See
+<a class="reference internal" href="config.html#tizonia-config-label"><span class="std std-ref">Configuration File</span></a> under the <code class="docutils literal notranslate"><span class="pre">[tizonia]</span></code> section.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that if you simply copy your existing <code class="docutils literal notranslate"><span class="pre">tizonia.conf</span></code> from a
+previous installation of Tizonia, i.e. from
+<code class="docutils literal notranslate"><span class="pre">$HOME/.config/tizonia/tizonia.conf</span></code>, Tizonia installed as a snap
+will not work. This is because the <code class="docutils literal notranslate"><span class="pre">component-paths</span></code> directory is
+different in Tizonia Snap installations and Tizonia Debian
+installations. For the Snap package to work, your <code class="docutils literal notranslate"><span class="pre">tizonia.conf</span></code>
+needs to have the following content in that section of the config
+file:</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Component plugins discovery</span>
 <span class="c1"># -------------------------------------------------------------------------</span>
-<span class="c1"># To avoid passing this information on the command line, uncomment and</span>
-<span class="c1"># configure as needed.</span>
-<span class="c1">#</span>
-<span class="c1"># youtube.api_key = youtube api key. Optional but RECOMMENDED to avoid</span>
-<span class="c1">#                   problems when the daily quota of the interal api key</span>
-<span class="c1">#                   is exceeded. To create your YouTube api key, see info at:</span>
-<span class="c1">#                   https://www.slickremix.com/docs/get-api-key-for-youtube/</span>
-<span class="c1"># youtube.buffer_seconds = size of the audio buffer (in seconds) to use</span>
-<span class="c1">#                          while downloading streams. Default: 60.</span>
-<span class="c1">#                          Increase in case of cuts.</span>
+<span class="c1"># A comma-separated list of paths to be scanned by the Tizonia IL Core when</span>
+<span class="c1"># searching for component plugins</span>
+component-paths <span class="o">=</span> <span class="nv">$TIZONIA_PLUGINS_DIR</span>
 </pre></div>
 </div>
-<dl>
-<dt><code class="docutils literal notranslate"><span class="pre">youtube.api_key</span></code></dt><dd><p>Tizonia is distributed with its own internal YouTube API key which is
-used when making requests to the YouTube service. The YouTube API key has a
-daily quota and the request limit may be exceeded in occasions, as there are
-many users of Tizonia globally.</p>
-<p>E.g.:
-<code class="docutils literal notranslate"><span class="pre">[YouTube]</span> <span class="pre">Youtube</span> <span class="pre">Error</span> <span class="pre">403:</span> <span class="pre">Daily</span> <span class="pre">Limit</span> <span class="pre">Exceeded.</span> <span class="pre">The</span> <span class="pre">quota</span> <span class="pre">will</span> <span class="pre">be</span> <span class="pre">reset</span>
-<span class="pre">at</span> <span class="pre">midnight</span> <span class="pre">Pacific</span> <span class="pre">Time</span> <span class="pre">(PT)...</span></code></p>
-<p>If you see this message, it is RECOMMENDED that you create your own YouTube
-api key, and add it to your tizonia.conf. See info at:
-<a class="reference external" href="https://www.slickremix.com/docs/get-api-key-for-youtube/">https://www.slickremix.com/docs/get-api-key-for-youtube/</a></p>
-</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">youtube.buffer_seconds</span></code></dt><dd><p>This is the minimum size of the audio buffer (in seconds) that Tizonia will
-use while downloading the audio streams. It may be increased in case of
-cuts, but usually not required. Default: 60.</p>
-</dd>
-</dl>
 </div>
-<div class="section" id="options">
-<h2>OPTIONS<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
-<dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">--youtube-audio-stream</span> <span class="pre">arg</span></code></dt><dd><p>Play a YouTube audio stream from a video url or video id.</p>
-</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--youtube-audio-playlist</span> <span class="pre">arg</span></code></dt><dd><p>Play a YouTube audio playlist from a playlist url or playlist id.</p>
-</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--youtube-audio-mix</span> <span class="pre">arg</span></code></dt><dd><p>Play a YouTube mix from a video url or video id.</p>
-</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--youtube-audio-search</span> <span class="pre">arg</span></code></dt><dd><p>Search and play YouTube audio streams.</p>
-</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--youtube-audio-mix-search</span> <span class="pre">arg</span></code></dt><dd><p>Play a YouTube mix from a search term.</p>
-</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--youtube-audio-channel-uploads</span> <span class="pre">arg</span></code></dt><dd><p>Play all videos uploaded to a YouTube channel (arg = channel url or name).</p>
-</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--youtube-audio-channel-playlist</span> <span class="pre">arg</span></code></dt><dd><p>Play a playlist from particular YouTube channel (arg = ‘&lt;channel-name[space]play list-name&gt;’).</p>
-</dd>
-</dl>
-</div>
-<div class="section" id="examples">
-<h2>EXAMPLES<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tizonia --youtube-audio-mix-search <span class="s1">&#39;the final countdown&#39;</span>
-
-$ tizonia --youtube-audio-channel-playlist <span class="s1">&#39;UCGJdzJQ3R1BpahSvcFq23HA masters of metal&#39;</span>
-
-$ tizonia --youtube-audio-channel-uploads <span class="s1">&#39;UCGJdzJQ3R1BpahSvcFq23HA&#39;</span>
-
-$ tizonia --youtube-audio-stream v2AC41dglnM
-</pre></div>
-</div>
+<div class="section" id="the-tizonia-snap-github-repository">
+<h2>The <cite>tizonia-snap</cite> GitHub Repository<a class="headerlink" href="#the-tizonia-snap-github-repository" title="Permalink to this headline">¶</a></h2>
+<p>For more information about Tizonia packaged as a Snap, please visit the package
+repository on GitHub:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tizonia/tizonia-snap">https://github.com/tizonia/tizonia-snap</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -222,7 +210,7 @@ $ tizonia --youtube-audio-stream v2AC41dglnM
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../_sources/manual/youtube.rst.txt"
+      <a href="../_sources/manual/snap.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

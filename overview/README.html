@@ -241,6 +241,8 @@ servers and Chromecast devices.</p></li>
 <li><p>[Configuration](#configuration)</p></li>
 <li><p>[Upgrade](#upgrade)
 - [Debian / Ubuntu / Raspbian](#debian–ubuntu–raspbian-1)</p></li>
+<li><p>[Uninstall](#uninstall)
+- [Debian / Ubuntu / Raspbian](#debian–ubuntu–raspbian-1)</p></li>
 <li><p>[Hall of Fame](#hall-of-fame)</p></li>
 </ul>
 <p>&lt;!– END doctoc generated TOC please keep comment here to allow auto update –&gt;</p>
@@ -491,6 +493,16 @@ $ sudo -H pip3 install –upgrade gmusicapi soundcloud youtube-dl pafy pycountry
 <p># For Tizonia v0.18.0 or older: Python 2 dependencies
 $ sudo -H pip2 install –upgrade gmusicapi soundcloud youtube-dl pafy pycountry titlecase pychromecast plexapi fuzzywuzzy eventlet python-Levenshtein &amp;&amp; sudo -H pip2 install git+https://github.com/plamere/spotipy.git –upgrade</p>
 <p><a href="#id29"><span class="problematic" id="id30">``</span></a><a href="#id31"><span class="problematic" id="id32">`</span></a></p>
+<p>&lt;/details&gt;</p>
+<p>&amp;nbsp;&amp;nbsp;</p>
+<p># Uninstall</p>
+<p>## Debian / Ubuntu / Raspbian</p>
+<p>To uninstall Tizonia and all its dependencies, run the following commands</p>
+<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show details&lt;/b&gt;&lt;/summary&gt;</p>
+<p><a href="#id33"><span class="problematic" id="id34">``</span></a><a href="#id35"><span class="problematic" id="id36">`</span></a>bash</p>
+<p># Remove/purge all tizonia packages installed in the system
+sudo apt-get -y remove –purge tizonia-all &amp;&amp; sudo apt-get -y autoremove
+<a href="#id37"><span class="problematic" id="id38">``</span></a><a href="#id39"><span class="problematic" id="id40">`</span></a></p>
 <p>&lt;/details&gt;</p>
 <p>&amp;nbsp;&amp;nbsp;</p>
 <p># Hall of Fame</p>

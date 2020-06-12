@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Docker Image &#8212; Tizonia 0.22.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="macOS" href="macos.html" />
+    <link rel="prev" title="Snap Package" href="snap.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/tizonia_logo_200.gif" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=tizonia&repo=tizonia-openmax-il&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a class="badge" href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+    <img
+        alt="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+        src="https://secure.travis-ci.org/tizonia/tizonia-openmax-il.svg?branch=master"
+    />
+</a>
+</p>
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="manual.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="helptopics.html">Help Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html">Configuration File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keyboard.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="global.html">Global Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spotify.html">Spotify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="googlemusic.html">Google Play Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="soundcloud.html">SoundCloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="youtube.html">YouTube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tunein.html">TuneIn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plex.html">Plex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iheart.html">iHeart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html">Shoutcast Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client.html">Shoutcast Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chromecast.html">Chromecast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="themes.html">Color Themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="openmax.html">OpenMAX IL Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="localmedia.html">Local Media Playback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mprisv2.html">Remote Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snap.html">Snap Package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="macos.html">macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="raspberrypi.html">Raspberry Pi</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/development.html">Developer Guide</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://tizonia.org">Tizonia Website</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il">Source (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/tizonia/tizonia-openmax-il/issues">Issues (GitHub)</a></li>
+    
+    <li class="toctree-l1"><a href="https://bintray.com/tizonia">Binaries (Bintray)</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="manual.html">User Guide</a><ul>
+      <li>Previous: <a href="snap.html" title="previous chapter">Snap Package</a></li>
+      <li>Next: <a href="macos.html" title="next chapter">macOS</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="docker-image">
+<span id="tizonia-docker-label"></span><h1>Docker Image<a class="headerlink" href="#docker-image" title="Permalink to this headline">¶</a></h1>
+<p>In addition to Debian and Snap packages, there is also a docker image of
+Tizonia in the <a class="reference external" href="https://hub.docker.com/r/tizonia/docker-tizonia">Docker Hub</a>.</p>
+<div class="section" id="tizonia-on-docker">
+<h2>TIZONIA ON DOCKER<a class="headerlink" href="#tizonia-on-docker" title="Permalink to this headline">¶</a></h2>
+<p>To pull the image, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker pull tizonia/docker-tizonia
+</pre></div>
+</div>
+</div>
+<div class="section" id="launch-command">
+<h2>Launch Command<a class="headerlink" href="#launch-command" title="Permalink to this headline">¶</a></h2>
+<p>There is a convenience script to start Tizonia called <a class="reference external" href="https://github.com/tizonia/docker-tizonia/blob/master/docker-tizonia">docker-tizonia</a>. The
+script bind mounts the host’s <code class="docutils literal notranslate"><span class="pre">$HOME/.config/tizonia</span></code> to make
+<code class="docutils literal notranslate"><span class="pre">tizonia.conf</span></code> available inside the container.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Tizonia process running inside the container needs ‘rwx’ permissions on
+<code class="docutils literal notranslate"><span class="pre">$HOME/.config/tizonia</span></code>.</p>
+</div>
+<p>The script also bind mounts the host’s <code class="docutils literal notranslate"><span class="pre">$HOME/.cache</span></code> to allow
+debug logs to be written to disk. For example, gmusicapi logs for Google Play
+Music can be found at <code class="docutils literal notranslate"><span class="pre">$HOME/.cache/gmusicapi/log/gmusicapi.log</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="nv">USER_ID</span><span class="o">=</span><span class="k">$(</span>id -u<span class="k">)</span><span class="p">;</span>
+<span class="nv">GROUP_ID</span><span class="o">=</span><span class="k">$(</span>id -g<span class="k">)</span><span class="p">;</span>
+
+<span class="k">if</span> uname -s <span class="p">|</span> grep -iq <span class="s2">&quot;Darwin&quot;</span> <span class="p">;</span> <span class="k">then</span>
+  <span class="nv">pulse_server</span><span class="o">=</span>docker.for.mac.localhost
+  <span class="nv">runtime_dir</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">&quot;</span>
+<span class="k">else</span>
+  <span class="nv">pulse_server</span><span class="o">=</span>unix:<span class="s2">&quot;</span><span class="si">${</span><span class="nv">XDG_RUNTIME_DIR</span><span class="si">}</span><span class="s2">/pulse/native&quot;</span>
+  <span class="nv">runtime_dir</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">XDG_RUNTIME_DIR</span><span class="si">}</span><span class="s2">/pulse&quot;</span>
+<span class="k">fi</span>
+
+docker run -it --rm <span class="se">\</span>
+    -e <span class="nv">PULSE_SERVER</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$pulse_server</span><span class="s2">&quot;</span> <span class="se">\</span>
+    --volume<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$runtime_dir</span><span class="s2">&quot;</span>:<span class="s2">&quot;</span><span class="nv">$runtime_dir</span><span class="s2">&quot;</span> <span class="se">\</span>
+    --volume<span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.config/tizonia&quot;</span>:/home/tizonia/.config/tizonia <span class="se">\</span>
+    --volume<span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.config/pulse/cookie&quot;</span>:/home/tizonia/.config/pulse/cookie <span class="se">\</span>
+    --volume<span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.cache&quot;</span>:/home/tizonia/.cache <span class="se">\</span>
+    --name tizonia <span class="se">\</span>
+    tizonia/docker-tizonia <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please make sure you download the latest version of the convenience script
+from its location on GitHub:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tizonia/docker-tizonia/blob/master/docker-tizonia">https://github.com/tizonia/docker-tizonia/blob/master/docker-tizonia</a></p></li>
+</ul>
+</div>
+<p>Once the script is in your path, and the permissions of
+<code class="docutils literal notranslate"><span class="pre">$HOME/.config/tizonia</span></code> have been changed, just use the usual Tizonia
+commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change Tizonia&#39;s config dir permissions</span>
+$ chmod a+wrx <span class="nv">$HOME</span>/.config/tizonia
+
+<span class="c1"># Install the wrapper script in a location in your PATH</span>
+$ sudo install docker-tizonia /usr/local/bin
+
+<span class="c1"># Pass the usual Tizonia commands to the wrapper</span>
+$ docker-tizonia --youtube-audio-mix-search <span class="s2">&quot;Queen Official&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="known-issues">
+<h2>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tizonia-exiting-omx-errorinsufficientresources">
+<h3><code class="docutils literal notranslate"><span class="pre">tizonia</span> <span class="pre">exiting</span> <span class="pre">(OMX_ErrorInsufficientResources)</span></code><a class="headerlink" href="#tizonia-exiting-omx-errorinsufficientresources" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes, the Tizonia instance running in the container is unable to connect
+to the PulseAudio (PA) server running on the host.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./docker-tizonia --spotify-album <span class="s1">&#39;Chocolate Starfish &amp; the Hot Dog Flavored Water&#39;</span>
+tizonia <span class="m">0</span>.22.0. Copyright <span class="o">(</span>C<span class="o">)</span> <span class="m">2020</span> Juan A. Rubio and contributors
+This software is part of the Tizonia project &lt;https://tizonia.org&gt;
+
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Connecting<span class="o">]</span> : <span class="s1">&#39;e@mail.com&#39;</span>.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Album search<span class="o">]</span> <span class="s1">&#39;Chocolate Starfish &amp; the Hot Dog Flavored Water&#39;</span>.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Album<span class="o">]</span> <span class="s1">&#39;Chocolate Starfish And The Hot Dog Flavored Water&#39;</span>.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#01] &#39;Intro&#39; [Limp Bizkit] (1m:19s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#02] &#39;Hot Dog&#39; [Limp Bizkit] (3m:50s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#03] &#39;My Generation&#39; [Limp Bizkit] (3m:41s) &lt;Explicit&gt;.</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#04] &#39;Full Nelson&#39; [Limp Bizkit] (4m:07s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#05] &#39;My Way&#39; [Limp Bizkit] (4m:33s) &lt;Explicit&gt;.</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#06] &#39;Rollin&#39; (Air Raid Vehicle)&#39; [Limp Bizkit] (3m:34s) &lt;Explicit&gt;.</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#07] &#39;Livin&#39; It Up&#39; [Limp Bizkit] (4m:24s) &lt;Explicit&gt;.</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#08] &#39;The One&#39; [Limp Bizkit] (5m:43s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#09] &#39;Getcha Groove On - Dirt Road Mix&#39; [Limp Bizkit] (4m:19s) &lt;Explicit&gt;.</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#10] &#39;Take A Look Around&#39; [Limp Bizkit] (5m:21s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#11] &#39;It&#39;ll Be OK&#39; [Limp Bizkit] (5m:06s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#12] &#39;Boiler&#39; [Limp Bizkit] (7m:00s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#13] &#39;Hold On&#39; [Limp Bizkit] (5m:48s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#14] &#39;Rollin&#39; (Urban Assault Vehicle)&#39; [Limp Bizkit] (6m:23s) &lt;Explicit&gt;.</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Track<span class="o">]</span> <span class="o">[</span><span class="c1">#15] &#39;Outro&#39; [Limp Bizkit] (9m:50s).</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Tracks in queue<span class="o">]</span> <span class="s1">&#39;15&#39;</span>.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Cache<span class="o">]</span>: <span class="s1">&#39;/var/tmp/tizonia-tizonia-spotify-e@mail.com&#39;</span>
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Login<span class="o">]</span> <span class="s1">&#39;r8eaz0tuw621b2z1kbq41a2a5&#39;</span> logged in.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Streaming<span class="o">]</span> : <span class="s1">&#39;Chocolate Starfish &amp; the Hot Dog Flavored Water&#39;</span>.
+
+tizonia exiting <span class="o">(</span>OMX_ErrorInsufficientResources<span class="o">)</span>.
+
+ <span class="o">[</span>OMX.Aratelia.audio_renderer.pulseaudio.pcm:port:0<span class="o">]</span>
+ <span class="o">[</span>OMX_ErrorInsufficientResources<span class="o">]</span>
+</pre></div>
+</div>
+<p>This occurs because Tizonia has not got the necessary access rights to talk to
+the PA server. That may happen for a number of reasons, including but not
+limited to:</p>
+<ul class="simple">
+<li><p>PA server restarted, and the content of the PA authentication cookie changed
+(<code class="docutils literal notranslate"><span class="pre">$HOME/.config/pulse/cookie</span></code>).</p></li>
+<li><p>The location of the PA cookie is not accessible to the Tizonia instance
+(i.e. check the permissions of the path: <code class="docutils literal notranslate"><span class="pre">$HOME/.config/pulse/cookie</span></code>).</p></li>
+</ul>
+<p>It has been reported that this problem sometimes goes away with one of these
+solutions:</p>
+<ul class="simple">
+<li><p>restarting PulseAudio.</p></li>
+<li><p>restarting the desktop manager session.</p></li>
+<li><p>rebooting the machine.</p></li>
+</ul>
+<p>For further discussion on this issue, see GitHub bug
+<a class="reference external" href="https://github.com/tizonia/docker-tizonia/issues/19">tizonia/docker-tizonia/#19</a>.</p>
+</div>
+</div>
+<div class="section" id="mac-support">
+<span id="tizonia-docker-macos-label"></span><h2>Mac Support<a class="headerlink" href="#mac-support" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1">
+<h3>Step 1)<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
+<p>It is required that PulseAudio to be installed via homebrew (<code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span>
+<span class="pre">pulseaudio</span></code>), and the following lines in
+<code class="docutils literal notranslate"><span class="pre">/usr/local/Cellar/pulseaudio/13.0/etc/pulse/default.pa</span></code> to be uncommented:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>load-module module-esound-protocol-tcp
+load-module module-native-protocol-tcp
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-2">
+<h3>Step 2)<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
+<p>To choose the device being used for output, bring up a list of possible output
+devices and select one as the default sink:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pactl list short sinks
+
+pacmd set-default-sink n  <span class="c1"># where n is the chosen output number</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-3">
+<h3>Step 3)<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
+<p>Start the Pulseaudio daemon:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pulseaudio --load<span class="o">=</span>module-native-protocol-tcp --exit-idle-time<span class="o">=</span>-1 --daemon
+</pre></div>
+</div>
+<p>You should now be able to utilize the <code class="docutils literal notranslate"><span class="pre">docker-tizonia</span></code> script to route audio
+from the docker container to the host machine!</p>
+</div>
+</div>
+<div class="section" id="the-docker-tizonia-github-repository">
+<h2>The <cite>docker-tizonia</cite> GitHub Repository<a class="headerlink" href="#the-docker-tizonia-github-repository" title="Permalink to this headline">¶</a></h2>
+<p>For up-to-date information about Tizonia packaged as a Docker container, please
+visit the Dockerfile repository on GitHub:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tizonia/docker-tizonia">https://github.com/tizonia/docker-tizonia</a></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2020, Juan A. Rubio and contributors.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/manual/docker.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/tizonia/tizonia-openmax-il" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21817639-6']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>
