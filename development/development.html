@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Guide &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +15,7 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="PROJECT.html" />
+    <link rel="next" title="Components" href="PROJECT.html" />
     <link rel="prev" title="Raspberry Pi" href="../manual/raspberrypi.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -62,6 +63,18 @@
 
 <h3>Navigation</h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#news">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#uninstall">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/COPYING.LESSER.html">License</a></li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../manual/manual.html">User Guide</a></li>
 </ul>
 <ul class="current">
@@ -94,7 +107,7 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
       <li>Previous: <a href="../manual/raspberrypi.html" title="previous chapter">Raspberry Pi</a></li>
-      <li>Next: <a href="PROJECT.html" title="next chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="PROJECT.html" title="next chapter">Components</a></li>
   </ul></li>
 </ul>
 </div>
@@ -122,14 +135,117 @@
 </div>
 <div class="section" id="components">
 <h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
-<p>Familiarize yourself with the various building blocks of the project.</p>
+<p>Familiarize yourself with the various building blocks of the project (<strong>click on the image to enlarge</strong>):</p>
+<div class="figure align-default" id="id1">
+<p class="plantuml">
+<a href="../_images/plantuml-2e92781fb0e3deb46951038a84d58e0bf0600be0.png"><img src="../_images/plantuml-2e92781fb0e3deb46951038a84d58e0bf0600be0.png" alt="&#64;startuml
+package &quot;Tizonia (command-line app)&quot; {
+  node &quot;Local Playback&quot; {
+    [Local playback FSMs and IL graphs]
+  }
+  node &quot;Cloud Playback&quot; {
+    [Cloud service FSMs and IL graphs]
+  }
+  node &quot;Chromecast&quot; {
+    [Chromecast service FSMs and IL graphs]
+  }
+  node &quot;Shoutcast/Icecast Client&quot; {
+    [HTTP client FSMs and IL graphs]
+  }
+  node &quot;Shoutcast/Icecast Server&quot; {
+    [HTTP server FSMs and IL graphs]
+  }
+}
+
+node &quot;OpenMAX IL 1.2 Subsystem&quot; {
+  IL - [IL Core (libtizilcore)]
+  [IL Base plugin (libtizonia)] - IL
+  IL -left- [IL Resource Manager ]
+  IL -right- [OS APIS / Utilities (libtizplatform)]
+  [Local playback FSMs and IL graphs] --&gt; IL
+  [Cloud service FSMs and IL graphs] --&gt; IL
+  [Chromecast service FSMs and IL graphs] -- IL
+  [HTTP client FSMs and IL graphs] -- IL
+  [HTTP server FSMs and IL graphs] -- IL
+}
+
+
+database &quot;OpenMAX IL 1.2 Plugins&quot; {
+   [OMX.Aratelia.audio_decoder.opus] - IL_API
+   IL_API - [OMX.Aratelia.audio_renderer.pulseaudio.pcm]
+   [OMX.Aratelia.audio_decoder.aac] -up- IL_API
+   [OMX.Aratelia.audio_source.http] -up- IL_API
+   [OMX plugin X ...] -up- IL_API
+   [OMX plugin Y ...] -up- IL_API
+   IL --&gt; IL_API
+}
+
+
+node &quot;Python Proxies (aka clients)&quot; {
+  [tizgmusicproxy] - clientAPI_gmusic
+  [tizyoutubeproxy] - clientAPI_youtube
+  [tizspotifyproxy] - clientAPI_spotify
+  [tizplexproxy] - clientAPI_plex
+  [tizsoundcloudproxy] - clientAPI_soundcloud
+  [tiztuneinproxy] - clientAPI_tunein
+  [tizxxxproxy] - clientAPI_xxx
+  [OMX.Aratelia.audio_source.http] --&gt; clientAPI_gmusic
+  [OMX.Aratelia.audio_source.http] --&gt; clientAPI_youtube
+  [OMX.Aratelia.audio_source.http] --&gt; clientAPI_spotify
+  [OMX.Aratelia.audio_source.http] --&gt; clientAPI_plex
+  [OMX.Aratelia.audio_source.http] --&gt; clientAPI_soundcloud
+  [OMX.Aratelia.audio_source.http] --&gt; clientAPI_tunein
+  [OMX.Aratelia.audio_source.http] --&gt; clientAPI_xxx
+}
+
+cloud {
+  [Google Play Music] -up-&gt; clientAPI_gmusic
+  [Spotify] -up-&gt; clientAPI_spotify
+  [YouTube] -up-&gt; clientAPI_youtube
+  [Plex] -up-&gt; clientAPI_plex
+  [SoundCloud] -up-&gt; clientAPI_soundcloud
+  [TuneIn] -up-&gt; clientAPI_tunein
+  [ServiceX] -up-&gt; clientAPI_xxx
+}
+&#64;enduml" style="width: 20.0cm"/></a>
+</p>
+<p class="caption"><span class="caption-text">The Tizonia Project components</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="PROJECT.html">Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PROJECT.html#command-line-cloud-music-player-and-audio-streaming-client-server">Command-line cloud music player and audio streaming client/server.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PROJECT.html#a-fully-featured-openmax-il-1-2-multimedia-framework">A fully-featured OpenMAX IL 1.2 multimedia framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PROJECT.html#openmax-il-1-2-plugins">OpenMAX IL 1.2 plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PROJECT.html#skema-tizonia-s-test-execution-framework-for-openmax-il-components">Skema: Tizonia’s test execution framework for OpenMAX IL components.</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="building-from-source">
 <h2>Building from Source<a class="headerlink" href="#building-from-source" title="Permalink to this headline">¶</a></h2>
 <p>Follow one of these guides to build and run the codebase locally.</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BUILDING_with_meson.html">Building from Source (with Meson) [RECOMMENDED]</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING_with_meson.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING_with_meson.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING_with_meson.html#building">Building</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BUILDING.html">Building from Source (with Autotools)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#building">Building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#tizonia-s-configuration-file">Tizonia’s configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#resource-manager-s-d-bus-service-activation-file-optional">Resource Manager’s D-BUS service activation file (optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#known-issues">Known issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#speeding-up-re-compilation-using-ccache">Speeding up (re-)compilation using ccache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUILDING.html#creating-a-json-compilation-database-for-use-with-e-g-emacs-rtags">Creating a JSON compilation database, for use with e.g. Emacs RTags</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="coding-guidelines">
@@ -193,7 +309,7 @@
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

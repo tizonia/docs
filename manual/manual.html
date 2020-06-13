@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Guide &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,7 +16,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Help Topics" href="helptopics.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="../overview/COPYING.LESSER.html" />
+    <link rel="prev" title="License" href="../overview/COPYING.LESSER.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -61,6 +62,18 @@
 
 
 <h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#news">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#upgrade">Upgrade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#uninstall">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/README.html#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/COPYING.LESSER.html">License</a></li>
+</ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="helptopics.html">Help Topics</a></li>
@@ -109,7 +122,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../overview/COPYING.LESSER.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Previous: <a href="../overview/COPYING.LESSER.html" title="previous chapter">License</a></li>
       <li>Next: <a href="helptopics.html" title="next chapter">Help Topics</a></li>
   </ul></li>
 </ul>
@@ -137,22 +150,21 @@
 <p>Tizonia provides an efficient and unbstrusive music search and listening
 experience by following a few principles:</p>
 <dl class="simple">
-<dt><strong>Simplest CLI UI</strong></dt><dd><p>Because the keyboard is faster than the mouse you get to listen to the music
-that you want in less time. Music plays almost immediately.</p>
+<dt><strong>Simple CLI UI</strong></dt><dd><p>The keyboard is faster than the mouse, the goal is to listen to the music in
+less time. With Tizonia, the music plays almost immediately.</p>
 </dd>
-<dt><strong>Play the music, not matter what</strong></dt><dd><p>Tizonia uses fuzzy string matching techniques to match your search keywords
+<dt><strong>Must play some music, not matter what</strong></dt><dd><p>Tizonia uses fuzzy string matching techniques to match the search keywords
 against the data provided by the streaming services. This maximizes the
-chances of finding the music that you want. When a search returns no
-results Tizonia may at times try a ‘I’m Feeling Lucky’ guess.</p>
+chances of finding the music that the user wants. When a search returns no
+results Tizonia may try a ‘I’m Feeling Lucky’ guess.</p>
 </dd>
-<dt><strong>Non-stop music</strong></dt><dd><p>Tizonia’s play queue always runs in <strong>looped</strong> mode. There is currently no
+<dt><strong>Music never stops</strong></dt><dd><p>Tizonia’s play queue always runs in <strong>looped</strong> mode. There is currently no
 way to configure non-looped playback (although this may be added in the
 future, see <a class="footnote-reference brackets" href="#f1" id="id1">1</a>).</p>
 </dd>
-<dt><strong>Limit the distractions</strong></dt><dd><p>By limiting the interactions. No fast-forward or rewind. Only skip to
-next/previous track (see <a class="footnote-reference brackets" href="#f2" id="id2">2</a>). There is no elaborate ‘ncurses’ CLI
-interface to interact with. But there is some track info and a simple visual
-progress bar.</p>
+<dt><strong>Limited distractions</strong></dt><dd><p>No fast-forward or rewind. Only skip to next/previous track (see <a class="footnote-reference brackets" href="#f2" id="id2">2</a>).  No
+elaborate ‘ncurses’ CLI interface to interact with (some people might see as
+a downside). Only the track info and a simple visual progress bar.</p>
 </dd>
 <dt><strong>Reduced ‘muscle-memory’</strong></dt><dd><p>Finding the music that you want and listening to it should require a single
 command-line option on the terminal. E.g.: <code class="docutils literal notranslate"><span class="pre">tizonia</span> <span class="pre">--spotify-album</span> <span class="pre">Islands</span></code>.
@@ -209,7 +221,7 @@ Bash and Zsh completions are available. There is also a
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>&lt;no title&gt; &#8212; Tizonia 0.22.0 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tizonia Project &#8212; Tizonia 0.22.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -14,7 +15,7 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="CONTRIBUTING.html" />
+    <link rel="next" title="Contributing" href="CONTRIBUTING.html" />
     <link rel="prev" title="Tizonia documentation" href="../index.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -61,6 +62,30 @@
 
 
 <h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Tizonia Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#news">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#debian-ubuntu-raspbian">Debian / Ubuntu / Raspbian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arch-user-repository-aur">Arch User Repository (AUR)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#snap-package">Snap Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#docker-image">Docker Image</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#upgrade">Upgrade</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Debian / Ubuntu / Raspbian</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#uninstall">Uninstall</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Debian / Ubuntu / Raspbian</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#hall-of-fame">Hall of Fame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="COPYING.LESSER.html">License</a></li>
+</ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../manual/manual.html">User Guide</a></li>
 </ul>
@@ -86,7 +111,7 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
       <li>Previous: <a href="../index.html" title="previous chapter">Tizonia documentation</a></li>
-      <li>Next: <a href="CONTRIBUTING.html" title="next chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="CONTRIBUTING.html" title="next chapter">Contributing</a></li>
   </ul></li>
 </ul>
 </div>
@@ -108,409 +133,390 @@
 
           <div class="body" role="main">
             
-  <dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://tizonia.org/">https://tizonia.org/</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://avatars2.githubusercontent.com/u/3161606?s=400&amp;v=4">https://avatars2.githubusercontent.com/u/3161606?s=400&amp;v=4</a>” alt=”Tizonia logo” title=”The Tizonia Project” align=”right” height=”100” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-<p># The Tizonia Project</p>
+  <a href="https://tizonia.org/">
+    <img src="https://avatars2.githubusercontent.com/u/3161606?s=400&v=4" alt="Tizonia logo" title="The Tizonia Project" align="right" height="100" />
+</a><div class="section" id="the-tizonia-project">
+<h1>The Tizonia Project<a class="headerlink" href="#the-tizonia-project" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>A command-line streaming music client/server for Linux.</p></li>
 <li><p>Support for Spotify (Premium), Google Play Music (free and paid tiers),
 YouTube, SoundCloud, TuneIn and iHeart Internet Radio directories, Plex
 servers and Chromecast devices.</p></li>
-<li><p>The first open-source implementation of [OpenMAX IL
-1.2](<a class="reference external" href="https://www.khronos.org/news/press/khronos-group-releases-openmax-il-1.2-provisional-specification">https://www.khronos.org/news/press/khronos-group-releases-openmax-il-1.2-provisional-specification</a>).</p></li>
+<li><p>The first open-source implementation of <a class="reference external" href="https://www.khronos.org/news/press/khronos-group-releases-openmax-il-1.2-provisional-specification">OpenMAX IL
+1.2</a>.</p></li>
 </ul>
-<p>—</p>
-<dl>
-<dt>&lt;div align=”center”&gt;</dt><dd><dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://travis-ci.org/tizonia/tizonia-openmax-il">https://travis-ci.org/tizonia/tizonia-openmax-il</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://travis-ci.org/tizonia/tizonia-openmax-il.png">https://travis-ci.org/tizonia/tizonia-openmax-il.png</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-<dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://scan.coverity.com/projects/594">https://scan.coverity.com/projects/594</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://scan.coverity.com/projects/594/badge.svg">https://scan.coverity.com/projects/594/badge.svg</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-<dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://codecov.io/gh/tizonia/tizonia-openmax-il">https://codecov.io/gh/tizonia/tizonia-openmax-il</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://img.shields.io/codecov/c/github/tizonia/tizonia-openmax-il.svg">https://img.shields.io/codecov/c/github/tizonia/tizonia-openmax-il.svg</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-<dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.22.0...master">https://github.com/tizonia/tizonia-openmax-il/compare/v0.22.0…master</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://img.shields.io/github/commits-since/tizonia/tizonia-openmax-il/v0.22.0.svg">https://img.shields.io/github/commits-since/tizonia/tizonia-openmax-il/v0.22.0.svg</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-</dd>
-</dl>
-<p>&lt;/div&gt;</p>
-<p>&lt;div align=”center”&gt;</p>
-<blockquote>
-<div><dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://www.codacy.com/app/tizonia/tizonia-openmax-il?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=tizonia/tizonia-openmax-il&amp;amp;utm_campaign=Badge_Grade">https://www.codacy.com/app/tizonia/tizonia-openmax-il?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=tizonia/tizonia-openmax-il&amp;amp;utm_campaign=Badge_Grade</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://api.codacy.com/project/badge/Grade/b002a7f1ba464093b48fb7c9620f8ae7">https://api.codacy.com/project/badge/Grade/b002a7f1ba464093b48fb7c9620f8ae7</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-<dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/blob/master/COPYING.LESSER">https://github.com/tizonia/tizonia-openmax-il/blob/master/COPYING.LESSER</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://img.shields.io/github/license/tizonia/tizonia-openmax-il.svg">https://img.shields.io/github/license/tizonia/tizonia-openmax-il.svg</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-<dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://bestpractices.coreinfrastructure.org/projects/1359">https://bestpractices.coreinfrastructure.org/projects/1359</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://bestpractices.coreinfrastructure.org/projects/1359/badge">https://bestpractices.coreinfrastructure.org/projects/1359/badge</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-</div></blockquote>
-<p>&lt;/div&gt;</p>
-<p>&lt;div align=”center”&gt;</p>
-<blockquote>
-<div><dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://gitter.im/tizonia/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=body_badge">https://gitter.im/tizonia/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=body_badge</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://badges.gitter.im/tizonia/tizonia-openmax-il.svg">https://badges.gitter.im/tizonia/tizonia-openmax-il.svg</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-<dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues">https://github.com/tizonia/tizonia-openmax-il/issues</a>”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=plastic">https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=plastic</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;</p>
-</div></blockquote>
-<p>&lt;/div&gt;</p>
-<dl>
-<dt>&lt;div align=”center”&gt;</dt><dd><dl>
-<dt>&lt;h3&gt;</dt><dd><dl class="simple">
-<dt>&lt;a href=”<a class="reference external" href="https://tizonia.org">https://tizonia.org</a>”&gt;</dt><dd><p>Website</p>
-</dd>
-</dl>
-<p>&lt;/a&gt;
-&lt;span&gt; | &lt;/span&gt;
-&lt;a href=”<a class="reference external" href="https://docs.tizonia.org">https://docs.tizonia.org</a>”&gt;</p>
-<blockquote>
-<div><p>Documentation</p>
-</div></blockquote>
-<p>&lt;/a&gt;
-&lt;span&gt; | &lt;/span&gt;
-&lt;a href=”<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/contribute">https://github.com/tizonia/tizonia-openmax-il/contribute</a>”&gt;</p>
-<blockquote>
-<div><p>Contributing</p>
-</div></blockquote>
-<p>&lt;/a&gt;
-&lt;span&gt; | &lt;/span&gt;
-&lt;a href=”<a class="reference external" href="https://gitter.im/tizonia/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=body_badge">https://gitter.im/tizonia/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=body_badge</a>”&gt;</p>
-<blockquote>
-<div><p>Chat</p>
-</div></blockquote>
-<p>&lt;/a&gt;</p>
-</dd>
-</dl>
-<p>&lt;/h3&gt;</p>
-</dd>
-</dl>
-<p>&lt;/div&gt;</p>
-<dl>
-<dt>&lt;div align=”center”&gt;</dt><dd><p>&lt;sub&gt;By
-&lt;a href=”<a class="reference external" href="https://juanrubio.org">https://juanrubio.org</a>”&gt;Juan A. Rubio&lt;/a&gt; and
-&lt;a href=”<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/graphs/contributors">https://github.com/tizonia/tizonia-openmax-il/graphs/contributors</a>”&gt;</p>
-<blockquote>
-<div><p>contributors</p>
-</div></blockquote>
-<p>&lt;/a&gt;</p>
-</dd>
-</dl>
-<p>&lt;/div&gt;</p>
-<p>—</p>
-<dl class="simple">
-<dt>&lt;div align=”center”&gt;</dt><dd><p>&lt;img src=”<a class="reference external" href="https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/develop/docs/animated-gifs/tizonia-usage-screencast.gif">https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/develop/docs/animated-gifs/tizonia-usage-screencast.gif</a>” /&gt;</p>
-</dd>
-</dl>
-<p>&lt;/div&gt;</p>
-<p>&lt;!– [![](<a class="reference external" href="https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/master/docs/animated-gifs/tizonia-usage-screencast2.gif)](https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/master/docs/animated-gifs/tizonia-usage-screencast2.gif">https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/master/docs/animated-gifs/tizonia-usage-screencast2.gif)](https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/master/docs/animated-gifs/tizonia-usage-screencast2.gif</a>) –&gt;</p>
-<p>&lt;!– START doctoc generated TOC please keep comment here to allow auto update –&gt;
-&lt;!– DON’T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE –&gt;</p>
-<ul class="simple">
-<li><p>[News](#news)</p></li>
-<li><p>[Installation](#installation)
-- [Debian / Ubuntu / Raspbian](#debian–ubuntu–raspbian)
-- [Arch User Repository (AUR)](#arch-user-repository-aur)
-- [Snap Package](#snap-package)
-- [Docker Image](#docker-image)</p></li>
-<li><p>[Configuration](#configuration)</p></li>
-<li><p>[Upgrade](#upgrade)
-- [Debian / Ubuntu / Raspbian](#debian–ubuntu–raspbian-1)</p></li>
-<li><p>[Uninstall](#uninstall)
-- [Debian / Ubuntu / Raspbian](#debian–ubuntu–raspbian-1)</p></li>
-<li><p>[Hall of Fame](#hall-of-fame)</p></li>
+<hr class="docutils" />
+<div align="center">
+  <a href="https://travis-ci.org/tizonia/tizonia-openmax-il">
+    <img src="https://travis-ci.org/tizonia/tizonia-openmax-il.png" />
+  </a>  <a href="https://scan.coverity.com/projects/594">
+    <img src="https://scan.coverity.com/projects/594/badge.svg" />
+  </a>  <a href="https://codecov.io/gh/tizonia/tizonia-openmax-il">
+    <img src="https://img.shields.io/codecov/c/github/tizonia/tizonia-openmax-il.svg" />
+  </a>  <a href="https://github.com/tizonia/tizonia-openmax-il/compare/v0.22.0...master">
+    <img src="https://img.shields.io/github/commits-since/tizonia/tizonia-openmax-il/v0.22.0.svg" />
+  </a></div><div align="center">  <a href="https://www.codacy.com/app/tizonia/tizonia-openmax-il?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tizonia/tizonia-openmax-il&amp;utm_campaign=Badge_Grade">
+    <img src="https://api.codacy.com/project/badge/Grade/b002a7f1ba464093b48fb7c9620f8ae7" />
+  </a>  <a href="https://github.com/tizonia/tizonia-openmax-il/blob/master/COPYING.LESSER">
+    <img src="https://img.shields.io/github/license/tizonia/tizonia-openmax-il.svg" />
+  </a>  <a href="https://bestpractices.coreinfrastructure.org/projects/1359">
+    <img src="https://bestpractices.coreinfrastructure.org/projects/1359/badge" />
+  </a></div><div align="center">  <a href="https://gitter.im/tizonia/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge">
+    <img src="https://badges.gitter.im/tizonia/tizonia-openmax-il.svg" />
+  </a>  <a href="https://github.com/tizonia/tizonia-openmax-il/issues">
+    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=plastic" />
+  </a></div><div align="center">
+  <h3>
+    <a href="https://tizonia.org">
+      Website
+    </a>
+    <span> | </span>
+    <a href="https://docs.tizonia.org">
+      Documentation
+    </a>
+    <span> | </span>
+    <a href="https://github.com/tizonia/tizonia-openmax-il/contribute">
+      Contributing
+    </a>
+    <span> | </span>
+    <a href="https://gitter.im/tizonia/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge">
+      Chat
+    </a>
+  </h3>
+</div><div align="center">
+  <sub>By
+  <a href="https://juanrubio.org">Juan A. Rubio</a> and
+  <a href="https://github.com/tizonia/tizonia-openmax-il/graphs/contributors">
+    contributors
+  </a>
+</div><hr class="docutils" />
+<div align="center">
+  <img src="https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/develop/docs/animated-gifs/tizonia-usage-screencast.gif" />
+</div><!-- [![](https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/master/docs/animated-gifs/tizonia-usage-screencast2.gif)](https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/master/docs/animated-gifs/tizonia-usage-screencast2.gif) --><!-- START doctoc generated TOC please keep comment here to allow auto update --><!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --><ul class="simple">
+<li><p><a class="reference external" href="#news">News</a></p></li>
+<li><p><a class="reference external" href="#installation">Installation</a></p>
+<ul>
+<li><p><a class="reference external" href="#debian--ubuntu--raspbian">Debian / Ubuntu / Raspbian</a></p></li>
+<li><p><a class="reference external" href="#arch-user-repository-aur">Arch User Repository (AUR)</a></p></li>
+<li><p><a class="reference external" href="#snap-package">Snap Package</a></p></li>
+<li><p><a class="reference external" href="#docker-image">Docker Image</a></p></li>
 </ul>
-<p>&lt;!– END doctoc generated TOC please keep comment here to allow auto update –&gt;</p>
-<p># News</p>
+</li>
+<li><p><a class="reference external" href="#configuration">Configuration</a></p></li>
+<li><p><a class="reference external" href="#upgrade">Upgrade</a></p>
+<ul>
+<li><p><a class="reference external" href="#debian--ubuntu--raspbian-1">Debian / Ubuntu / Raspbian</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#uninstall">Uninstall</a></p>
+<ul>
+<li><p><a class="reference external" href="#debian--ubuntu--raspbian-1">Debian / Ubuntu / Raspbian</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#hall-of-fame">Hall of Fame</a></p></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update --></div>
+<div class="section" id="news">
+<h1>News<a class="headerlink" href="#news" title="Permalink to this headline">¶</a></h1>
 <p><strong>Latest news</strong></p>
 <ul class="simple">
-<li><p>[2020-05-22] Tizonia</p></li>
-</ul>
-<p>[v0.22.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.22.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.22.0</a>). Added
+<li><p>[2020-05-22] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.22.0">v0.22.0</a>. Added
 support for iHeart radio, new command-line options to play Spotify
 recommendations by artist and album name, new keyboard shortcuts and a good
-number of other fixes and improvements.</p>
-<p>&gt; See Tizonia’s website: [Tizonia 0.22.0](<a class="reference external" href="https://tizonia.org/news/2020/05/22/release-0-22-0/">https://tizonia.org/news/2020/05/22/release-0-22-0/</a>)</p>
-<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show more&lt;/b&gt;&lt;/summary&gt;</p>
-<ul class="simple">
-<li><p>[2020-03-08] Tizonia</p></li>
+number of other fixes and improvements.</p></li>
 </ul>
-<p>[v0.21.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.21.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.21.0</a>). A
-maintenance release with fixes for YouTube API quota issues, among others.</p>
-<p>&gt; See Tizonia’s website: [Tizonia 0.21.0 brings changes to minimize the YouTube
-&gt; API quota issues](<a class="reference external" href="https://tizonia.org/news/2020/03/08/release-0-21-0/">https://tizonia.org/news/2020/03/08/release-0-21-0/</a>)</p>
-<ul class="simple">
-<li><p>[2020-01-19] Tizonia</p></li>
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2020/05/22/release-0-22-0/">Tizonia 0.22.0</a></p>
+</div></blockquote>
+<details><summary><b>Show more</b></summary><ul class="simple">
+<li><p>[2020-03-08] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.21.0">v0.21.0</a>. A
+maintenance release with fixes for YouTube API quota issues, among others.</p></li>
 </ul>
-<p>[v0.20.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.20.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.20.0</a>). Added
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2020/03/08/release-0-21-0/">Tizonia 0.21.0 brings changes to minimize the YouTube
+API quota issues</a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>[2020-01-19] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.20.0">v0.20.0</a>. Added
 support for TuneIn Internet radios, color-themes and a new build system based
-on Meson (thanks [&#64;lgbaldoni!](<a class="reference external" href="https://github.com/lgbaldoni">https://github.com/lgbaldoni</a>)). A man page has
-been added and the documentation site has been refreshed. Also <cite>tizonia-remote</cite>
+on Meson (thanks <a class="reference external" href="https://github.com/lgbaldoni">&#64;lgbaldoni!</a>). A man page has
+been added and the documentation site has been refreshed. Also <code class="docutils literal notranslate"><span class="pre">tizonia-remote</span></code>
 is now distributed in the Debian package plus a good number of fixes, including
-reviving Chromecast support (still more work needed).</p>
-<p>&gt; See Tizonia’s website: [TuneIn Internet radio and podcasts, and color-themes
-&gt; in Tizonia 0.20.0](<a class="reference external" href="https://tizonia.org/news/2020/02/20/release-0-20-0/">https://tizonia.org/news/2020/02/20/release-0-20-0/</a>)</p>
-<ul class="simple">
-<li><p>[2019-12-13] Tizonia</p></li>
+reviving Chromecast support (still more work needed).</p></li>
 </ul>
-<p>[v0.19.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.19.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.19.0</a>). Another
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2020/02/20/release-0-20-0/">TuneIn Internet radio and podcasts, and color-themes
+in Tizonia 0.20.0</a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>[2019-12-13] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.19.0">v0.19.0</a>. Another
 maintenance release with a good bunch of improvements and bug fixes: Dirble
 removal (the service is sadly gone), Python 3 migration (please see the section
-[Upgrade (Debian / Ubuntu / Raspbian)](#upgrade-debian–ubuntu–raspbian) to learn
-how to install the new Python 3 dependencies!).</p>
-<p>&gt; See Tizonia’s website: [Global Spotify playlist search and
-&gt; other improvements in Tizonia
-&gt; 0.19.0](<a class="reference external" href="https://tizonia.org/news/2019/03/19/release-0-19-0/">https://tizonia.org/news/2019/03/19/release-0-19-0/</a>)</p>
-<ul class="simple">
-<li><p>[2019-03-13] Tizonia</p></li>
+<a class="reference external" href="#upgrade-debian--ubuntu--raspbian">Upgrade (Debian / Ubuntu / Raspbian)</a> to learn
+how to install the new Python 3 dependencies!).</p></li>
 </ul>
-<p>[v0.18.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.18.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.18.0</a>). Various
-improvements and bug fixes in Google Music and Spotify.</p>
-<p>&gt; See Tizonia’s website: [Fixed ‘Google Play Music tracks cut short’ in Tizonia 0.18.0](<a class="reference external" href="https://tizonia.org/news/2019/03/17/release-0-18-0/">https://tizonia.org/news/2019/03/17/release-0-18-0/</a>)</p>
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2019/03/19/release-0-19-0/">Global Spotify playlist search and
+other improvements in Tizonia
+0.19.0</a></p>
+</div></blockquote>
 <ul class="simple">
-<li><p>[2019-01-17] Tizonia</p></li>
+<li><p>[2019-03-13] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.18.0">v0.18.0</a>. Various
+improvements and bug fixes in Google Music and Spotify.</p></li>
 </ul>
-<p>[v0.17.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.17.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.17.0</a>). Fixed
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2019/03/17/release-0-18-0/">Fixed ‘Google Play Music tracks cut short’ in Tizonia 0.18.0</a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>[2019-01-17] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.17.0">v0.17.0</a>. Fixed
 Spotify login issues. A regression introduced in v0.16.0. This issue was
 identified and fixed thanks to the great feedback provided by the users in
-issue [#531](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/531">https://github.com/tizonia/tizonia-openmax-il/issues/531</a>).</p>
-<p>&gt; See Tizonia’s website: [Spotify login issues fixed in Tizonia 0.17.0](<a class="reference external" href="https://tizonia.org/news/2019/01/17/release-0-17-0/">https://tizonia.org/news/2019/01/17/release-0-17-0/</a>)</p>
-<ul class="simple">
-<li><p>[2018-12-03] Tizonia</p></li>
+issue <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/531">#531</a>.</p></li>
 </ul>
-<p>[v0.16.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.16.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.16.0</a>). Improved
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2019/01/17/release-0-17-0/">Spotify login issues fixed in Tizonia 0.17.0</a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>[2018-12-03] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.16.0">v0.16.0</a>. Improved
 Spotify support with more options to dicover new music rather than just playing
 the content that you know and love. Last but not least,
-[docker-tizonia](<a class="reference external" href="https://hub.docker.com/r/tizonia/docker-tizonia/">https://hub.docker.com/r/tizonia/docker-tizonia/</a>) has been
-updated! (many thanks to [Josh5](<a class="reference external" href="https://github.com/Josh5">https://github.com/Josh5</a>)).</p>
-<p>&gt; See Tizonia’s website: [More ways to discover music on Spotify with Tizonia 0.16.0](<a class="reference external" href="https://tizonia.org/news/2018/12/03/release-0-16-0/">https://tizonia.org/news/2018/12/03/release-0-16-0/</a>)</p>
-<ul class="simple">
-<li><p>[2018-06-15] Tizonia</p></li>
+<a class="reference external" href="https://hub.docker.com/r/tizonia/docker-tizonia/">docker-tizonia</a> has been
+updated! (many thanks to <a class="reference external" href="https://github.com/Josh5">Josh5</a>).</p></li>
 </ul>
-<p>[v0.15.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.15.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.15.0</a>). Reworked
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2018/12/03/release-0-16-0/">More ways to discover music on Spotify with Tizonia 0.16.0</a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>[2018-06-15] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.15.0">v0.15.0</a>. Reworked
 Spotify support to overcome playlist search problems that arised in
-libspotify. Now [spotipy](<a class="reference external" href="https://github.com/plamere/spotipy">https://github.com/plamere/spotipy</a>) is being used to
-retrieve track, artist, album, and playlist metadata from Spotify.</p>
-<p>&gt; See Tizonia’s website: [Totally revamped Spotify support in Tizonia 0.15.0](<a class="reference external" href="https://tizonia.org/news/2018/06/15/release-0-15-0/">https://tizonia.org/news/2018/06/15/release-0-15-0/</a>)</p>
-<ul class="simple">
-<li><p>[2018-04-20] Tizonia</p></li>
+libspotify. Now <a class="reference external" href="https://github.com/plamere/spotipy">spotipy</a> is being used to
+retrieve track, artist, album, and playlist metadata from Spotify.</p></li>
 </ul>
-<p>[v0.14.0](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.14.0">https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.14.0</a>). Added
-support for Google Play Music [stations for
-non-subscribers](<a class="reference external" href="https://support.google.com/googleplaymusic/answer/6250894?hl=en">https://support.google.com/googleplaymusic/answer/6250894?hl=en</a>)
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2018/06/15/release-0-15-0/">Totally revamped Spotify support in Tizonia 0.15.0</a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>[2018-04-20] Tizonia
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/tag/v0.14.0">v0.14.0</a>. Added
+support for Google Play Music <a class="reference external" href="https://support.google.com/googleplaymusic/answer/6250894?hl=en">stations for
+non-subscribers</a>
 and YouTube channels (uploads and playlists). Also added option to play the
-user’s entire Google Play Music library.</p>
-<p>&gt; See Tizonia’s website: [Tizonia v0.14.0 adds YouTube Channels and Google Play Music stations for non-subscribers](<a class="reference external" href="https://tizonia.org/news/2018/04/21/release-0-14-0/">https://tizonia.org/news/2018/04/21/release-0-14-0/</a>)</p>
-<ul class="simple">
-<li><p>[2017-12-28]</p></li>
+user’s entire Google Play Music library.</p></li>
 </ul>
-<p>[Snap Package](#snap-package) and [Docker Image](#docker-image) available.</p>
-<p>&gt; See Tizonia’s website: [Tizonia v0.13.0 adds support for Plex media servers](<a class="reference external" href="https://tizonia.org/news/2018/03/09/release-0-13-0/">https://tizonia.org/news/2018/03/09/release-0-13-0/</a>)</p>
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2018/04/21/release-0-14-0/">Tizonia v0.14.0 adds YouTube Channels and Google Play Music stations for non-subscribers</a></p>
+</div></blockquote>
 <ul class="simple">
-<li><p>[2017-08-26] [tizonia-all](<a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all/">https://aur.archlinux.org/packages/tizonia-all/</a>) and [tizonia-all-git](<a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all-git/">https://aur.archlinux.org/packages/tizonia-all-git/</a>) packages submitted to the [Arch User Repository](<a class="reference external" href="https://aur.archlinux.org/">https://aur.archlinux.org/</a>)</p></li>
+<li><p>[2017-12-28]
+<a class="reference external" href="#snap-package">Snap Package</a> and <a class="reference external" href="#docker-image">Docker Image</a> available.</p></li>
 </ul>
-<p>&gt; See Tizonia’s website: [Snap package and Docker image available now!](<a class="reference external" href="https://tizonia.org/news/2017/12/30/snap-package-and-docker-image/">https://tizonia.org/news/2017/12/30/snap-package-and-docker-image/</a>)</p>
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2018/03/09/release-0-13-0/">Tizonia v0.13.0 adds support for Plex media servers</a></p>
+</div></blockquote>
 <ul class="simple">
-<li><p>[2017-05-04] [Summer of Code 2017: Add OpenMAX state tracker</p></li>
+<li><p>[2017-08-26] <a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all/">tizonia-all</a> and <a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all-git/">tizonia-all-git</a> packages submitted to the <a class="reference external" href="https://aur.archlinux.org/">Arch User Repository</a></p></li>
 </ul>
-<p>in Mesa/Gallium that uses
-Tizonia](<a class="reference external" href="https://summerofcode.withgoogle.com/projects/#4737166321123328">https://summerofcode.withgoogle.com/projects/#4737166321123328</a>) (X.Org
-Foundation project, with Gurkirpal Singh and Julien Isorce).</p>
-<p>&lt;/details&gt;</p>
-<p>&amp;nbsp;&amp;nbsp;</p>
-<p># Installation</p>
-<p>## Debian / Ubuntu / Raspbian</p>
+<blockquote>
+<div><p>See Tizonia’s website: <a class="reference external" href="https://tizonia.org/news/2017/12/30/snap-package-and-docker-image/">Snap package and Docker image available now!</a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>[2017-05-04] <a class="reference external" href="https://summerofcode.withgoogle.com/projects/#4737166321123328">Summer of Code 2017: Add OpenMAX state tracker
+in Mesa/Gallium that uses
+Tizonia</a> (X.Org
+Foundation project, with Gurkirpal Singh and Julien Isorce).</p></li>
+</ul>
+</details><p>  </p>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="debian-ubuntu-raspbian">
+<h2>Debian / Ubuntu / Raspbian<a class="headerlink" href="#debian-ubuntu-raspbian" title="Permalink to this headline">¶</a></h2>
 <p>Run the following command to install Tizonia on a Debian-compatible system:</p>
-<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">$</span> <span class="pre">curl</span> <span class="pre">-kL</span> <span class="pre">https://github.com/tizonia/tizonia-openmax-il/raw/master/tools/install.sh</span> <span class="pre">|</span> <span class="pre">bash</span>
-<span class="pre">#</span> <span class="pre">Or</span> <span class="pre">its</span> <span class="pre">shortened</span> <span class="pre">version:</span>
-<span class="pre">$</span> <span class="pre">curl</span> <span class="pre">-kL</span> <span class="pre">https://goo.gl/Vu8qGR</span> <span class="pre">|</span> <span class="pre">bash</span>
-<span class="pre">`</span></code></p>
-<p>&gt; NOTE: This script installs the
-&gt; [latest](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/latest">https://github.com/tizonia/tizonia-openmax-il/releases/latest</a>)
-&gt; release and all the dependencies.</p>
-<p>&gt; DISCLAIMER: Trust no-one. Please have a look at the installation script
-&gt; before running it on your system!.</p>
-<p>Debian packages are stored on [Bintray](<a class="reference external" href="https://bintray.com/tizonia">https://bintray.com/tizonia</a>), with the
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl -kL https://github.com/tizonia/tizonia-openmax-il/raw/master/tools/install.sh <span class="p">|</span> bash
+<span class="c1"># Or its shortened version:</span>
+$ curl -kL https://goo.gl/Vu8qGR <span class="p">|</span> bash
+</pre></div>
+</div>
+<blockquote>
+<div><p>NOTE: This script installs the
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/releases/latest">latest</a>
+release and all the dependencies.</p>
+</div></blockquote>
+<blockquote>
+<div><p>DISCLAIMER: Trust no-one. Please have a look at the installation script
+before running it on your system!.</p>
+</div></blockquote>
+<p>Debian packages are stored on <a class="reference external" href="https://bintray.com/tizonia">Bintray</a>, with the
 following distro/arch combinations:</p>
-<dl>
-<dt>&lt;div align=”center”&gt;</dt><dd><dl>
-<dt>&lt;table&gt;</dt><dd><dl>
-<dt>&lt;thead&gt;</dt><dd><dl class="simple">
-<dt>&lt;tr&gt;</dt><dd><p>&lt;th align=”center”&gt;Ubuntu Bionic&lt;/th&gt;
-&lt;th align=”center”&gt;Ubuntu Focal&lt;/th&gt;
-&lt;th align=”center”&gt;Debian Buster&lt;/th&gt;
-&lt;th align=”center”&gt;Debian Bullseye&lt;/th&gt;
-&lt;th align=”center”&gt;Raspbian Buster&lt;/th&gt;</p>
-</dd>
-</dl>
-<p>&lt;/tr&gt;
-&lt;tr&gt;</p>
-<blockquote>
-<div><p>&lt;th align=”center”&gt;(18.04)&lt;/th&gt;
-&lt;th align=”center”&gt;(20.04)&lt;/th&gt;
-&lt;th align=”center”&gt;(10)&lt;/th&gt;
-&lt;th align=”center”&gt;(11)&lt;/th&gt;
-&lt;th align=”center”&gt;(10)&lt;/th&gt;</p>
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th align="center">Ubuntu Bionic</th>
+                <th align="center">Ubuntu Focal</th>
+                <th align="center">Debian Buster</th>
+                <th align="center">Debian Bullseye</th>
+                <th align="center">Raspbian Buster</th>
+            </tr>
+            <tr>
+                <th align="center">(18.04)</th>
+                <th align="center">(20.04)</th>
+                <th align="center">(10)</th>
+                <th align="center">(11)</th>
+                <th align="center">(10)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">amd64, armhf</td>
+                <td align="center">amd64</td>
+                <td align="center">amd64, armhf</td>
+                <td align="center">amd64</td>
+                <td align="center">armhf</td>
+            </tr>
+        </tbody>
+    </table>
+</div><!-- | [ ![](https://api.bintray.com/packages/tizonia/ubuntu/tizonia-xenial/images/download.svg) ](https://bintray.com/tizonia/ubuntu/tizonia-xenial/_latestVersion) | [ ![](https://api.bintray.com/packages/tizonia/ubuntu/tizonia-bionic/images/download.svg) ](https://bintray.com/tizonia/ubuntu/tizonia-bionic/_latestVersion) | [ ![](https://api.bintray.com/packages/tizonia/debian/tizonia-buster/images/download.svg) ](https://bintray.com/tizonia/debian/tizonia-buster/_latestVersion) | [ ![](https://api.bintray.com/packages/tizonia/raspbian/tizonia-buster/images/download.svg) ](https://bintray.com/tizonia/raspbian/tizonia-buster/_latestVersion) | [ ![](https://api.bintray.com/packages/tizonia/debian/tizonia-bullseye/images/download.svg) ](https://bintray.com/tizonia/debian/tizonia-bullseye/_latestVersion) | --><blockquote>
+<div><p>NOTE: Elementary OS, Linux Mint, Kali Linux are supported on releases based
+on Ubuntu ‘Xenial’ or ‘Bionic’, Debian ‘Buster’ or ‘Bullseye’. To install
+Tizonia on other versions of Debian or Ubuntu-based distros, use the Snap
+package or have a look at
+<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/631">#631</a>.</p>
 </div></blockquote>
-<p>&lt;/tr&gt;</p>
-</dd>
-</dl>
-<p>&lt;/thead&gt;
-&lt;tbody&gt;</p>
-<blockquote>
-<div><dl class="simple">
-<dt>&lt;tr&gt;</dt><dd><p>&lt;td align=”center”&gt;amd64, armhf&lt;/td&gt;
-&lt;td align=”center”&gt;amd64&lt;/td&gt;
-&lt;td align=”center”&gt;amd64, armhf&lt;/td&gt;
-&lt;td align=”center”&gt;amd64&lt;/td&gt;
-&lt;td align=”center”&gt;armhf&lt;/td&gt;</p>
-</dd>
-</dl>
-<p>&lt;/tr&gt;</p>
-</div></blockquote>
-<p>&lt;/tbody&gt;</p>
-</dd>
-</dl>
-<p>&lt;/table&gt;</p>
-</dd>
-</dl>
-<p>&lt;/div&gt;</p>
-<p>&lt;!– | [ ![](<a class="reference external" href="https://api.bintray.com/packages/tizonia/ubuntu/tizonia-xenial/images/download.svg">https://api.bintray.com/packages/tizonia/ubuntu/tizonia-xenial/images/download.svg</a>) ](<a class="reference external" href="https://bintray.com/tizonia/ubuntu/tizonia-xenial/_latestVersion">https://bintray.com/tizonia/ubuntu/tizonia-xenial/_latestVersion</a>) | [ ![](<a class="reference external" href="https://api.bintray.com/packages/tizonia/ubuntu/tizonia-bionic/images/download.svg">https://api.bintray.com/packages/tizonia/ubuntu/tizonia-bionic/images/download.svg</a>) ](<a class="reference external" href="https://bintray.com/tizonia/ubuntu/tizonia-bionic/_latestVersion">https://bintray.com/tizonia/ubuntu/tizonia-bionic/_latestVersion</a>) | [ ![](<a class="reference external" href="https://api.bintray.com/packages/tizonia/debian/tizonia-buster/images/download.svg">https://api.bintray.com/packages/tizonia/debian/tizonia-buster/images/download.svg</a>) ](<a class="reference external" href="https://bintray.com/tizonia/debian/tizonia-buster/_latestVersion">https://bintray.com/tizonia/debian/tizonia-buster/_latestVersion</a>) | [ ![](<a class="reference external" href="https://api.bintray.com/packages/tizonia/raspbian/tizonia-buster/images/download.svg">https://api.bintray.com/packages/tizonia/raspbian/tizonia-buster/images/download.svg</a>) ](<a class="reference external" href="https://bintray.com/tizonia/raspbian/tizonia-buster/_latestVersion">https://bintray.com/tizonia/raspbian/tizonia-buster/_latestVersion</a>) | [ ![](<a class="reference external" href="https://api.bintray.com/packages/tizonia/debian/tizonia-bullseye/images/download.svg">https://api.bintray.com/packages/tizonia/debian/tizonia-bullseye/images/download.svg</a>) ](<a class="reference external" href="https://bintray.com/tizonia/debian/tizonia-bullseye/_latestVersion">https://bintray.com/tizonia/debian/tizonia-bullseye/_latestVersion</a>) | –&gt;</p>
-<p>&gt; NOTE: Elementary OS, Linux Mint, Kali Linux are supported on releases based
-&gt; on Ubuntu ‘Xenial’ or ‘Bionic’, Debian ‘Buster’ or ‘Bullseye’. To install
-&gt; Tizonia on other versions of Debian or Ubuntu-based distros, use the Snap
-&gt; package or have a look at
-&gt; [#631](<a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/631">https://github.com/tizonia/tizonia-openmax-il/issues/631</a>).</p>
-<p>## Arch User Repository (AUR)</p>
+</div>
+<div class="section" id="arch-user-repository-aur">
+<h2>Arch User Repository (AUR)<a class="headerlink" href="#arch-user-repository-aur" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>[tizonia-all (for the latest released version)](<a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all/">https://aur.archlinux.org/packages/tizonia-all/</a>)</p></li>
-<li><p>[tizonia-all-git (HEAD of master branch)](<a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all-git/">https://aur.archlinux.org/packages/tizonia-all-git/</a>)</p></li>
+<li><p><a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all/">tizonia-all (for the latest released version)</a></p></li>
+<li><p><a class="reference external" href="https://aur.archlinux.org/packages/tizonia-all-git/">tizonia-all-git (HEAD of master branch)</a></p></li>
 </ul>
-<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show details&lt;/b&gt;&lt;/summary&gt;</p>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>bash
-# Please note that if you are upgrading your existing
-# Tizonia installation, you <em>need</em> to uninstall it before building a new version.
-# See GitHub issue <a class="reference external" href="https://github.com/tizonia/tizonia-openmax-il/issues/485">https://github.com/tizonia/tizonia-openmax-il/issues/485</a></p>
-<p># For the latest stable release
-$ git clone <a class="reference external" href="https://aur.archlinux.org/tizonia-all.git">https://aur.archlinux.org/tizonia-all.git</a>
-$ cd tizonia-all
-$ makepkg -si</p>
-<p># There is also a -git package:
-$ git clone <a class="reference external" href="https://aur.archlinux.org/tizonia-all-git.git">https://aur.archlinux.org/tizonia-all-git.git</a>
-$ cd tizonia-all
-$ makepkg -si</p>
-<p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
-<p>&lt;/details&gt;</p>
-<p>## Snap Package</p>
-<p>&gt; NOTE: Unfortunately, the snap package is taking too much of my time to
-&gt; maintain, given the number of other release tasks that I need to deal with
-&gt; during a normal release cycle of Tizonia.  So I’m calling for maintainers for
-&gt; the Snap package. Please see message in the Snap package repo at
-&gt; <a class="reference external" href="https://github.com/tizonia/tizonia-snap/">https://github.com/tizonia/tizonia-snap/</a></p>
+<details><summary><b>Show details</b></summary><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please note that if you are upgrading your existing</span>
+<span class="c1"># Tizonia installation, you *need* to uninstall it before building a new version.</span>
+<span class="c1"># See GitHub issue https://github.com/tizonia/tizonia-openmax-il/issues/485</span>
+
+<span class="c1"># For the latest stable release</span>
+$ git clone https://aur.archlinux.org/tizonia-all.git
+$ <span class="nb">cd</span> tizonia-all
+$ makepkg -si
+
+<span class="c1"># There is also a -git package:</span>
+$ git clone https://aur.archlinux.org/tizonia-all-git.git
+$ <span class="nb">cd</span> tizonia-all
+$ makepkg -si
+</pre></div>
+</div>
+</details></div>
+<div class="section" id="snap-package">
+<h2>Snap Package<a class="headerlink" href="#snap-package" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>NOTE: Unfortunately, the snap package is taking too much of my time to
+maintain, given the number of other release tasks that I need to deal with
+during a normal release cycle of Tizonia.  So I’m calling for maintainers for
+the Snap package. Please see message in the Snap package repo at
+https://github.com/tizonia/tizonia-snap/</p>
+</div></blockquote>
 <p>A ‘snap’ package is available to download from the ‘Global’ snap store
 (‘stable’ channel). For more details visit:</p>
 <ul class="simple">
-<li><p>Tizonia’s landing page on [Snapcraft.io](<a class="reference external" href="https://snapcraft.io/tizonia">https://snapcraft.io/tizonia</a>)</p></li>
+<li><p>Tizonia’s landing page on <a class="reference external" href="https://snapcraft.io/tizonia">Snapcraft.io</a></p></li>
 </ul>
-<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show details&lt;/b&gt;&lt;/summary&gt;</p>
-<p>To install, first visit [Install
-Snapd](<a class="reference external" href="https://docs.snapcraft.io/core/install?_ga=2.41936226.1106178805.1514500852-128158267.1514500852">https://docs.snapcraft.io/core/install?_ga=2.41936226.1106178805.1514500852-128158267.1514500852</a>)
+<details><summary><b>Show details</b></summary><p>To install, first visit <a class="reference external" href="https://docs.snapcraft.io/core/install?_ga=2.41936226.1106178805.1514500852-128158267.1514500852">Install
+Snapd</a>
 and make sure that your Linux distro is supported. Follow the instructions to
 get the ‘snapd’ service running on your system, and finally use this command to
 install Tizonia:</p>
-<p><a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a>bash</p>
-<p>$ sudo snap install tizonia</p>
-<p><a href="#id13"><span class="problematic" id="id14">``</span></a><a href="#id15"><span class="problematic" id="id16">`</span></a></p>
-<p>&lt;/details&gt;</p>
-<p>Tizonia’s snapcraft.yaml file is hosted in a separate repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo snap install tizonia
+</pre></div>
+</div>
+</details><p>Tizonia’s snapcraft.yaml file is hosted in a separate repository:</p>
 <ul class="simple">
-<li><p>[tizonia-snap](<a class="reference external" href="https://github.com/tizonia/tizonia-snap/">https://github.com/tizonia/tizonia-snap/</a>)</p></li>
+<li><p><a class="reference external" href="https://github.com/tizonia/tizonia-snap/">tizonia-snap</a></p></li>
 </ul>
-<p>## Docker Image</p>
+</div>
+<div class="section" id="docker-image">
+<h2>Docker Image<a class="headerlink" href="#docker-image" title="Permalink to this headline">¶</a></h2>
 <p>Tizonia may also be run from a Docker container. A Docker image is available
 from the Docker hub:</p>
 <ul class="simple">
-<li><p>[docker-tizonia](<a class="reference external" href="https://hub.docker.com/r/tizonia/docker-tizonia/">https://hub.docker.com/r/tizonia/docker-tizonia/</a>)</p></li>
+<li><p><a class="reference external" href="https://hub.docker.com/r/tizonia/docker-tizonia/">docker-tizonia</a></p></li>
 </ul>
-<p>&amp;nbsp;&amp;nbsp;</p>
-<p># Configuration</p>
+<p>  </p>
+</div>
+</div>
+<div class="section" id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
 <p>To use <em>Spotify</em>, <em>Google Play Music</em>, <em>SoundCloud</em> and <em>Plex</em> you need to
 introduce your credentials in Tizonia’s config file. No credentials needed to
 stream from <em>YouTube</em> or <em>TuneIn</em>.</p>
-<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show details&lt;/b&gt;&lt;/summary&gt;</p>
-<p><a href="#id17"><span class="problematic" id="id18">``</span></a><a href="#id19"><span class="problematic" id="id20">`</span></a>bash
-( On first use, Tizonia outputs its configuration file, if it is not there yet )</p>
-<p>$ tizonia –help</p>
-<p>( now edit $HOME/.config/tizonia/tizonia.conf )</p>
-<p>( NOTE: If Tizonia was installed from the ‘snap’ package, use this path instead )
-( $HOME/snap/tizonia/current/.config/tizonia/tizonia.conf )
-<a href="#id21"><span class="problematic" id="id22">``</span></a><a href="#id23"><span class="problematic" id="id24">`</span></a></p>
-<p>&gt; NOTE: See full instructions inside [tizonia.conf](<a class="reference external" href="https://docs.tizonia.org/manual/config.html">https://docs.tizonia.org/manual/config.html</a>).</p>
-<p>&lt;/details&gt;</p>
-<p>&amp;nbsp;&amp;nbsp;</p>
-<p># Upgrade</p>
-<p>## Debian / Ubuntu / Raspbian</p>
+<details><summary><b>Show details</b></summary><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span> On first use, Tizonia outputs its configuration file, <span class="k">if</span> it is not there yet <span class="o">)</span>
+
+$ tizonia --help
+
+<span class="o">(</span> now edit <span class="nv">$HOME</span>/.config/tizonia/tizonia.conf <span class="o">)</span>
+
+<span class="o">(</span> NOTE: If Tizonia was installed from the <span class="s1">&#39;snap&#39;</span> package, use this path instead <span class="o">)</span>
+<span class="o">(</span> <span class="nv">$HOME</span>/snap/tizonia/current/.config/tizonia/tizonia.conf <span class="o">)</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>NOTE: See full instructions inside <a class="reference external" href="https://docs.tizonia.org/manual/config.html">tizonia.conf</a>.</p>
+</div></blockquote>
+</details><p>  </p>
+</div>
+<div class="section" id="upgrade">
+<h1>Upgrade<a class="headerlink" href="#upgrade" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Debian / Ubuntu / Raspbian<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>To upgrade Tizonia and all its dependencies, simply re-run the installation
 script.</p>
 <p>If you prefer to do it manually, it is a two-step process. Run ‘apt-get’ as
 usual to upgrade the Debian packages. Finally make sure that the various Python
 dependencies are up-to-date.</p>
-<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show details&lt;/b&gt;&lt;/summary&gt;</p>
-<p><a href="#id25"><span class="problematic" id="id26">``</span></a><a href="#id27"><span class="problematic" id="id28">`</span></a>bash</p>
-<p># Step1: update Tizonia’s Debian packages
-$ sudo apt-get update &amp;&amp; sudo apt-get upgrade</p>
-<p># Step2: update Tizonia’s Python dependencies
-# (Note that new versions of some of these Python dependencies are released often,
-# so you should do this frequently, even if there isn’t a new Tizonia release)</p>
-<p># For Tizonia v0.19.0 or newer: Python 3 dependencies
-$ sudo -H pip3 install –upgrade gmusicapi soundcloud youtube-dl pafy pycountry titlecase pychromecast plexapi spotipy fuzzywuzzy eventlet python-Levenshtein</p>
-<p># For Tizonia v0.18.0 or older: Python 2 dependencies
-$ sudo -H pip2 install –upgrade gmusicapi soundcloud youtube-dl pafy pycountry titlecase pychromecast plexapi fuzzywuzzy eventlet python-Levenshtein &amp;&amp; sudo -H pip2 install git+https://github.com/plamere/spotipy.git –upgrade</p>
-<p><a href="#id29"><span class="problematic" id="id30">``</span></a><a href="#id31"><span class="problematic" id="id32">`</span></a></p>
-<p>&lt;/details&gt;</p>
-<p>&amp;nbsp;&amp;nbsp;</p>
-<p># Uninstall</p>
-<p>## Debian / Ubuntu / Raspbian</p>
+<details><summary><b>Show details</b></summary><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Step1: update Tizonia&#39;s Debian packages</span>
+$ sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get upgrade
+
+<span class="c1"># Step2: update Tizonia&#39;s Python dependencies</span>
+<span class="c1"># (Note that new versions of some of these Python dependencies are released often,</span>
+<span class="c1"># so you should do this frequently, even if there isn&#39;t a new Tizonia release)</span>
+
+<span class="c1"># For Tizonia v0.19.0 or newer: Python 3 dependencies</span>
+$ sudo -H pip3 install --upgrade gmusicapi soundcloud youtube-dl pafy pycountry titlecase pychromecast plexapi spotipy fuzzywuzzy eventlet python-Levenshtein
+
+<span class="c1"># For Tizonia v0.18.0 or older: Python 2 dependencies</span>
+$ sudo -H pip2 install --upgrade gmusicapi soundcloud youtube-dl pafy pycountry titlecase pychromecast plexapi fuzzywuzzy eventlet python-Levenshtein <span class="o">&amp;&amp;</span> sudo -H pip2 install git+https://github.com/plamere/spotipy.git --upgrade
+</pre></div>
+</div>
+</details><p>  </p>
+</div>
+</div>
+<div class="section" id="uninstall">
+<h1>Uninstall<a class="headerlink" href="#uninstall" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Debian / Ubuntu / Raspbian<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>To uninstall Tizonia and all its dependencies, run the following commands</p>
-<p>&lt;details&gt;&lt;summary&gt;&lt;b&gt;Show details&lt;/b&gt;&lt;/summary&gt;</p>
-<p><a href="#id33"><span class="problematic" id="id34">``</span></a><a href="#id35"><span class="problematic" id="id36">`</span></a>bash</p>
-<p># Remove/purge all tizonia packages installed in the system
-sudo apt-get -y remove –purge tizonia-all &amp;&amp; sudo apt-get -y autoremove
-<a href="#id37"><span class="problematic" id="id38">``</span></a><a href="#id39"><span class="problematic" id="id40">`</span></a></p>
-<p>&lt;/details&gt;</p>
-<p>&amp;nbsp;&amp;nbsp;</p>
-<p># Hall of Fame</p>
-<p>If you are interested in participating, please read our [contribution
-guidelines](CONTRIBUTING.md) and don’t hesitate to ask (via the bug tracker,
-[chat](<a class="reference external" href="https://gitter.im/tizonia/Lobby">https://gitter.im/tizonia/Lobby</a>) or any other means!).</p>
+<details><summary><b>Show details</b></summary><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove/purge all tizonia packages installed in the system</span>
+sudo apt-get -y remove --purge tizonia-all <span class="o">&amp;&amp;</span> sudo apt-get -y autoremove
+</pre></div>
+</div>
+</details><p>  </p>
+</div>
+</div>
+<div class="section" id="hall-of-fame">
+<h1>Hall of Fame<a class="headerlink" href="#hall-of-fame" title="Permalink to this headline">¶</a></h1>
+<p>If you are interested in participating, please read our <a class="reference internal" href="CONTRIBUTING.html"><span class="doc">contribution
+guidelines</span></a> and don’t hesitate to ask (via the bug tracker,
+<a class="reference external" href="https://gitter.im/tizonia/Lobby">chat</a> or any other means!).</p>
 <p>Here are some of our contributors:</p>
-<p>[![](<a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/0)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/0)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/1)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/1)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/2)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/2)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/3)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/3)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/4)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/4)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/5)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/5)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/6)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/6)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/7)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/7">https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/0)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/0)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/1)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/1)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/2)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/2)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/3)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/3)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/4)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/4)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/5)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/5)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/6)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/6)[![](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/7)](https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/7</a>)</p>
+<p><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/0"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/0" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/0" /></a><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/1"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/1" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/1" /></a><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/2"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/2" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/2" /></a><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/3"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/3" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/3" /></a><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/4"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/4" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/4" /></a><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/5"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/5" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/5" /></a><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/6"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/6" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/6" /></a><a class="reference external" href="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/links/7"><img alt="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/7" src="https://sourcerer.io/fame/tizonia/tizonia/tizonia-openmax-il/images/7" /></a></p>
+</div>
 
 
           </div>
@@ -523,7 +529,7 @@ guidelines](CONTRIBUTING.md) and don’t hesitate to ask (via the bug tracker,
       &copy;2020, Juan A. Rubio and contributors.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
