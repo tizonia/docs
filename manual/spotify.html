@@ -277,19 +277,50 @@ values: 96, 160, or 320. Optional (Default: 320).</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-liked-tracks</span></code></dt><dd><p>Play the user’s liked tracks.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-recent-tracks</span></code></dt><dd><p>Play the user’s most recent tracks.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-recent-tracks</span></code></dt><dd><p>Play the user’s most recent tracks. See <a class="reference internal" href="#tizonia-spotify-scopes-label"><span class="std std-ref">AUTHORIZATION SCOPES</span></a>.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-top-tracks</span></code></dt><dd><p>Play the user’s top tracks.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-top-tracks</span></code></dt><dd><p>Play the user’s top tracks. See <a class="reference internal" href="#tizonia-spotify-scopes-label"><span class="std std-ref">AUTHORIZATION SCOPES</span></a>.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-top-artists</span></code></dt><dd><p>Play tracks from the user’s top artists.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-top-artists</span></code></dt><dd><p>Play tracks from the user’s top artists. See <a class="reference internal" href="#tizonia-spotify-scopes-label"><span class="std std-ref">AUTHORIZATION SCOPES</span></a>.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">--spotify-user-playlist</span> <span class="pre">arg</span></code></dt><dd><p>Play tracks from the user’s playlist (including private playlists,
-Daily Mixes and Discover Weekly).</p>
+Daily Mixes and Discover Weekly). See <a class="reference internal" href="#tizonia-spotify-scopes-label"><span class="std std-ref">AUTHORIZATION SCOPES</span></a>.</p>
 <p>Note that Daily Mixes and Discover Weekly playlists need to be ‘liked’
 beforehand in order to be found by a search performed on the user
 library.</p>
 </dd>
 </dl>
+</div>
+<div class="section" id="authorization-scopes">
+<span id="tizonia-spotify-scopes-label"></span><h2>AUTHORIZATION SCOPES<a class="headerlink" href="#authorization-scopes" title="Permalink to this headline">¶</a></h2>
+<p>In order to access the user’s private playlists, the Spotify API uses
+authentication scopes. Scopes provide Spotify users using third-party apps the
+confidence that only the information they choose to share will be shared, and
+nothing more.</p>
+<p>When Tizonia is run for the first time with any of the <code class="docutils literal notranslate"><span class="pre">--spotify-user-...</span></code>
+options, the user is asked to input his/her credentials on a browser session.</p>
+<p>A browser window or tab session will be created. Once the credentials have been
+input successfully, Tizonia receives an authentication token that is cached
+locally for future use. Once this process is completed, Tizonia can access the
+specific user’s private list(s) allowed by the scope.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> ~  tizonia --spotify-user-playlist <span class="s2">&quot;all out 90s&quot;</span>
+This software is part of the Tizonia project &lt;https://tizonia.org&gt;
+
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Connecting<span class="o">]</span> : <span class="s1">&#39;username&#39;</span>.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Playlist search<span class="o">]</span> <span class="s1">&#39;all out 90s&#39;</span> <span class="o">(</span>owner: username<span class="o">)</span>.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Authorization<span class="o">]</span> Verifying <span class="k">if</span> an authorization token exists <span class="k">for</span> scope <span class="s1">&#39;playlist-read-private&#39;</span>.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Authorization<span class="o">]</span> You may be asked to input your Spotify credentials on your browser to grant Tizonia access to your private playlists.
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Authorization<span class="o">]</span> If a new browser session is not created, please manually copy this URL into your browser:
+<span class="o">[</span>Spotify<span class="o">]</span> <span class="o">[</span>Authorization<span class="o">]</span> <span class="s1">&#39;https://accounts.spotify.com/authorize?client_id=asd7asd7813782378asedhjdfjksd&amp;response_type=code&amp;redirect_uri=http%3A%2F%2Flocalhost%3A8080&amp;scope=playlist-read-private&#39;</span>.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some cases, a new browser window or tab fails to open
+automatically. If this is the case, Tizonia will wait. Open your
+browser and manually paste the URL displayed by Tizonia on the
+terminal and then follow the instructions.</p>
+</div>
 </div>
 <div class="section" id="examples">
 <h2>EXAMPLES<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
